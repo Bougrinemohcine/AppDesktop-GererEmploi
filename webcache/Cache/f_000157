@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.css" />
+    <script type="text/javascript"
+        src="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js"></script>
+    
+
+    <link rel="apple-touch-icon" sizes="76x76" href="http://127.0.0.1:8000/assets/masterAssets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="http://127.0.0.1:8000/assets/masterAssets/img/favicon.png">
+    <link href="http://127.0.0.1:8000/assets/css/app.css" rel="stylesheet">
+    <title>
+        Assign Modules to Formateur
+    </title>
+    
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+    <!-- Nucleo Icons -->
+    <link href="http://127.0.0.1:8000/assets/masterAssets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="http://127.0.0.1:8000/assets/masterAssets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <!-- CSS Files -->
+    <link id="pagestyle" href="http://127.0.0.1:8000/assets/masterAssets/css/material-dashboard.css?v=3.1.0"
+        rel="stylesheet" />
+    <Link rel="stylesheet" href="http://127.0.0.1:8000/assets/bootstrap/css/bootstrap.min.css"></Link>
+    <!-- <link rel="stylesheet" href="http://127.0.0.1:8000/bootstrap/css/bootstrap.min.css"> -->
+    <!-- Nepcha Analytics (nepcha.com) -->
+    <!-- Nepcha is a easy-to-use web analytics. No cookies and fully compliant with GDPR, CCPA and PECR. -->
+    <script defer data-site="YOUR_DOMAIN_HERE" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
+
+    <style>
+        /* Custom CSS for buttons */
+        .modal-content button {
+            width: 200px;
+            /* Adjust the width as needed */
+            text-align: center;
+        }
+    *{
+        scrollbar-width: thin;
+        scrollbar-color: #ccc ;
+    }
+    * ::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    *::-webkit-scrollbar-corner {
+        background-color: transparent;
+    }
+    .logout:hover a{
+        color: #1a73e8;
+        transition: all 0.3s ease;
+    }
+    .toggle-sidebar{
+        display: none !important;
+    }
+    #toggleSidebarBtn{
+        left: 235px;
+        top: 50%;
+        z-index: 1000;
+        rotate: -180deg;
+        box-shadow: none;
+    }
+    #toggleSidebarBtn {
+    transition: left 0.3s ease; /* Add a transition effect to the left property */
+}
+</style>
+</head>
+    <button id="toggleSidebarBtn" class="btn  m-0 position-absolute" ><i class="fs-3 fa-solid fa-arrow-left text-info"></i></button>
+<body class="g-sidenav-show  bg-white-200">
+    <aside
+        class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3   bg-gradient-light bg-opacity-50"
+        id="sidenav-main">
+        <div class="sidenav-header">
+                    <i class="fas fa-times p-3 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
+                aria-hidden="true" id="iconSidenav"></i>
+            <a class="navbar-brand m-0" href="http://127.0.0.1:8000/nouveau%20emploi">
+                <img src="http://127.0.0.1:8000/assets/masterAssets/img/iconofppt.png" class="navbar-brand-img h-100"
+                    alt="main_logo">
+                <span class="ms-1 font-weight-bold decoration-blue-950">Gérer l'emploi</span>
+            </a>
+        </div>
+        <hr class="horizontal light mt-0 mb-2">
+        <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
+            <ul class="navbar-nav overflow-y-auto" id="myNavbar">
+                <li class="nav-item">
+                    <a class="nav-link text-white active bg-gradient-info"
+                        href="http://127.0.0.1:8000/nouveau%20emploi">
+                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Nouveau Emploi</span>
+                    </a>
+                </li>
+                <div class="mt-2 text-center px-3"> <!-- Add 'text-center' class here -->
+                    <a href="http://127.0.0.1:8000/backup" class="btn  w-100 border border-info text-info">Back Up</a>
+                </div>
+
+                <li class="nav-item">
+                    <!-- emploi_formateurs -->
+                    <a class="nav-link decoration-blue-950 text-info  nav-link-routing" href="http://127.0.0.1:8000/emplois_formateurs">
+                        <div class="text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10 text-info"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Formateurs</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info  nav-link-routing" href="http://127.0.0.1:8000/emplois_groupes">
+                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10 text-info"></i>
+                        </div>
+                        <span class="nav-link-text ms-1 ">Groupes</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info  nav-link-routing" href="http://127.0.0.1:8000/emplois_formateur">
+                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10 text-info"></i>
+                        </div>
+                        <span class="nav-link-text ms-1 ">Par Fromateur</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info  nav-link-routing" href="http://127.0.0.1:8000/emploi_groupe">
+                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10 text-info"></i>
+                        </div>
+                        <span class="nav-link-text ms-1 ">Par Groupe</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info  nav-link-routing" href="http://127.0.0.1:8000/emploi_filiere">
+                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10 text-info"></i>
+                        </div>
+                        <span class="nav-link-text ms-1 ">Par Filiere</span>
+                    </a>
+                </li>
+
+                <hr class="horizontal light mt-0 mb-2">
+                <div class="sidenav-footer  w-100">
+                    <div class="mx-3">
+                        <a class="btn btn-outline-info mt-1 w-100 text-info" href="#" type="button ">Validé et Exporter</a>
+                        <a class="btn text-white bg-info w-100" href="http://127.0.0.1:8000/gererUser"
+                            type="button">Settings</a>
+                        <!-- Modal -->
+                        
+                    </div>
+                </div>
+            </ul>
+    </aside>
+    <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
+        <!-- Navbar -->
+        <nav class="navbar navbar-main navbar-expand-lg px-0  shadow-none border-radius-xl fixed-top w-100" id="navbarBlur"
+            data-scroll="true" >
+            <div class="container-fluid py-1 px-3">
+                <nav aria-label="breadcrumb">
+                    <!-- <h6 class="font-weight-bolder mb-0"></h6> -->
+                    <img src="http://127.0.0.1:8000/assets/masterAssets/img/ofpptLogo.png"
+                        style="width: 70px;margin-left: 55vw;" alt="ofpptLogo">
+                </nav>
+                <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
+                    <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+                    </div>
+                    <ul class="navbar-nav  justify-content-end">
+                                                    <li class="logout nav-item d-flex align-items-center">
+                                <a onclick="return confirm('Voulez Vous Vraiment déconnecter?')"
+                                    href="http://127.0.0.1:8000/logout" class=" nav-link font-weight-bold d-flex justify-content-center align-items-center">
+                                    <i class="fa-solid fa-right-from-bracket mx-1"></i>
+                                    <span class="d-sm-inline d-none">Logout</span>
+                                </a>
+                            </li>
+                                            </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+        <div class="container-fluid">
+            <div class="container" style="background-color: white; border-radius: 13px">
+    <div class="row p-3">
+        <!-- Sidebar -->
+        <div class="col-md-3">
+            <div class="sidebar align-items-center">
+                <!-- Sidebar content on the left -->
+                <ul class="list-group border-0 d-flex justify-content-center">
+                                                                <li class="list-group-item border-0">
+                            <a href="http://127.0.0.1:8000/gererUser" type="button" class="btn btn-dark" name="changerPass"
+                               style="width: 100%; ">
+                                Changer le mot de passe
+                            </a>
+                        </li>
+                                            <li class="list-group-item border-0">
+                            <a href="http://127.0.0.1:8000/gererFormateur" type="button" class="btn btn-dark" name="GererFormarteurs"
+                               style="width: 100%; ">
+                                Gérer les formateurs
+                            </a>
+                        </li>
+                                            <li class="list-group-item border-0">
+                            <a href="http://127.0.0.1:8000/gererFiliere" type="button" class="btn btn-dark" name="GererFilieres"
+                               style="width: 100%; ">
+                                Gérer les filières
+                            </a>
+                        </li>
+                                            <li class="list-group-item border-0">
+                            <a href="http://127.0.0.1:8000/gererGroupe" type="button" class="btn btn-dark" name="GererGroupes"
+                               style="width: 100%; ">
+                                Gérer les groupes
+                            </a>
+                        </li>
+                                            <li class="list-group-item border-0">
+                            <a href="http://127.0.0.1:8000/gereSemaine" type="button" class="btn btn-dark" name="GererSemaines"
+                               style="width: 100%; ">
+                                Gérer les semaines
+                            </a>
+                        </li>
+                                            <li class="list-group-item border-0">
+                            <a href="http://127.0.0.1:8000/gererSalle" type="button" class="btn btn-dark" name="GererSalles"
+                               style="width: 100%; ">
+                                Gérer les salles
+                            </a>
+                        </li>
+                                            <li class="list-group-item border-0">
+                            <a href="http://127.0.0.1:8000/gererModule" type="button" class="btn btn-dark" name="GererModules"
+                               style="width: 100%; ">
+                                Gérer les modules
+                            </a>
+                        </li>
+                                            <li class="list-group-item border-0">
+                            <a href="http://127.0.0.1:8000/gerer_formateur_module" type="button" class="btn btn-dark" name="GererFormateurModules"
+                               style="width: 99%; background-color: #1A73E8; color: white;">
+                                Gérer les formateurs - modules
+                            </a>
+                        </li>
+                                        
+                    <!-- Add more buttons or content as needed -->
+                </ul>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="col-md-9">
+            <!-- Main content on the right -->
+            <div class="d-flex" style="height: 70vh;">
+                <div class="container">
+            <div>
+
+                <a class="btn btn-success" href="http://127.0.0.1:8000/groupes-modules">Modules to Groupe</a>
+                <a class="btn btn-info" href="http://127.0.0.1:8000/formateur-groupes">Groupes to Formateur</a>
+                <a class="btn btn-info" href="http://127.0.0.1:8000/formateur-modules">Modules Formateur</a>
+
+            </div>
+            <div id="modulesGroupesForm">
+                <!-- Your Modules Groupes Form Here -->
+                <!-- Your Modules Groupes Form Here -->
+                <div class="row">
+                    <div class="col-md-10 offset-md-1">
+                        <div class="card mt-5">
+                            <div class="card-body text-center"> <!-- Added text-center class -->
+                                <h5 class="card-title">Modules to Groupe</h5>
+                                <form action="http://127.0.0.1:8000/gerer_formateur_module/assign-groupes-modules" method="POST">
+                                    <input type="hidden" name="_token" value="sJQAT4YjhMMUjFTxjKvlecGcI9PtRHrY5dN3P2hO" autocomplete="off">                                    <div class="d-flex justify-content-center"> <!-- Added justify-content-center class -->
+                                        <div class="mb-3 mx-auto" style="width: 150px;">
+                                            <label for="filiereGroupe" class="form-label">Select Filière</label>
+                                            <select class="form-select" name="filiereGroupe" id="filiereGroupe">
+                                                <option value="">Select a Filiere</option>
+                                                                                                    <option value="1">DEV</option>
+                                                                                                    <option value="2">GE</option>
+                                                                                                    <option value="3">COM</option>
+                                                                                            </select>
+                                        </div>
+                                        <div class="mb-3 mx-auto" style="width: 150px;">
+                                            <label for="NiveauGroupe" class="form-label">Select Niveau</label>
+                                            <select class="form-select" name="NiveauGroupe" id="NiveauGroupe">
+                                                <option value="">Select a Niveau</option>
+                                                                                                    <option value="1">1</option>
+                                                                                                    <option value="2">2</option>
+                                                                                                    <option value="3">3</option>
+                                                                                            </select>
+                                        </div>
+                                        <div class="mb-3 mx-auto" style="width: 150px;">
+                                            <label for="groupeModule" class="form-label">Select Groupe</label>
+                                            <select class="form-select" name="groupeModule" id="groupeModule">
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="form-check form-check-inline mb-3" style="width: 500px;">
+                                                                                    <input name="moduleGroupe[]" class="form-check-input" type="checkbox" id="inlineCheckbox1" value="1">
+                                            <label class="form-check-label" for="inlineCheckbox1">algorithme</label>
+                                                                                    <input name="moduleGroupe[]" class="form-check-input" type="checkbox" id="inlineCheckbox2" value="2">
+                                            <label class="form-check-label" for="inlineCheckbox2">html</label>
+                                                                                    <input name="moduleGroupe[]" class="form-check-input" type="checkbox" id="inlineCheckbox3" value="3">
+                                            <label class="form-check-label" for="inlineCheckbox3">python</label>
+                                                                                    <input name="moduleGroupe[]" class="form-check-input" type="checkbox" id="inlineCheckbox4" value="4">
+                                            <label class="form-check-label" for="inlineCheckbox4">css</label>
+                                                                                    <input name="moduleGroupe[]" class="form-check-input" type="checkbox" id="inlineCheckbox5" value="5">
+                                            <label class="form-check-label" for="inlineCheckbox5">js</label>
+                                                                                    <input name="moduleGroupe[]" class="form-check-input" type="checkbox" id="inlineCheckbox6" value="6">
+                                            <label class="form-check-label" for="inlineCheckbox6">php</label>
+                                                                                    <input name="moduleGroupe[]" class="form-check-input" type="checkbox" id="inlineCheckbox7" value="7">
+                                            <label class="form-check-label" for="inlineCheckbox7">poo</label>
+                                                                                    <input name="moduleGroupe[]" class="form-check-input" type="checkbox" id="inlineCheckbox8" value="8">
+                                            <label class="form-check-label" for="inlineCheckbox8">mysql</label>
+                                                                                    <input name="moduleGroupe[]" class="form-check-input" type="checkbox" id="inlineCheckbox9" value="9">
+                                            <label class="form-check-label" for="inlineCheckbox9">laravel</label>
+                                                                                    <input name="moduleGroupe[]" class="form-check-input" type="checkbox" id="inlineCheckbox10" value="10">
+                                            <label class="form-check-label" for="inlineCheckbox10">react</label>
+                                                                                    <input name="moduleGroupe[]" class="form-check-input" type="checkbox" id="inlineCheckbox11" value="11">
+                                            <label class="form-check-label" for="inlineCheckbox11">mongoDB</label>
+                                                                                    <input name="moduleGroupe[]" class="form-check-input" type="checkbox" id="inlineCheckbox12" value="12">
+                                            <label class="form-check-label" for="inlineCheckbox12">Bureautique</label>
+                                                                                    <input name="moduleGroupe[]" class="form-check-input" type="checkbox" id="inlineCheckbox13" value="13">
+                                            <label class="form-check-label" for="inlineCheckbox13">Marketing</label>
+                                                                                    <input name="moduleGroupe[]" class="form-check-input" type="checkbox" id="inlineCheckbox14" value="14">
+                                            <label class="form-check-label" for="inlineCheckbox14">Comptabilité générale</label>
+                                                                                    <input name="moduleGroupe[]" class="form-check-input" type="checkbox" id="inlineCheckbox15" value="15">
+                                            <label class="form-check-label" for="inlineCheckbox15">Gestion de production</label>
+                                                                                    <input name="moduleGroupe[]" class="form-check-input" type="checkbox" id="inlineCheckbox16" value="16">
+                                            <label class="form-check-label" for="inlineCheckbox16">Comptabilité Analytique</label>
+                                                                                    <input name="moduleGroupe[]" class="form-check-input" type="checkbox" id="inlineCheckbox17" value="17">
+                                            <label class="form-check-label" for="inlineCheckbox17">Marketing stratégique</label>
+                                                                                    <input name="moduleGroupe[]" class="form-check-input" type="checkbox" id="inlineCheckbox18" value="18">
+                                            <label class="form-check-label" for="inlineCheckbox18">Dossier de création d’entreprise</label>
+                                                                                    <input name="moduleGroupe[]" class="form-check-input" type="checkbox" id="inlineCheckbox19" value="19">
+                                            <label class="form-check-label" for="inlineCheckbox19">arabe</label>
+                                                                                    <input name="moduleGroupe[]" class="form-check-input" type="checkbox" id="inlineCheckbox20" value="20">
+                                            <label class="form-check-label" for="inlineCheckbox20">Techniques de vente et de négociation</label>
+                                                                                    <input name="moduleGroupe[]" class="form-check-input" type="checkbox" id="inlineCheckbox21" value="21">
+                                            <label class="form-check-label" for="inlineCheckbox21">Documents commerciaux et gestion de la caisse</label>
+                                                                                    <input name="moduleGroupe[]" class="form-check-input" type="checkbox" id="inlineCheckbox22" value="22">
+                                            <label class="form-check-label" for="inlineCheckbox22">Techniques de recherche d’emploi</label>
+                                                                                    <input name="moduleGroupe[]" class="form-check-input" type="checkbox" id="inlineCheckbox23" value="23">
+                                            <label class="form-check-label" for="inlineCheckbox23">Commerce électronique</label>
+                                                                                    <input name="moduleGroupe[]" class="form-check-input" type="checkbox" id="inlineCheckbox24" value="24">
+                                            <label class="form-check-label" for="inlineCheckbox24">Management de la relation client</label>
+                                                                                    <input name="moduleGroupe[]" class="form-check-input" type="checkbox" id="inlineCheckbox25" value="25">
+                                            <label class="form-check-label" for="inlineCheckbox25">Logiciel de gestion commerciale SAARI</label>
+                                                                                    <input name="moduleGroupe[]" class="form-check-input" type="checkbox" id="inlineCheckbox26" value="26">
+                                            <label class="form-check-label" for="inlineCheckbox26">FR</label>
+                                        
+                                    </div>
+                                    <br>
+
+                                    <button type="submit" class="btn btn-success">Enregistrer</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <script>
+                    var groupesData = [{"id":1,"nom_groupe":"CMOSE101","Mode_de_formation":"CDJ","Niveau":"1","filiere_id":3,"created_at":"2024-04-03T22:48:23.000000Z","updated_at":"2024-04-03T22:48:23.000000Z"},{"id":2,"nom_groupe":"CMOSE102","Mode_de_formation":"CDJ","Niveau":"1","filiere_id":3,"created_at":"2024-04-03T22:48:37.000000Z","updated_at":"2024-04-03T22:48:37.000000Z"},{"id":3,"nom_groupe":"CMOSW103","Mode_de_formation":"CDJ","Niveau":"1","filiere_id":3,"created_at":"2024-04-03T22:48:48.000000Z","updated_at":"2024-04-03T22:48:48.000000Z"},{"id":4,"nom_groupe":"AAOC201","Mode_de_formation":"CDJ","Niveau":"2","filiere_id":3,"created_at":"2024-04-03T22:49:14.000000Z","updated_at":"2024-04-03T22:49:14.000000Z"},{"id":5,"nom_groupe":"AAOCP201","Mode_de_formation":"CDJ","Niveau":"2","filiere_id":3,"created_at":"2024-04-03T22:49:28.000000Z","updated_at":"2024-04-03T22:49:28.000000Z"},{"id":6,"nom_groupe":"AAOCP202","Mode_de_formation":"CDJ","Niveau":"2","filiere_id":3,"created_at":"2024-04-03T22:49:39.000000Z","updated_at":"2024-04-03T22:49:39.000000Z"},{"id":7,"nom_groupe":"AAOCP203","Mode_de_formation":"CDJ","Niveau":"2","filiere_id":3,"created_at":"2024-04-03T22:49:51.000000Z","updated_at":"2024-04-03T22:49:51.000000Z"},{"id":8,"nom_groupe":"TSDEV101","Mode_de_formation":"CDJ","Niveau":"1","filiere_id":1,"created_at":"2024-04-03T22:50:35.000000Z","updated_at":"2024-04-03T22:50:35.000000Z"},{"id":9,"nom_groupe":"TSDEV102","Mode_de_formation":"CDJ","Niveau":"1","filiere_id":1,"created_at":"2024-04-03T22:50:44.000000Z","updated_at":"2024-04-03T22:50:44.000000Z"},{"id":10,"nom_groupe":"TSDEV103","Mode_de_formation":"CDJ","Niveau":"1","filiere_id":1,"created_at":"2024-04-03T22:50:56.000000Z","updated_at":"2024-04-03T22:50:56.000000Z"},{"id":11,"nom_groupe":"DEVOWFS201","Mode_de_formation":"CDJ","Niveau":"2","filiere_id":1,"created_at":"2024-04-03T22:51:12.000000Z","updated_at":"2024-04-03T22:51:12.000000Z"},{"id":12,"nom_groupe":"DEVOWFS202","Mode_de_formation":"CDJ","Niveau":"2","filiere_id":1,"created_at":"2024-04-03T22:51:21.000000Z","updated_at":"2024-04-03T22:51:21.000000Z"},{"id":13,"nom_groupe":"TSGE101","Mode_de_formation":"CDJ","Niveau":"1","filiere_id":2,"created_at":"2024-04-03T22:51:36.000000Z","updated_at":"2024-04-03T22:51:36.000000Z"},{"id":14,"nom_groupe":"TSGE102","Mode_de_formation":"CDJ","Niveau":"1","filiere_id":2,"created_at":"2024-04-03T22:51:45.000000Z","updated_at":"2024-04-03T22:51:45.000000Z"},{"id":15,"nom_groupe":"TSGE103","Mode_de_formation":"CDJ","Niveau":"1","filiere_id":2,"created_at":"2024-04-03T22:51:58.000000Z","updated_at":"2024-04-03T22:51:58.000000Z"},{"id":16,"nom_groupe":"TSGE104","Mode_de_formation":"CDJ","Niveau":"1","filiere_id":2,"created_at":"2024-04-03T22:52:10.000000Z","updated_at":"2024-04-03T22:52:10.000000Z"},{"id":17,"nom_groupe":"TSGE105","Mode_de_formation":"CDJ","Niveau":"1","filiere_id":2,"created_at":"2024-04-03T22:52:19.000000Z","updated_at":"2024-04-03T22:52:19.000000Z"},{"id":18,"nom_groupe":"GEOCM201","Mode_de_formation":"CDJ","Niveau":"2","filiere_id":2,"created_at":"2024-04-03T22:52:38.000000Z","updated_at":"2024-04-03T22:52:38.000000Z"},{"id":19,"nom_groupe":"GEOCM202","Mode_de_formation":"CDJ","Niveau":"2","filiere_id":2,"created_at":"2024-04-03T22:52:48.000000Z","updated_at":"2024-04-03T22:52:48.000000Z"},{"id":20,"nom_groupe":"GEOCM203","Mode_de_formation":"CDJ","Niveau":"2","filiere_id":2,"created_at":"2024-04-03T22:52:57.000000Z","updated_at":"2024-04-03T22:52:57.000000Z"},{"id":21,"nom_groupe":"COMPT301","Mode_de_formation":"CDJ","Niveau":"3","filiere_id":2,"created_at":"2024-04-03T22:53:17.000000Z","updated_at":"2024-04-03T22:53:17.000000Z"},{"id":22,"nom_groupe":"COMPT302","Mode_de_formation":"CDJ","Niveau":"3","filiere_id":2,"created_at":"2024-04-03T22:53:26.000000Z","updated_at":"2024-04-03T22:53:26.000000Z"}];
+                    var GroupeModules = [{"id":97,"groupe_id":8,"module_id":26,"created_at":null,"updated_at":null},{"id":98,"groupe_id":1,"module_id":26,"created_at":null,"updated_at":null},{"id":99,"groupe_id":2,"module_id":26,"created_at":null,"updated_at":null},{"id":100,"groupe_id":4,"module_id":26,"created_at":null,"updated_at":null},{"id":101,"groupe_id":3,"module_id":26,"created_at":null,"updated_at":null},{"id":102,"groupe_id":5,"module_id":26,"created_at":null,"updated_at":null},{"id":103,"groupe_id":6,"module_id":26,"created_at":null,"updated_at":null},{"id":104,"groupe_id":7,"module_id":26,"created_at":null,"updated_at":null},{"id":105,"groupe_id":9,"module_id":26,"created_at":null,"updated_at":null},{"id":106,"groupe_id":10,"module_id":26,"created_at":null,"updated_at":null},{"id":107,"groupe_id":11,"module_id":26,"created_at":null,"updated_at":null},{"id":108,"groupe_id":12,"module_id":26,"created_at":null,"updated_at":null},{"id":109,"groupe_id":13,"module_id":26,"created_at":null,"updated_at":null},{"id":110,"groupe_id":14,"module_id":26,"created_at":null,"updated_at":null},{"id":111,"groupe_id":15,"module_id":26,"created_at":null,"updated_at":null},{"id":112,"groupe_id":16,"module_id":26,"created_at":null,"updated_at":null},{"id":113,"groupe_id":17,"module_id":26,"created_at":null,"updated_at":null},{"id":114,"groupe_id":18,"module_id":26,"created_at":null,"updated_at":null},{"id":115,"groupe_id":19,"module_id":26,"created_at":null,"updated_at":null},{"id":116,"groupe_id":21,"module_id":26,"created_at":null,"updated_at":null},{"id":117,"groupe_id":22,"module_id":26,"created_at":null,"updated_at":null},{"id":118,"groupe_id":8,"module_id":1,"created_at":null,"updated_at":null},{"id":119,"groupe_id":8,"module_id":2,"created_at":null,"updated_at":null},{"id":120,"groupe_id":8,"module_id":3,"created_at":null,"updated_at":null},{"id":121,"groupe_id":8,"module_id":4,"created_at":null,"updated_at":null},{"id":122,"groupe_id":8,"module_id":5,"created_at":null,"updated_at":null},{"id":123,"groupe_id":8,"module_id":6,"created_at":null,"updated_at":null},{"id":124,"groupe_id":8,"module_id":7,"created_at":null,"updated_at":null},{"id":125,"groupe_id":8,"module_id":9,"created_at":null,"updated_at":null},{"id":126,"groupe_id":11,"module_id":10,"created_at":null,"updated_at":null},{"id":127,"groupe_id":11,"module_id":11,"created_at":null,"updated_at":null}];
+
+                    function updateGroupes() {
+                        var filiereId = document.getElementById('filiereGroupe').value;
+                        var niveau = document.getElementById('NiveauGroupe').value;
+                        var groupeSelect = document.getElementById('groupeModule');
+                        var groupeId = groupeSelect.value;
+
+                        // Store the currently selected groupe name
+                        var selectedGroupeName = groupeSelect.options[groupeSelect.selectedIndex]?.textContent || '';
+
+                        // Clear existing options
+                        groupeSelect.innerHTML = '<option value="">' + (selectedGroupeName || 'Select a group') + '</option>';
+
+                        // Filter groupes based on filiere and/or niveau, excluding the currently selected groupe
+                        var filteredGroupes = groupesData.filter(function(groupe) {
+                            return groupe.id != groupeId && (!filiereId || groupe.filiere_id == filiereId) && (!niveau || groupe.Niveau == niveau);
+                        });
+
+                        // Populate the groupe select options
+                        filteredGroupes.forEach(function(groupe) {
+                            var option = document.createElement('option');
+                            option.value = groupe.id;
+                            option.textContent = groupe.nom_groupe;
+                            groupeSelect.appendChild(option);
+                        });
+
+                        // Populate module checkboxes based on selected groupe
+                        var moduleCheckboxes = document.querySelectorAll('[name="moduleGroupe[]"]');
+                        moduleCheckboxes.forEach(function(checkbox) {
+                            checkbox.checked = false; // Uncheck all checkboxes
+                        });
+
+                        var relatedModules = GroupeModules.filter(function(groupeModule) {
+                            return groupeModule.groupe_id == groupeId;
+                        });
+
+                        relatedModules.forEach(function(groupeModule) {
+                            var checkbox = document.getElementById('inlineCheckbox' + groupeModule.module_id);
+                            if (checkbox) {
+                                checkbox.checked = true; // Check checkboxes related to selected groupe
+                            }
+                        });
+                    }
+
+                    document.getElementById('filiereGroupe').addEventListener('change', updateGroupes);
+                    document.getElementById('NiveauGroupe').addEventListener('change', updateGroupes);
+                    document.getElementById('groupeModule').addEventListener('change', updateGroupes);
+
+                    // Initial population of groupes based on filiere and niveau
+                    updateGroupes();
+
+                </script>
+            </div>
+        </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <!-- Button trigger modal -->
+        </div>
+    </main>
+
+    <script src="http://127.0.0.1:8000/assets/masterAssets/js/core/popper.min.js"></script>
+    <script src="http://127.0.0.1:8000/assets/masterAssets/js/core/bootstrap.min.js"></script>
+    <script src="http://127.0.0.1:8000/assets/masterAssets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="http://127.0.0.1:8000/assets/masterAssets/js/plugins/smooth-scrollbar.min.js"></script>
+    <script src="http://127.0.0.1:8000/assets/masterAssets/js/plugins/chartjs.min.js"></script>
+    <!--   Core JS Files   -->
+    
+        <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <script>
+document.addEventListener('DOMContentLoaded', function () {
+    const toggleSidebarBtn = document.getElementById('toggleSidebarBtn');
+    const sidebar = document.getElementById('sidenav-main');
+    const mainContent = document.querySelector('.main-content');
+    const divInsideMaster = document.querySelector('x-master > div');
+    toggleSidebarBtn.addEventListener('click', function () {
+        sidebar.classList.toggle('toggle-sidebar');
+        if (sidebar.classList.contains('toggle-sidebar')) {
+            toggleSidebarBtn.style.left = '-20px'; // Slide the button to the left when the sidebar is toggled
+            mainContent.style.width = '100%'; // Expand the main content to full width when the sidebar is hidden
+            divInsideMaster.style.width = '100%'; // Expand the div inside x-master to full width when the sidebar is hidden
+            document.body.style.overflowY = 'hidden'; // Hide the body scrollbar
+            document.body.style.overflowX = 'auto'; // Allow horizontal scrolling in the body
+        } else {
+            toggleSidebarBtn.style.left = '235px'; // Slide the button back to its original position
+            mainContent.style.width = ''; // Reset the width of the main content to its default value
+            divInsideMaster.style.width = ''; // Reset the width of the div inside x-master to its default value
+            document.body.style.overflowY = 'auto'; // Allow scrolling in the body
+            document.body.style.overflowX = 'hidden'; // Hide horizontal scrolling in the body
+        }
+    });
+});
+    </script>
+    <script src="http://127.0.0.1:8000/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0"></script>
+    <script>
+       const must_add_emloi = document.querySelector('.must_add_emploi');
+        const nav_link_routing = document.querySelectorAll('.nav-link-routing');
+        const alert_new_emploi=document.querySelector('.creer_emploi')
+        if (must_add_emloi) {
+            nav_link_routing.forEach((item)=>{
+                item.addEventListener('click', function (e) {
+                e.preventDefault();
+                alert("vous devez creer une emploi d'abord")
+            });
+            })
+        }
+
+</script>
+</body>
+
+</html>
+

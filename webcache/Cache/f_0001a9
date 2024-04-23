@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.css" />
+    <script type="text/javascript"
+        src="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js"></script>
+    
+
+    <link rel="apple-touch-icon" sizes="76x76" href="http://127.0.0.1:8000/public/assets/masterAssets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="http://127.0.0.1:8000/public/assets/masterAssets/img/favicon.png">
+    <link href="http://127.0.0.1:8000/public/assets/css/app.css" rel="stylesheet">
+    <title>
+        Filière
+    </title>
+    
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+    <!-- Nucleo Icons -->
+    <link href="http://127.0.0.1:8000/public/assets/masterAssets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="http://127.0.0.1:8000/public/assets/masterAssets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <!-- CSS Files -->
+    <link id="pagestyle" href="http://127.0.0.1:8000/public/assets/masterAssets/css/material-dashboard.css?v=3.1.0"
+        rel="stylesheet" />
+    <!-- Nepcha Analytics (nepcha.com) -->
+    <!-- Nepcha is a easy-to-use web analytics. No cookies and fully compliant with GDPR, CCPA and PECR. -->
+    <script defer data-site="YOUR_DOMAIN_HERE" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
+    <style>
+        /* Custom CSS for buttons */
+        .modal-content button {
+            width: 200px;
+            /* Adjust the width as needed */
+            text-align: center;
+        }
+    *{
+        scrollbar-width: thin;
+        scrollbar-color: #ccc ;
+    }
+    * ::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    *::-webkit-scrollbar-corner {
+        background-color: transparent;
+    }
+    .logout:hover a{
+        color: #1a73e8;
+        transition: all 0.3s ease;
+    }
+    .toggle-sidebar{
+        display: none !important;
+    }
+    #toggleSidebarBtn{
+        left: 235px;
+        top: 50%;
+        z-index: 1000;
+        rotate: -180deg;
+        box-shadow: none;
+    }
+    #toggleSidebarBtn {
+    transition: left 0.3s ease; /* Add a transition effect to the left property */
+}
+
+    </style>
+
+</head>
+    <button id="toggleSidebarBtn" class="btn  m-0 position-absolute" ><i class="fs-3 fa-solid fa-arrow-left text-info"></i></button>
+<body class="g-sidenav-show  bg-white-200">
+    <aside
+        class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3   bg-gradient-light bg-opacity-50"
+        id="sidenav-main">
+        <div class="sidenav-header">
+            <i class="fas fa-times p-3 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
+                aria-hidden="true" id="iconSidenav"></i>
+            <a class="navbar-brand m-0" href="http://127.0.0.1:8000/public/index.php/nouveau%20emploi">
+                <img src="http://127.0.0.1:8000/public/assets/masterAssets/img/iconofppt.png" class="navbar-brand-img h-100"
+                    alt="main_logo">
+                <span class="ms-1 font-weight-bold decoration-blue-950">Gérer l'emploi</span>
+            </a>
+        </div>
+        <hr class="horizontal light mt-0 mb-2">
+        <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
+            <ul class="navbar-nav overflow-y-auto" id="myNavbar">
+                <li class="nav-item">
+                    <a class="nav-link text-white active bg-gradient-info"
+                        href="http://127.0.0.1:8000/public/index.php/nouveau%20emploi">
+                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Nouveau Emploi</span>
+                    </a>
+                </li>
+                <div class="mt-2 text-center px-3"> <!-- Add 'text-center' class here -->
+                    <a href="http://127.0.0.1:8000/public/index.php/backup" class="btn  w-100 border border-info text-info">Back Up</a>
+                </div>
+
+                <li class="nav-item">
+                    <!-- emploi_formateurs -->
+                    <a class="nav-link decoration-blue-950 text-info " href="http://127.0.0.1:8000/public/index.php/emplois_formateurs">
+                        <div class="text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10 text-info"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Formateurs</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info " href="http://127.0.0.1:8000/public/index.php/emplois_groupes">
+                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10 text-info"></i>
+                        </div>
+                        <span class="nav-link-text ms-1 ">Groupes</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info " href="http://127.0.0.1:8000/public/index.php/emplois_formateur">
+                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10 text-info"></i>
+                        </div>
+                        <span class="nav-link-text ms-1 ">Par Fromateur</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info " href="http://127.0.0.1:8000/public/index.php/emploi_groupe">
+                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10 text-info"></i>
+                        </div>
+                        <span class="nav-link-text ms-1 ">Par Groupe</span>
+                    </a>
+                </li>
+                <hr class="horizontal light mt-0 mb-2">
+                <div class="sidenav-footer  w-100">
+                    <div class="mx-3">
+                        <a class="btn btn-outline-info mt-1 w-100 text-info" href="#" type="button ">Validé et Exporter</a>
+                        <a class="btn text-white bg-info w-100" href="http://127.0.0.1:8000/public/index.php/gererUser"
+                            type="button">Settings</a>
+                        <!-- Modal -->
+                        
+                    </div>
+                </div>
+            </ul>
+    </aside>
+    <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg" >
+        <!-- Navbar -->
+        <nav class="navbar navbar-main navbar-expand-lg px-0  shadow-none border-radius-xl fixed-top w-100" id="navbarBlur"
+            data-scroll="true" >
+            <div class="container-fluid py-1 px-3">
+                <nav aria-label="breadcrumb">
+                    <!-- <h6 class="font-weight-bolder mb-0"></h6> -->
+                    <img src="http://127.0.0.1:8000/public/assets/masterAssets/img/ofpptLogo.png"
+                        style="width: 70px;margin-left: 55vw;" alt="ofpptLogo">
+                </nav>
+                <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
+                    <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+                    </div>
+                    <ul class="navbar-nav  justify-content-end">
+                                                    <li class="logout nav-item d-flex align-items-center">
+                                <a onclick="return confirm('Voulez Vous Vraiment déconnecter?')"
+                                    href="http://127.0.0.1:8000/public/index.php/logout" class=" nav-link font-weight-bold d-flex justify-content-center align-items-center">
+                                    <i class="fa-solid fa-right-from-bracket mx-1"></i>
+                                    <span class="d-sm-inline d-none">Logout</span>
+                                </a>
+                            </li>
+                                            </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+        <div class="container-fluid">
+            <div class="container" style="background-color: white; border-radius: 13px">
+    <div class="row p-3">
+        <!-- Sidebar -->
+        <div class="col-md-3">
+            <div class="sidebar align-items-center">
+                <!-- Sidebar content on the left -->
+                <ul class="list-group border-0 d-flex justify-content-center">
+                                                                <li class="list-group-item border-0">
+                            <a href="http://127.0.0.1:8000/public/index.php/gererUser" type="button" class="btn btn-dark" name="changerPass"
+                               style="width: 100%; ">
+                                Changer le mot de passe
+                            </a>
+                        </li>
+                                            <li class="list-group-item border-0">
+                            <a href="http://127.0.0.1:8000/public/index.php/gererFormateur" type="button" class="btn btn-dark" name="GererFormarteurs"
+                               style="width: 100%; ">
+                                Gérer les formateurs
+                            </a>
+                        </li>
+                                            <li class="list-group-item border-0">
+                            <a href="http://127.0.0.1:8000/public/index.php/gererFiliere" type="button" class="btn btn-dark" name="GererFilieres"
+                               style="width: 99%; background-color: #1A73E8; color: white;">
+                                Gérer les filières
+                            </a>
+                        </li>
+                                            <li class="list-group-item border-0">
+                            <a href="http://127.0.0.1:8000/public/index.php/gererGroupe" type="button" class="btn btn-dark" name="GererGroupes"
+                               style="width: 100%; ">
+                                Gérer les groupes
+                            </a>
+                        </li>
+                                            <li class="list-group-item border-0">
+                            <a href="http://127.0.0.1:8000/public/index.php/gereSemaine" type="button" class="btn btn-dark" name="GererSemaines"
+                               style="width: 100%; ">
+                                Gérer les semaines
+                            </a>
+                        </li>
+                                            <li class="list-group-item border-0">
+                            <a href="http://127.0.0.1:8000/public/index.php/gererSalle" type="button" class="btn btn-dark" name="GererSalles"
+                               style="width: 100%; ">
+                                Gérer les salles
+                            </a>
+                        </li>
+                                        
+                    <!-- Add more buttons or content as needed -->
+                </ul>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="col-md-9">
+            <!-- Main content on the right -->
+            <div class="d-flex" style="height: 70vh;">
+                <div class="container">
+            <div class="row">
+                <div style="width: 100%; height: 60vh; overflow-y: scroll; border: 1px solid #ccc; padding: 10px;">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <div class="col-md-12 text-center mt-3"> <!-- Added Bootstrap classes for centering -->
+                    <a class="btn btn-success col-md-12 ajouter">Ajouter Filière</a> 
+                </div>
+            </div>
+        </div>
+            </div>
+        </div>
+    </div>
+</div>
+        </div>
+    </main>
+    <!--   Core JS Files   -->
+    <script src="http://127.0.0.1:8000/public/assets/masterAssets/js/core/popper.min.js"></script>
+    <script src="http://127.0.0.1:8000/public/assets/masterAssets/js/core/bootstrap.min.js"></script>
+    <script src="http://127.0.0.1:8000/public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="http://127.0.0.1:8000/public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js"></script>
+    <script src="http://127.0.0.1:8000/public/assets/masterAssets/js/plugins/chartjs.min.js"></script>
+        <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    const toggleSidebarBtn = document.getElementById('toggleSidebarBtn');
+    const sidebar = document.getElementById('sidenav-main');
+    const mainContent = document.querySelector('.main-content');
+    const divInsideMaster = document.querySelector('x-master > div');
+
+    toggleSidebarBtn.addEventListener('click', function () {
+        sidebar.classList.toggle('toggle-sidebar');
+        if (sidebar.classList.contains('toggle-sidebar')) {
+            toggleSidebarBtn.style.left = '-20px'; // Slide the button to the left when the sidebar is toggled
+            mainContent.style.width = '100%'; // Expand the main content to full width when the sidebar is hidden
+            divInsideMaster.style.width = '100%'; // Expand the div inside x-master to full width when the sidebar is hidden
+            document.body.style.overflowY = 'hidden'; // Hide the body scrollbar
+            document.body.style.overflowX = 'auto'; // Allow horizontal scrolling in the body
+        } else {
+            toggleSidebarBtn.style.left = '235px'; // Slide the button back to its original position
+            mainContent.style.width = ''; // Reset the width of the main content to its default value
+            divInsideMaster.style.width = ''; // Reset the width of the div inside x-master to its default value
+            document.body.style.overflowY = 'auto'; // Allow scrolling in the body
+            document.body.style.overflowX = 'hidden'; // Hide horizontal scrolling in the body
+        }
+    });
+});
+
+    </script>
+    <script src="http://127.0.0.1:8000/public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0"></script>
+</body>
+
+</html>
+
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.querySelector("a.ajouter").addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent the default action of the link
+            // Hide the "Ajouter Filière" button
+            this.style.display = "none";
+
+            // Get the parent container
+            var container = document.querySelector(".col-md-12.text-center.mt-3");
+
+            // Append the provided HTML code to the parent container
+            container.insertAdjacentHTML("afterend", `
+                <form action="http://127.0.0.1:8000/public/index.php/gererFiliere/addFiliere" method="POST" class="d-inline">
+                    <input type="hidden" name="_token" value="2dOb39fwun1TDiRCrlvP9A5jOp5rVh5MyR9cUY1s" autocomplete="off"> <!-- Include CSRF token for Laravel forms -->
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control border me-2" style="height: 40px; width: 200px; padding: 5px;" placeholder="Enter nom de filière" aria-label="Enter nom de filière" aria-describedby="name-addon" name="nom_filier">
+                        <button style="border-top-left-radius:5px;border-bottom-left-radius:5px" class="btn btn-success me-2" type="submit" id="button-addon2">Ajouter</button>
+                        <button class="btn btn-danger" style="border-top-left-radius:5px;border-bottom-left-radius:5px;" type="button" id="cancelButton">Cancel</button>
+                    </div>
+                </form>
+            `);
+
+            // Add event listener to the cancel button
+            document.getElementById("cancelButton").addEventListener("click", function() {
+                // Show the "Ajouter Filière" button
+                document.querySelector("a.ajouter").style.display = "block";
+                // Remove the form
+                this.parentNode.parentNode.remove(); // Remove the parent element of the cancel button (i.e., the form)
+            });
+        });
+    });
+
+</script>
