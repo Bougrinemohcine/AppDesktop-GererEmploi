@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.css" />
+    <script type="text/javascript"
+        src="https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js"></script>
+    
+    <script type="text/javascript" src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
+
+    <link rel="apple-touch-icon" sizes="76x76" href="http://127.0.0.1:8000/public/assets/masterAssets/img/apple-icon.png">
+    <link rel="icon" type="image/png" href="http://127.0.0.1:8000/public/assets/masterAssets/img/favicon.png">
+    <link href="http://127.0.0.1:8000/public/assets/css/app.css" rel="stylesheet">
+    <title>
+        Filière
+    </title>
+    
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+    <!-- Nucleo Icons -->
+    <link href="http://127.0.0.1:8000/public/assets/masterAssets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="http://127.0.0.1:8000/public/assets/masterAssets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <!-- CSS Files -->
+    <link id="pagestyle" href="http://127.0.0.1:8000/public/assets/masterAssets/css/material-dashboard.css?v=3.1.0"
+        rel="stylesheet" />
+    <Link rel="stylesheet" href="http://127.0.0.1:8000/public/assets/bootstrap/css/bootstrap.min.css"></Link>
+    <Link rel="stylesheet" href="http://127.0.0.1:8000/public/assets/bootstrap/css/bootstrap.min.css"></Link>
+
+    <!-- <link rel="stylesheet" href="http://127.0.0.1:8000/public/bootstrap/css/bootstrap.min.css"> -->
+    <!-- Nepcha Analytics (nepcha.com) -->
+    <!-- Nepcha is a easy-to-use web analytics. No cookies and fully compliant with GDPR, CCPA and PECR. -->
+    <script defer data-site="YOUR_DOMAIN_HERE" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
+
+    <style>
+        /* Custom CSS for buttons */
+        .modal-content button {
+            width: 200px;
+            /* Adjust the width as needed */
+            text-align: center;
+        }
+    *{
+        scrollbar-width: thin;
+        scrollbar-color: #ccc ;
+    }
+    * ::-webkit-scrollbar-track {
+        background-color: transparent;
+    }
+
+    *::-webkit-scrollbar-corner {
+        background-color: transparent;
+    }
+    .logout:hover a{
+        color: #1a73e8;
+        transition: all 0.3s ease;
+    }
+    .toggle-sidebar{
+        display: none !important;
+    }
+    #toggleSidebarBtn{
+        left: 235px;
+        top: 50%;
+        z-index: 1000;
+        rotate: -180deg;
+        box-shadow: none;
+    }
+    #toggleSidebarBtn {
+    transition: left 0.3s ease; /* Add a transition effect to the left property */
+}
+</style>
+</head>
+    <button id="toggleSidebarBtn" class="btn  m-0 position-absolute" ><i class="fs-3 fa-solid fa-arrow-left text-info"></i></button>
+<body class="g-sidenav-show  bg-white-200">
+    <aside
+        class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3   bg-gradient-light bg-opacity-50"
+        id="sidenav-main">
+        <div class="sidenav-header">
+                    <i class="fas fa-times p-3 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
+                aria-hidden="true" id="iconSidenav"></i>
+            <a class="navbar-brand m-0" href="http://127.0.0.1:8000/public/index.php/nouveau%20emploi">
+                <img src="http://127.0.0.1:8000/public/assets/masterAssets/img/iconofppt.png" class="navbar-brand-img h-100"
+                    alt="main_logo">
+                <span class="ms-1 font-weight-bold decoration-blue-950">Gérer l'emploi</span>
+            </a>
+        </div>
+        <hr class="horizontal light mt-0 mb-2">
+        <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
+            <ul class="navbar-nav overflow-y-auto" id="myNavbar">
+                <li class="nav-item">
+                    <a class="nav-link text-white active bg-gradient-info"
+                        href="http://127.0.0.1:8000/public/index.php/nouveau%20emploi">
+                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10"></i>
+                        </div>
+                        <span class="nav-link-text ms-1">Nouveau Emploi</span>
+                    </a>
+                </li>
+                <div class="mt-2 text-center px-3"> <!-- Add 'text-center' class here -->
+                    <a href="http://127.0.0.1:8000/public/index.php/backup" class="btn  w-100 border border-info text-info">Back Up</a>
+                </div>
+                <li class="nav-item">
+                    <a class="nav-link text-info  nav-link-routing" href="http://127.0.0.1:8000/public/index.php/emplois_formateur">
+                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10 text-info"></i>
+                        </div>
+                        <span class="nav-link-text ms-1 ">Par Fromateur</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info  nav-link-routing" href="http://127.0.0.1:8000/public/index.php/emploi_filiere">
+                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10 text-info"></i>
+                        </div>
+                        <span class="nav-link-text ms-1 ">Par Filiere</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-info  nav-link-routing" href="http://127.0.0.1:8000/public/index.php/salles">
+                        <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+                            <i class="material-icons opacity-10 text-info"></i>
+                        </div>
+                        <span class="nav-link-text ms-1 ">Salles</span>
+                    </a>
+                </li>
+                <hr class="horizontal light mt-0 mb-2">
+                <div class="sidenav-footer  w-100">
+                    <div class="mx-3">
+                        <a class="btn btn-outline-info mt-1 w-100 text-info" href="http://127.0.0.1:8000/public/index.php/valideExporter" type="button ">Validé et Exporter</a>
+                        <a class="btn text-white bg-info w-100" href="http://127.0.0.1:8000/public/index.php/gererUser"
+                            type="button">Settings</a>
+                        <!-- Modal -->
+                        
+                    </div>
+                </div>
+            </ul>
+    </aside>
+    <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
+        <!-- Navbar -->
+        <nav class="navbar navbar-main navbar-expand-lg px-0  shadow-none border-radius-xl fixed-top w-100" id="navbarBlur"
+            data-scroll="true" >
+            <div class="container-fluid py-1 px-3">
+                <nav aria-label="breadcrumb">
+                    <!-- <h6 class="font-weight-bolder mb-0"></h6> -->
+                    <img src="http://127.0.0.1:8000/public/assets/masterAssets/img/ofpptLogo.png"
+                        style="width: 70px;margin-left: 55vw;" alt="ofpptLogo">
+                </nav>
+                <div class="collapse navbar-collapse mt-sm-0 mt-2 me-md-0 me-sm-4" id="navbar">
+                    <div class="ms-md-auto pe-md-3 d-flex align-items-center">
+                    </div>
+                    <ul class="navbar-nav  justify-content-end">
+                                                    <li class="logout nav-item d-flex align-items-center">
+                                <a onclick="return confirm('Voulez Vous Vraiment déconnecter?')"
+                                    href="http://127.0.0.1:8000/public/index.php/logout" class=" nav-link font-weight-bold d-flex justify-content-center align-items-center">
+                                    <i class="fa-solid fa-right-from-bracket mx-1"></i>
+                                    <span class="d-sm-inline d-none">Logout</span>
+                                </a>
+                            </li>
+                                            </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- End Navbar -->
+        <div class="container-fluid">
+            <div class="container" style="background-color: white; border-radius: 13px">
+    <div class="row p-3">
+        <!-- Sidebar -->
+        <div class="col-md-3">
+            <div class="sidebar align-items-center">
+                <!-- Sidebar content on the left -->
+                <ul class="list-group border-0 d-flex justify-content-center">
+                                                                <li class="list-group-item border-0">
+                            <a href="http://127.0.0.1:8000/public/index.php/gererUser" type="button" class="btn btn-dark" name="changerPass"
+                               style="width: 100%; ">
+                                Changer le mot de passe
+                            </a>
+                        </li>
+                                            <li class="list-group-item border-0">
+                            <a href="http://127.0.0.1:8000/public/index.php/gererFormateur" type="button" class="btn btn-dark" name="GererFormarteurs"
+                               style="width: 100%; ">
+                                Gérer les formateurs
+                            </a>
+                        </li>
+                                            <li class="list-group-item border-0">
+                            <a href="http://127.0.0.1:8000/public/index.php/gererFiliere" type="button" class="btn btn-dark" name="GererFilieres"
+                               style="width: 99%; background-color: #1A73E8; color: white;">
+                                Gérer les filières
+                            </a>
+                        </li>
+                                            <li class="list-group-item border-0">
+                            <a href="http://127.0.0.1:8000/public/index.php/gererGroupe" type="button" class="btn btn-dark" name="GererGroupes"
+                               style="width: 100%; ">
+                                Gérer les groupes
+                            </a>
+                        </li>
+                                            <li class="list-group-item border-0">
+                            <a href="http://127.0.0.1:8000/public/index.php/gereSemaine" type="button" class="btn btn-dark" name="GererSemaines"
+                               style="width: 100%; ">
+                                Gérer les semaines
+                            </a>
+                        </li>
+                                            <li class="list-group-item border-0">
+                            <a href="http://127.0.0.1:8000/public/index.php/gererSalle" type="button" class="btn btn-dark" name="GererSalles"
+                               style="width: 100%; ">
+                                Gérer les salles
+                            </a>
+                        </li>
+                                            <li class="list-group-item border-0">
+                            <a href="http://127.0.0.1:8000/public/index.php/gererModule" type="button" class="btn btn-dark" name="GererModules"
+                               style="width: 100%; ">
+                                Gérer les modules
+                            </a>
+                        </li>
+                                            <li class="list-group-item border-0">
+                            <a href="http://127.0.0.1:8000/public/index.php/groupes-modules" type="button" class="btn btn-dark" name="GererFormateurModules"
+                               style="width: 100%; ">
+                                Gérer les Affectations
+                            </a>
+                        </li>
+                                            <li class="list-group-item border-0">
+                            <a href="http://127.0.0.1:8000/public/index.php/import" type="button" class="btn btn-dark" name="importView"
+                               style="width: 100%; ">
+                                IMPORT DATA
+                            </a>
+                        </li>
+                                        
+                    <!-- Add more buttons or content as needed -->
+                </ul>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="col-md-9">
+            <!-- Main content on the right -->
+            <div class="d-flex" style="height: 70vh;">
+                <div class="container">
+            <div class="row">
+                <div style="width: 100%; height: 60vh; overflow-y: scroll; border: 1px solid #ccc; padding: 10px;">
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Name</th>
+                                    <th scope="col">Niveau de formation</th>
+                                    <th scope="col">Mode de formation</th>
+                                    <th scope="col">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>TEMI</td>
+                                    <td>T</td>
+                                    <td>FPA</td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <button type="button" class="btn btn-info me-2" data-toggle="modal" data-target="#updateModal3">Update</button>
+                                            <form action="http://127.0.0.1:8000/public/index.php/gererFiliere/3" method="post">
+                                                <input type="hidden" name="_method" value="DELETE">                                                <input type="hidden" name="_token" value="PkrgCPrik6M58we5uE0YDBvqPTKtU2yYys0UMpRk" autocomplete="off">                                                <button onclick="return confirm('Voulez-vous vraiment supprimer cette filière?')" type="submit" class="btn btn-danger">Delete</button>
+                                            </form>
+                                        </div>
+                                    </td>
+                                </tr>
+                                                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>TREM</td>
+                                    <td>T</td>
+                                    <td>FPA</td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <button type="button" class="btn btn-info me-2" data-toggle="modal" data-target="#updateModal4">Update</button>
+                                            <form action="http://127.0.0.1:8000/public/index.php/gererFiliere/4" method="post">
+                                                <input type="hidden" name="_method" value="DELETE">                                                <input type="hidden" name="_token" value="PkrgCPrik6M58we5uE0YDBvqPTKtU2yYys0UMpRk" autocomplete="off">                                                <button onclick="return confirm('Voulez-vous vraiment supprimer cette filière?')" type="submit" class="btn btn-danger">Delete</button>
+                                            </form>
+                                        </div>
+                                    </td>
+                                </tr>
+                                                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>TFM</td>
+                                    <td>T</td>
+                                    <td>FPA</td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <button type="button" class="btn btn-info me-2" data-toggle="modal" data-target="#updateModal5">Update</button>
+                                            <form action="http://127.0.0.1:8000/public/index.php/gererFiliere/5" method="post">
+                                                <input type="hidden" name="_method" value="DELETE">                                                <input type="hidden" name="_token" value="PkrgCPrik6M58we5uE0YDBvqPTKtU2yYys0UMpRk" autocomplete="off">                                                <button onclick="return confirm('Voulez-vous vraiment supprimer cette filière?')" type="submit" class="btn btn-danger">Delete</button>
+                                            </form>
+                                        </div>
+                                    </td>
+                                </tr>
+                                                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>BACPRO MI</td>
+                                    <td>BP</td>
+                                    <td>FPA</td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <button type="button" class="btn btn-info me-2" data-toggle="modal" data-target="#updateModal6">Update</button>
+                                            <form action="http://127.0.0.1:8000/public/index.php/gererFiliere/6" method="post">
+                                                <input type="hidden" name="_method" value="DELETE">                                                <input type="hidden" name="_token" value="PkrgCPrik6M58we5uE0YDBvqPTKtU2yYys0UMpRk" autocomplete="off">                                                <button onclick="return confirm('Voulez-vous vraiment supprimer cette filière?')" type="submit" class="btn btn-danger">Delete</button>
+                                            </form>
+                                        </div>
+                                    </td>
+                                </tr>
+                                                                <tr>
+                                    <th scope="row">7</th>
+                                    <td>RVA</td>
+                                    <td>Q</td>
+                                    <td>FPA</td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <button type="button" class="btn btn-info me-2" data-toggle="modal" data-target="#updateModal7">Update</button>
+                                            <form action="http://127.0.0.1:8000/public/index.php/gererFiliere/7" method="post">
+                                                <input type="hidden" name="_method" value="DELETE">                                                <input type="hidden" name="_token" value="PkrgCPrik6M58we5uE0YDBvqPTKtU2yYys0UMpRk" autocomplete="off">                                                <button onclick="return confirm('Voulez-vous vraiment supprimer cette filière?')" type="submit" class="btn btn-danger">Delete</button>
+                                            </form>
+                                        </div>
+                                    </td>
+                                </tr>
+                                                                <tr>
+                                    <th scope="row">8</th>
+                                    <td>SIMP</td>
+                                    <td>Q</td>
+                                    <td>FPA</td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <button type="button" class="btn btn-info me-2" data-toggle="modal" data-target="#updateModal8">Update</button>
+                                            <form action="http://127.0.0.1:8000/public/index.php/gererFiliere/8" method="post">
+                                                <input type="hidden" name="_method" value="DELETE">                                                <input type="hidden" name="_token" value="PkrgCPrik6M58we5uE0YDBvqPTKtU2yYys0UMpRk" autocomplete="off">                                                <button onclick="return confirm('Voulez-vous vraiment supprimer cette filière?')" type="submit" class="btn btn-danger">Delete</button>
+                                            </form>
+                                        </div>
+                                    </td>
+                                </tr>
+                                                                <tr>
+                                    <th scope="row">9</th>
+                                    <td>TCM</td>
+                                    <td>T</td>
+                                    <td>FPA</td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <button type="button" class="btn btn-info me-2" data-toggle="modal" data-target="#updateModal9">Update</button>
+                                            <form action="http://127.0.0.1:8000/public/index.php/gererFiliere/9" method="post">
+                                                <input type="hidden" name="_method" value="DELETE">                                                <input type="hidden" name="_token" value="PkrgCPrik6M58we5uE0YDBvqPTKtU2yYys0UMpRk" autocomplete="off">                                                <button onclick="return confirm('Voulez-vous vraiment supprimer cette filière?')" type="submit" class="btn btn-danger">Delete</button>
+                                            </form>
+                                        </div>
+                                    </td>
+                                </tr>
+                                                                <tr>
+                                    <th scope="row">10</th>
+                                    <td>OPCM</td>
+                                    <td>Q</td>
+                                    <td>FPA</td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <button type="button" class="btn btn-info me-2" data-toggle="modal" data-target="#updateModal10">Update</button>
+                                            <form action="http://127.0.0.1:8000/public/index.php/gererFiliere/10" method="post">
+                                                <input type="hidden" name="_method" value="DELETE">                                                <input type="hidden" name="_token" value="PkrgCPrik6M58we5uE0YDBvqPTKtU2yYys0UMpRk" autocomplete="off">                                                <button onclick="return confirm('Voulez-vous vraiment supprimer cette filière?')" type="submit" class="btn btn-danger">Delete</button>
+                                            </form>
+                                        </div>
+                                    </td>
+                                </tr>
+                                                                <tr>
+                                    <th scope="row">11</th>
+                                    <td>EEI</td>
+                                    <td>Q</td>
+                                    <td>FPA</td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <button type="button" class="btn btn-info me-2" data-toggle="modal" data-target="#updateModal11">Update</button>
+                                            <form action="http://127.0.0.1:8000/public/index.php/gererFiliere/11" method="post">
+                                                <input type="hidden" name="_method" value="DELETE">                                                <input type="hidden" name="_token" value="PkrgCPrik6M58we5uE0YDBvqPTKtU2yYys0UMpRk" autocomplete="off">                                                <button onclick="return confirm('Voulez-vous vraiment supprimer cette filière?')" type="submit" class="btn btn-danger">Delete</button>
+                                            </form>
+                                        </div>
+                                    </td>
+                                </tr>
+                                                                <tr>
+                                    <th scope="row">12</th>
+                                    <td>EM</td>
+                                    <td>Q</td>
+                                    <td>FPA</td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <button type="button" class="btn btn-info me-2" data-toggle="modal" data-target="#updateModal12">Update</button>
+                                            <form action="http://127.0.0.1:8000/public/index.php/gererFiliere/12" method="post">
+                                                <input type="hidden" name="_method" value="DELETE">                                                <input type="hidden" name="_token" value="PkrgCPrik6M58we5uE0YDBvqPTKtU2yYys0UMpRk" autocomplete="off">                                                <button onclick="return confirm('Voulez-vous vraiment supprimer cette filière?')" type="submit" class="btn btn-danger">Delete</button>
+                                            </form>
+                                        </div>
+                                    </td>
+                                </tr>
+                                                                <tr>
+                                    <th scope="row">13</th>
+                                    <td>CPA</td>
+                                    <td>Q</td>
+                                    <td>FPA</td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <button type="button" class="btn btn-info me-2" data-toggle="modal" data-target="#updateModal13">Update</button>
+                                            <form action="http://127.0.0.1:8000/public/index.php/gererFiliere/13" method="post">
+                                                <input type="hidden" name="_method" value="DELETE">                                                <input type="hidden" name="_token" value="PkrgCPrik6M58we5uE0YDBvqPTKtU2yYys0UMpRk" autocomplete="off">                                                <button onclick="return confirm('Voulez-vous vraiment supprimer cette filière?')" type="submit" class="btn btn-danger">Delete</button>
+                                            </form>
+                                        </div>
+                                    </td>
+                                </tr>
+                                                                <tr>
+                                    <th scope="row">14</th>
+                                    <td>PC</td>
+                                    <td>Q</td>
+                                    <td>FR</td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <button type="button" class="btn btn-info me-2" data-toggle="modal" data-target="#updateModal14">Update</button>
+                                            <form action="http://127.0.0.1:8000/public/index.php/gererFiliere/14" method="post">
+                                                <input type="hidden" name="_method" value="DELETE">                                                <input type="hidden" name="_token" value="PkrgCPrik6M58we5uE0YDBvqPTKtU2yYys0UMpRk" autocomplete="off">                                                <button onclick="return confirm('Voulez-vous vraiment supprimer cette filière?')" type="submit" class="btn btn-danger">Delete</button>
+                                            </form>
+                                        </div>
+                                    </td>
+                                </tr>
+                                                                <tr>
+                                    <th scope="row">15</th>
+                                    <td>AEFGT</td>
+                                    <td>Q</td>
+                                    <td>FR</td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <button type="button" class="btn btn-info me-2" data-toggle="modal" data-target="#updateModal15">Update</button>
+                                            <form action="http://127.0.0.1:8000/public/index.php/gererFiliere/15" method="post">
+                                                <input type="hidden" name="_method" value="DELETE">                                                <input type="hidden" name="_token" value="PkrgCPrik6M58we5uE0YDBvqPTKtU2yYys0UMpRk" autocomplete="off">                                                <button onclick="return confirm('Voulez-vous vraiment supprimer cette filière?')" type="submit" class="btn btn-danger">Delete</button>
+                                            </form>
+                                        </div>
+                                    </td>
+                                </tr>
+                                                                <tr>
+                                    <th scope="row">16</th>
+                                    <td>MOAB</td>
+                                    <td>Q</td>
+                                    <td>FR</td>
+                                    <td>
+                                        <div class="d-flex">
+                                            <button type="button" class="btn btn-info me-2" data-toggle="modal" data-target="#updateModal16">Update</button>
+                                            <form action="http://127.0.0.1:8000/public/index.php/gererFiliere/16" method="post">
+                                                <input type="hidden" name="_method" value="DELETE">                                                <input type="hidden" name="_token" value="PkrgCPrik6M58we5uE0YDBvqPTKtU2yYys0UMpRk" autocomplete="off">                                                <button onclick="return confirm('Voulez-vous vraiment supprimer cette filière?')" type="submit" class="btn btn-danger">Delete</button>
+                                            </form>
+                                        </div>
+                                    </td>
+                                </tr>
+                                                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+                <div class="col-md-12 text-center mt-3"> <!-- Added Bootstrap classes for centering -->
+                    <a href="http://127.0.0.1:8000/public/index.php/gerer_formateur_module/statusFilieres" type="button" class="btn btn-info me-2">Status des Filieres</a> <br>
+                        <!-- Button to open Add Groupe modal -->
+                    <a class="btn btn-success col-md-12 ajouter">Ajouter Filière</a> 
+                </div>
+            </div>
+        </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <!-- Button trigger modal -->
+        </div>
+    </main>
+
+    <script src="http://127.0.0.1:8000/public/assets/masterAssets/js/core/popper.min.js"></script>
+    <script src="http://127.0.0.1:8000/public/assets/masterAssets/js/core/bootstrap.min.js"></script>
+    <script src="http://127.0.0.1:8000/public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="http://127.0.0.1:8000/public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js"></script>
+    <script src="http://127.0.0.1:8000/public/assets/masterAssets/js/plugins/chartjs.min.js"></script>
+    <!--   Core JS Files   -->
+    <script src="http://127.0.0.1:8000/public/bootstrap/jquery.min.js"></script>
+    <script src="http://127.0.0.1:8000/public/bootstrap/popper.min.js"></script>
+    <script src="http://127.0.0.1:8000/public/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const toggleSidebarBtn = document.getElementById('toggleSidebarBtn');
+            const sidenavMain = document.getElementById('sidenav-main');
+            let isSidebarVisible = null;
+
+            // Check local storage for sidebar state
+            const sidebarState = localStorage.getItem('sidebarState');
+            if (sidebarState !== null) {
+                isSidebarVisible = JSON.parse(sidebarState);
+                updateSidebarVisibility();
+            }
+
+            toggleSidebarBtn.addEventListener('click', function() {
+                isSidebarVisible = !isSidebarVisible;
+                updateSidebarVisibility();
+            });
+
+            function updateSidebarVisibility() {
+                if (isSidebarVisible) {
+                    sidenavMain.classList.remove('toggle-sidebar');
+                } else {
+                    sidenavMain.classList.add('toggle-sidebar');
+                }
+                // Update local storage with current sidebar state
+                localStorage.setItem('sidebarState', JSON.stringify(isSidebarVisible));
+            }
+        });
+    </script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const toggleSidebarBtn = document.getElementById('toggleSidebarBtn');
+            const sidenavMain = document.getElementById('sidenav-main');
+            const mainContent = document.querySelector('.main-content'); // Select the main content element
+            let isSidebarVisible = true;
+
+            // Check local storage for sidebar state
+            const sidebarState = localStorage.getItem('sidebarState');
+            if (sidebarState !== null) {
+                isSidebarVisible = JSON.parse(sidebarState);
+                updateSidebarVisibility();
+            }
+
+            toggleSidebarBtn.addEventListener('click', function() {
+                isSidebarVisible = !isSidebarVisible;
+                updateSidebarVisibility();
+            });
+
+            function updateSidebarVisibility() {
+                if (isSidebarVisible) {
+                    sidenavMain.classList.remove('toggle-sidebar');
+                    // Check if the sidebar is visible before adjusting the margin
+                    if (!sidenavMain.classList.contains('toggle-sidebar')) {
+                        mainContent.style.marginLeft = '18%'; // Adjust the margin when the sidebar is visible
+                        toggleSidebarBtn.style.left = '17%'; // Adjust button position when sidebar is visible
+                    }
+                } else {
+                    sidenavMain.classList.add('toggle-sidebar');
+                    mainContent.style.marginLeft = '2%'; // Set margin to 0 when the sidebar is hidden
+                    toggleSidebarBtn.style.left = '0'; // Adjust button position when sidebar is hidden
+                }
+                // Update local storage with current sidebar state
+                localStorage.setItem('sidebarState', JSON.stringify(isSidebarVisible));
+            }
+        });
+    </script>
+    <script src="http://127.0.0.1:8000/public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0"></script>
+    <script>
+       const must_add_emloi = document.querySelector('.must_add_emploi');
+        const nav_link_routing = document.querySelectorAll('.nav-link-routing');
+        const alert_new_emploi=document.querySelector('.creer_emploi')
+        if (must_add_emloi) {
+            nav_link_routing.forEach((item)=>{
+                item.addEventListener('click', function (e) {
+                e.preventDefault();
+                alert("vous devez creer une emploi d'abord")
+            });
+            })
+        }
+
+</script>
+</body>
+
+</html>
+
+
+<div class="modal fade" id="updateModal3" tabindex="-1" aria-labelledby="updateModalLabel3" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="updateModalLabel3">Update Filière</h5>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="http://127.0.0.1:8000/public/index.php/gererFiliere/updateFiliere/3" method="POST">
+                <input type="hidden" name="_token" value="PkrgCPrik6M58we5uE0YDBvqPTKtU2yYys0UMpRk" autocomplete="off">                <input type="hidden" name="_method" value="PUT">                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="nom_filier3" class="form-label">Nom de filière</label>
+                        <input type="text" class="form-control border" style="padding: 5px;" id="nom_filier3" name="nom_filier" value="TEMI">
+                    </div>
+                    <select class="form-select border mb-3"  style="padding:5px" aria-label="Select niveau de formation" name="niveau_formation">
+                       <option value="T">T</option>
+                       <option value="TS">TECHNICIEN SPECIALISE</option>
+                       <option value="T">TECHNICIEN</option>
+                       <option value="Q">QUALIFICATION</option>
+                       <option value="BP">BAC PRO</option>
+                       <!-- Add options dynamically from your data source -->
+                   </select>
+                   <!-- Add select for mode de formation -->
+                   <select class="form-select border me-2" style="padding:5px"  aria-label="Select mode de formation" name="mode_formation">
+                       <option value="FPA">FPA</option>
+                       <option value="FH">FORMATION HYBRIDE</option>
+                       <option value="FR">FORMATION RESIDENTIELLE</option>
+                       <option value="FPA">FORMATION PAR ALTERNANCE</option>
+                       <!-- Add options dynamically from your data source -->
+                   </select>
+                </div>
+                 <!-- Add select for niveau de formation -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-success">Save changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="updateModal4" tabindex="-1" aria-labelledby="updateModalLabel4" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="updateModalLabel4">Update Filière</h5>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="http://127.0.0.1:8000/public/index.php/gererFiliere/updateFiliere/4" method="POST">
+                <input type="hidden" name="_token" value="PkrgCPrik6M58we5uE0YDBvqPTKtU2yYys0UMpRk" autocomplete="off">                <input type="hidden" name="_method" value="PUT">                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="nom_filier4" class="form-label">Nom de filière</label>
+                        <input type="text" class="form-control border" style="padding: 5px;" id="nom_filier4" name="nom_filier" value="TREM">
+                    </div>
+                    <select class="form-select border mb-3"  style="padding:5px" aria-label="Select niveau de formation" name="niveau_formation">
+                       <option value="T">T</option>
+                       <option value="TS">TECHNICIEN SPECIALISE</option>
+                       <option value="T">TECHNICIEN</option>
+                       <option value="Q">QUALIFICATION</option>
+                       <option value="BP">BAC PRO</option>
+                       <!-- Add options dynamically from your data source -->
+                   </select>
+                   <!-- Add select for mode de formation -->
+                   <select class="form-select border me-2" style="padding:5px"  aria-label="Select mode de formation" name="mode_formation">
+                       <option value="FPA">FPA</option>
+                       <option value="FH">FORMATION HYBRIDE</option>
+                       <option value="FR">FORMATION RESIDENTIELLE</option>
+                       <option value="FPA">FORMATION PAR ALTERNANCE</option>
+                       <!-- Add options dynamically from your data source -->
+                   </select>
+                </div>
+                 <!-- Add select for niveau de formation -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-success">Save changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="updateModal5" tabindex="-1" aria-labelledby="updateModalLabel5" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="updateModalLabel5">Update Filière</h5>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="http://127.0.0.1:8000/public/index.php/gererFiliere/updateFiliere/5" method="POST">
+                <input type="hidden" name="_token" value="PkrgCPrik6M58we5uE0YDBvqPTKtU2yYys0UMpRk" autocomplete="off">                <input type="hidden" name="_method" value="PUT">                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="nom_filier5" class="form-label">Nom de filière</label>
+                        <input type="text" class="form-control border" style="padding: 5px;" id="nom_filier5" name="nom_filier" value="TFM">
+                    </div>
+                    <select class="form-select border mb-3"  style="padding:5px" aria-label="Select niveau de formation" name="niveau_formation">
+                       <option value="T">T</option>
+                       <option value="TS">TECHNICIEN SPECIALISE</option>
+                       <option value="T">TECHNICIEN</option>
+                       <option value="Q">QUALIFICATION</option>
+                       <option value="BP">BAC PRO</option>
+                       <!-- Add options dynamically from your data source -->
+                   </select>
+                   <!-- Add select for mode de formation -->
+                   <select class="form-select border me-2" style="padding:5px"  aria-label="Select mode de formation" name="mode_formation">
+                       <option value="FPA">FPA</option>
+                       <option value="FH">FORMATION HYBRIDE</option>
+                       <option value="FR">FORMATION RESIDENTIELLE</option>
+                       <option value="FPA">FORMATION PAR ALTERNANCE</option>
+                       <!-- Add options dynamically from your data source -->
+                   </select>
+                </div>
+                 <!-- Add select for niveau de formation -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-success">Save changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="updateModal6" tabindex="-1" aria-labelledby="updateModalLabel6" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="updateModalLabel6">Update Filière</h5>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="http://127.0.0.1:8000/public/index.php/gererFiliere/updateFiliere/6" method="POST">
+                <input type="hidden" name="_token" value="PkrgCPrik6M58we5uE0YDBvqPTKtU2yYys0UMpRk" autocomplete="off">                <input type="hidden" name="_method" value="PUT">                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="nom_filier6" class="form-label">Nom de filière</label>
+                        <input type="text" class="form-control border" style="padding: 5px;" id="nom_filier6" name="nom_filier" value="BACPRO MI">
+                    </div>
+                    <select class="form-select border mb-3"  style="padding:5px" aria-label="Select niveau de formation" name="niveau_formation">
+                       <option value="BP">BP</option>
+                       <option value="TS">TECHNICIEN SPECIALISE</option>
+                       <option value="T">TECHNICIEN</option>
+                       <option value="Q">QUALIFICATION</option>
+                       <option value="BP">BAC PRO</option>
+                       <!-- Add options dynamically from your data source -->
+                   </select>
+                   <!-- Add select for mode de formation -->
+                   <select class="form-select border me-2" style="padding:5px"  aria-label="Select mode de formation" name="mode_formation">
+                       <option value="FPA">FPA</option>
+                       <option value="FH">FORMATION HYBRIDE</option>
+                       <option value="FR">FORMATION RESIDENTIELLE</option>
+                       <option value="FPA">FORMATION PAR ALTERNANCE</option>
+                       <!-- Add options dynamically from your data source -->
+                   </select>
+                </div>
+                 <!-- Add select for niveau de formation -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-success">Save changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="updateModal7" tabindex="-1" aria-labelledby="updateModalLabel7" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="updateModalLabel7">Update Filière</h5>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="http://127.0.0.1:8000/public/index.php/gererFiliere/updateFiliere/7" method="POST">
+                <input type="hidden" name="_token" value="PkrgCPrik6M58we5uE0YDBvqPTKtU2yYys0UMpRk" autocomplete="off">                <input type="hidden" name="_method" value="PUT">                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="nom_filier7" class="form-label">Nom de filière</label>
+                        <input type="text" class="form-control border" style="padding: 5px;" id="nom_filier7" name="nom_filier" value="RVA">
+                    </div>
+                    <select class="form-select border mb-3"  style="padding:5px" aria-label="Select niveau de formation" name="niveau_formation">
+                       <option value="Q">Q</option>
+                       <option value="TS">TECHNICIEN SPECIALISE</option>
+                       <option value="T">TECHNICIEN</option>
+                       <option value="Q">QUALIFICATION</option>
+                       <option value="BP">BAC PRO</option>
+                       <!-- Add options dynamically from your data source -->
+                   </select>
+                   <!-- Add select for mode de formation -->
+                   <select class="form-select border me-2" style="padding:5px"  aria-label="Select mode de formation" name="mode_formation">
+                       <option value="FPA">FPA</option>
+                       <option value="FH">FORMATION HYBRIDE</option>
+                       <option value="FR">FORMATION RESIDENTIELLE</option>
+                       <option value="FPA">FORMATION PAR ALTERNANCE</option>
+                       <!-- Add options dynamically from your data source -->
+                   </select>
+                </div>
+                 <!-- Add select for niveau de formation -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-success">Save changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="updateModal8" tabindex="-1" aria-labelledby="updateModalLabel8" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="updateModalLabel8">Update Filière</h5>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="http://127.0.0.1:8000/public/index.php/gererFiliere/updateFiliere/8" method="POST">
+                <input type="hidden" name="_token" value="PkrgCPrik6M58we5uE0YDBvqPTKtU2yYys0UMpRk" autocomplete="off">                <input type="hidden" name="_method" value="PUT">                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="nom_filier8" class="form-label">Nom de filière</label>
+                        <input type="text" class="form-control border" style="padding: 5px;" id="nom_filier8" name="nom_filier" value="SIMP">
+                    </div>
+                    <select class="form-select border mb-3"  style="padding:5px" aria-label="Select niveau de formation" name="niveau_formation">
+                       <option value="Q">Q</option>
+                       <option value="TS">TECHNICIEN SPECIALISE</option>
+                       <option value="T">TECHNICIEN</option>
+                       <option value="Q">QUALIFICATION</option>
+                       <option value="BP">BAC PRO</option>
+                       <!-- Add options dynamically from your data source -->
+                   </select>
+                   <!-- Add select for mode de formation -->
+                   <select class="form-select border me-2" style="padding:5px"  aria-label="Select mode de formation" name="mode_formation">
+                       <option value="FPA">FPA</option>
+                       <option value="FH">FORMATION HYBRIDE</option>
+                       <option value="FR">FORMATION RESIDENTIELLE</option>
+                       <option value="FPA">FORMATION PAR ALTERNANCE</option>
+                       <!-- Add options dynamically from your data source -->
+                   </select>
+                </div>
+                 <!-- Add select for niveau de formation -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-success">Save changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="updateModal9" tabindex="-1" aria-labelledby="updateModalLabel9" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="updateModalLabel9">Update Filière</h5>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="http://127.0.0.1:8000/public/index.php/gererFiliere/updateFiliere/9" method="POST">
+                <input type="hidden" name="_token" value="PkrgCPrik6M58we5uE0YDBvqPTKtU2yYys0UMpRk" autocomplete="off">                <input type="hidden" name="_method" value="PUT">                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="nom_filier9" class="form-label">Nom de filière</label>
+                        <input type="text" class="form-control border" style="padding: 5px;" id="nom_filier9" name="nom_filier" value="TCM">
+                    </div>
+                    <select class="form-select border mb-3"  style="padding:5px" aria-label="Select niveau de formation" name="niveau_formation">
+                       <option value="T">T</option>
+                       <option value="TS">TECHNICIEN SPECIALISE</option>
+                       <option value="T">TECHNICIEN</option>
+                       <option value="Q">QUALIFICATION</option>
+                       <option value="BP">BAC PRO</option>
+                       <!-- Add options dynamically from your data source -->
+                   </select>
+                   <!-- Add select for mode de formation -->
+                   <select class="form-select border me-2" style="padding:5px"  aria-label="Select mode de formation" name="mode_formation">
+                       <option value="FPA">FPA</option>
+                       <option value="FH">FORMATION HYBRIDE</option>
+                       <option value="FR">FORMATION RESIDENTIELLE</option>
+                       <option value="FPA">FORMATION PAR ALTERNANCE</option>
+                       <!-- Add options dynamically from your data source -->
+                   </select>
+                </div>
+                 <!-- Add select for niveau de formation -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-success">Save changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="updateModal10" tabindex="-1" aria-labelledby="updateModalLabel10" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="updateModalLabel10">Update Filière</h5>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="http://127.0.0.1:8000/public/index.php/gererFiliere/updateFiliere/10" method="POST">
+                <input type="hidden" name="_token" value="PkrgCPrik6M58we5uE0YDBvqPTKtU2yYys0UMpRk" autocomplete="off">                <input type="hidden" name="_method" value="PUT">                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="nom_filier10" class="form-label">Nom de filière</label>
+                        <input type="text" class="form-control border" style="padding: 5px;" id="nom_filier10" name="nom_filier" value="OPCM">
+                    </div>
+                    <select class="form-select border mb-3"  style="padding:5px" aria-label="Select niveau de formation" name="niveau_formation">
+                       <option value="Q">Q</option>
+                       <option value="TS">TECHNICIEN SPECIALISE</option>
+                       <option value="T">TECHNICIEN</option>
+                       <option value="Q">QUALIFICATION</option>
+                       <option value="BP">BAC PRO</option>
+                       <!-- Add options dynamically from your data source -->
+                   </select>
+                   <!-- Add select for mode de formation -->
+                   <select class="form-select border me-2" style="padding:5px"  aria-label="Select mode de formation" name="mode_formation">
+                       <option value="FPA">FPA</option>
+                       <option value="FH">FORMATION HYBRIDE</option>
+                       <option value="FR">FORMATION RESIDENTIELLE</option>
+                       <option value="FPA">FORMATION PAR ALTERNANCE</option>
+                       <!-- Add options dynamically from your data source -->
+                   </select>
+                </div>
+                 <!-- Add select for niveau de formation -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-success">Save changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="updateModal11" tabindex="-1" aria-labelledby="updateModalLabel11" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="updateModalLabel11">Update Filière</h5>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="http://127.0.0.1:8000/public/index.php/gererFiliere/updateFiliere/11" method="POST">
+                <input type="hidden" name="_token" value="PkrgCPrik6M58we5uE0YDBvqPTKtU2yYys0UMpRk" autocomplete="off">                <input type="hidden" name="_method" value="PUT">                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="nom_filier11" class="form-label">Nom de filière</label>
+                        <input type="text" class="form-control border" style="padding: 5px;" id="nom_filier11" name="nom_filier" value="EEI">
+                    </div>
+                    <select class="form-select border mb-3"  style="padding:5px" aria-label="Select niveau de formation" name="niveau_formation">
+                       <option value="Q">Q</option>
+                       <option value="TS">TECHNICIEN SPECIALISE</option>
+                       <option value="T">TECHNICIEN</option>
+                       <option value="Q">QUALIFICATION</option>
+                       <option value="BP">BAC PRO</option>
+                       <!-- Add options dynamically from your data source -->
+                   </select>
+                   <!-- Add select for mode de formation -->
+                   <select class="form-select border me-2" style="padding:5px"  aria-label="Select mode de formation" name="mode_formation">
+                       <option value="FPA">FPA</option>
+                       <option value="FH">FORMATION HYBRIDE</option>
+                       <option value="FR">FORMATION RESIDENTIELLE</option>
+                       <option value="FPA">FORMATION PAR ALTERNANCE</option>
+                       <!-- Add options dynamically from your data source -->
+                   </select>
+                </div>
+                 <!-- Add select for niveau de formation -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-success">Save changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="updateModal12" tabindex="-1" aria-labelledby="updateModalLabel12" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="updateModalLabel12">Update Filière</h5>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="http://127.0.0.1:8000/public/index.php/gererFiliere/updateFiliere/12" method="POST">
+                <input type="hidden" name="_token" value="PkrgCPrik6M58we5uE0YDBvqPTKtU2yYys0UMpRk" autocomplete="off">                <input type="hidden" name="_method" value="PUT">                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="nom_filier12" class="form-label">Nom de filière</label>
+                        <input type="text" class="form-control border" style="padding: 5px;" id="nom_filier12" name="nom_filier" value="EM">
+                    </div>
+                    <select class="form-select border mb-3"  style="padding:5px" aria-label="Select niveau de formation" name="niveau_formation">
+                       <option value="Q">Q</option>
+                       <option value="TS">TECHNICIEN SPECIALISE</option>
+                       <option value="T">TECHNICIEN</option>
+                       <option value="Q">QUALIFICATION</option>
+                       <option value="BP">BAC PRO</option>
+                       <!-- Add options dynamically from your data source -->
+                   </select>
+                   <!-- Add select for mode de formation -->
+                   <select class="form-select border me-2" style="padding:5px"  aria-label="Select mode de formation" name="mode_formation">
+                       <option value="FPA">FPA</option>
+                       <option value="FH">FORMATION HYBRIDE</option>
+                       <option value="FR">FORMATION RESIDENTIELLE</option>
+                       <option value="FPA">FORMATION PAR ALTERNANCE</option>
+                       <!-- Add options dynamically from your data source -->
+                   </select>
+                </div>
+                 <!-- Add select for niveau de formation -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-success">Save changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="updateModal13" tabindex="-1" aria-labelledby="updateModalLabel13" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="updateModalLabel13">Update Filière</h5>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="http://127.0.0.1:8000/public/index.php/gererFiliere/updateFiliere/13" method="POST">
+                <input type="hidden" name="_token" value="PkrgCPrik6M58we5uE0YDBvqPTKtU2yYys0UMpRk" autocomplete="off">                <input type="hidden" name="_method" value="PUT">                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="nom_filier13" class="form-label">Nom de filière</label>
+                        <input type="text" class="form-control border" style="padding: 5px;" id="nom_filier13" name="nom_filier" value="CPA">
+                    </div>
+                    <select class="form-select border mb-3"  style="padding:5px" aria-label="Select niveau de formation" name="niveau_formation">
+                       <option value="Q">Q</option>
+                       <option value="TS">TECHNICIEN SPECIALISE</option>
+                       <option value="T">TECHNICIEN</option>
+                       <option value="Q">QUALIFICATION</option>
+                       <option value="BP">BAC PRO</option>
+                       <!-- Add options dynamically from your data source -->
+                   </select>
+                   <!-- Add select for mode de formation -->
+                   <select class="form-select border me-2" style="padding:5px"  aria-label="Select mode de formation" name="mode_formation">
+                       <option value="FPA">FPA</option>
+                       <option value="FH">FORMATION HYBRIDE</option>
+                       <option value="FR">FORMATION RESIDENTIELLE</option>
+                       <option value="FPA">FORMATION PAR ALTERNANCE</option>
+                       <!-- Add options dynamically from your data source -->
+                   </select>
+                </div>
+                 <!-- Add select for niveau de formation -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-success">Save changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="updateModal14" tabindex="-1" aria-labelledby="updateModalLabel14" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="updateModalLabel14">Update Filière</h5>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="http://127.0.0.1:8000/public/index.php/gererFiliere/updateFiliere/14" method="POST">
+                <input type="hidden" name="_token" value="PkrgCPrik6M58we5uE0YDBvqPTKtU2yYys0UMpRk" autocomplete="off">                <input type="hidden" name="_method" value="PUT">                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="nom_filier14" class="form-label">Nom de filière</label>
+                        <input type="text" class="form-control border" style="padding: 5px;" id="nom_filier14" name="nom_filier" value="PC">
+                    </div>
+                    <select class="form-select border mb-3"  style="padding:5px" aria-label="Select niveau de formation" name="niveau_formation">
+                       <option value="Q">Q</option>
+                       <option value="TS">TECHNICIEN SPECIALISE</option>
+                       <option value="T">TECHNICIEN</option>
+                       <option value="Q">QUALIFICATION</option>
+                       <option value="BP">BAC PRO</option>
+                       <!-- Add options dynamically from your data source -->
+                   </select>
+                   <!-- Add select for mode de formation -->
+                   <select class="form-select border me-2" style="padding:5px"  aria-label="Select mode de formation" name="mode_formation">
+                       <option value="FR">FR</option>
+                       <option value="FH">FORMATION HYBRIDE</option>
+                       <option value="FR">FORMATION RESIDENTIELLE</option>
+                       <option value="FPA">FORMATION PAR ALTERNANCE</option>
+                       <!-- Add options dynamically from your data source -->
+                   </select>
+                </div>
+                 <!-- Add select for niveau de formation -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-success">Save changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="updateModal15" tabindex="-1" aria-labelledby="updateModalLabel15" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="updateModalLabel15">Update Filière</h5>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="http://127.0.0.1:8000/public/index.php/gererFiliere/updateFiliere/15" method="POST">
+                <input type="hidden" name="_token" value="PkrgCPrik6M58we5uE0YDBvqPTKtU2yYys0UMpRk" autocomplete="off">                <input type="hidden" name="_method" value="PUT">                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="nom_filier15" class="form-label">Nom de filière</label>
+                        <input type="text" class="form-control border" style="padding: 5px;" id="nom_filier15" name="nom_filier" value="AEFGT">
+                    </div>
+                    <select class="form-select border mb-3"  style="padding:5px" aria-label="Select niveau de formation" name="niveau_formation">
+                       <option value="Q">Q</option>
+                       <option value="TS">TECHNICIEN SPECIALISE</option>
+                       <option value="T">TECHNICIEN</option>
+                       <option value="Q">QUALIFICATION</option>
+                       <option value="BP">BAC PRO</option>
+                       <!-- Add options dynamically from your data source -->
+                   </select>
+                   <!-- Add select for mode de formation -->
+                   <select class="form-select border me-2" style="padding:5px"  aria-label="Select mode de formation" name="mode_formation">
+                       <option value="FR">FR</option>
+                       <option value="FH">FORMATION HYBRIDE</option>
+                       <option value="FR">FORMATION RESIDENTIELLE</option>
+                       <option value="FPA">FORMATION PAR ALTERNANCE</option>
+                       <!-- Add options dynamically from your data source -->
+                   </select>
+                </div>
+                 <!-- Add select for niveau de formation -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-success">Save changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="updateModal16" tabindex="-1" aria-labelledby="updateModalLabel16" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="updateModalLabel16">Update Filière</h5>
+                <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <form action="http://127.0.0.1:8000/public/index.php/gererFiliere/updateFiliere/16" method="POST">
+                <input type="hidden" name="_token" value="PkrgCPrik6M58we5uE0YDBvqPTKtU2yYys0UMpRk" autocomplete="off">                <input type="hidden" name="_method" value="PUT">                <div class="modal-body">
+                    <div class="mb-3">
+                        <label for="nom_filier16" class="form-label">Nom de filière</label>
+                        <input type="text" class="form-control border" style="padding: 5px;" id="nom_filier16" name="nom_filier" value="MOAB">
+                    </div>
+                    <select class="form-select border mb-3"  style="padding:5px" aria-label="Select niveau de formation" name="niveau_formation">
+                       <option value="Q">Q</option>
+                       <option value="TS">TECHNICIEN SPECIALISE</option>
+                       <option value="T">TECHNICIEN</option>
+                       <option value="Q">QUALIFICATION</option>
+                       <option value="BP">BAC PRO</option>
+                       <!-- Add options dynamically from your data source -->
+                   </select>
+                   <!-- Add select for mode de formation -->
+                   <select class="form-select border me-2" style="padding:5px"  aria-label="Select mode de formation" name="mode_formation">
+                       <option value="FR">FR</option>
+                       <option value="FH">FORMATION HYBRIDE</option>
+                       <option value="FR">FORMATION RESIDENTIELLE</option>
+                       <option value="FPA">FORMATION PAR ALTERNANCE</option>
+                       <!-- Add options dynamically from your data source -->
+                   </select>
+                </div>
+                 <!-- Add select for niveau de formation -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-success">Save changes</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        document.querySelector("a.ajouter").addEventListener("click", function(event) {
+            event.preventDefault(); // Prevent the default action of the link
+            // Hide the "Ajouter Filière" button
+            this.style.display = "none";
+
+            // Get the parent container
+            var container = document.querySelector(".col-md-12.text-center.mt-3");
+
+            // Append the provided HTML code to the parent container
+            container.insertAdjacentHTML("afterend", `
+                <form action="http://127.0.0.1:8000/public/index.php/gererFiliere/addFiliere" method="POST" class="d-inline">
+                    <input type="hidden" name="_token" value="PkrgCPrik6M58we5uE0YDBvqPTKtU2yYys0UMpRk" autocomplete="off"> <!-- Include CSRF token for Laravel forms -->
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control border me-2" style="height: 40px; width: 200px; padding: 5px;" placeholder="Enter nom de filière" aria-label="Enter nom de filière" aria-describedby="name-addon" name="nom_filier">
+                        <!-- Add select for niveau de formation -->
+                        <select class="form-select border me-2" style="height: 40px; width: 200px; padding: 5px;" aria-label="Select niveau de formation" name="niveau_formation">
+                            <option value="">Select niveau de formation</option>
+                            <option value="TS">TECHNICIEN SPECIALISE</option>
+                            <option value="T">TECHNICIEN</option>
+                            <option value="Q">QUALIFICATION</option>
+                            <option value="BP">BAC PRO</option>
+                            <!-- Add options dynamically from your data source -->
+                        </select>
+                        <!-- Add select for mode de formation -->
+                        <select class="form-select border me-2" style="height: 40px; width: 200px; padding: 5px;" aria-label="Select mode de formation" name="mode_formation">
+                            <option value="">Select mode de formation</option>
+                            <option value="FH">FORMATION HYBRIDE</option>
+                            <option value="FR">FORMATION RESIDENTIELLE</option>
+                            <option value="FPA">FORMATION PAR ALTERNANCE</option>
+                            <!-- Add options dynamically from your data source -->
+                        </select>
+                        <button style="border-top-left-radius:5px;border-bottom-left-radius:5px" class="btn btn-success me-2" type="submit" id="button-addon2">Ajouter</button>
+                        <button class="btn btn-danger" style="border-top-left-radius:5px;border-bottom-left-radius:5px;" type="button" id="cancelButton">Cancel</button>
+                    </div>
+                </form>
+            `);
+
+
+            // Add event listener to the cancel button
+            document.getElementById("cancelButton").addEventListener("click", function() {
+                // Show the "Ajouter Filière" button
+                document.querySelector("a.ajouter").style.display = "block";
+                // Remove the form
+                this.parentNode.parentNode.remove(); // Remove the parent element of the cancel button (i.e., the form)
+            });
+        });
+    });
+
+</script>

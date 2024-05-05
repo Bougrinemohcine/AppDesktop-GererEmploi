@@ -1,0 +1,1742 @@
+- 21:37:40.016 INFO: --------------------------------------------------------
+- 21:37:40.016 INFO: Started application
+- 21:37:40.016 INFO: Logging to: C:\Users\PC\Desktop\appDesktop GererEmploi (git)\mainApp\debug.log
+- 21:37:40.016 INFO: Log level = DEBUG4
+- 21:37:40.016 INFO: Starting Mongoose 3.9c web server
+- 21:37:40.031 INFO: WWW directory: C:\Users\PC\Desktop\appDesktop GererEmploi (git)\mainApp\www
+- 21:37:40.031 INFO: Index files: index.php
+- 21:37:40.031 INFO: CGI interpreter: C:\Users\PC\Desktop\appDesktop GererEmploi (git)\mainApp\php\php-cgi.exe
+- 21:37:40.031 INFO: CGI pattern: **.php$
+- 21:37:40.031 INFO: Hide files patterns: 
+- 21:37:40.031 INFO: CGI environment variables set: TMP=C:\Users\PC\AppData\Local\Temp\,TEMP=C:\Users\PC\AppData\Local\Temp\,TMPDIR=C:\Users\PC\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 21:37:40.031 INFO: Web server url: http://127.0.0.1:8000/
+- 21:37:40.031 INFO: remote_debugging_port = 59131
+- 21:37:40.047 DEBUG: Command line string for the browser process: "C:\Users\PC\Desktop\appDesktop GererEmploi (git)\mainApp\gererEmploi-ITA.exe" --no-sandbox --lang=en-US --log-file="C:\Users\PC\Desktop\appDesktop GererEmploi (git)\mainApp\debug.log" --remote-debugging-port=59131
+- 21:37:40.641 DEBUG: App::OnContextInitialized()
+- 21:37:40.641 INFO: DPI, window enlarged by 25% new width/height = 1000/750
+- 21:37:40.641 DEBUG: Window max width/height = 1842/1034
+- 21:37:40.641 DEBUG: GetBrowserWindow(): not found, hwnd = 658128
+- 21:37:40.641 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 21:37:40.000 DEBUG: Command line string for the gpu-process process: "C:\Users\PC\Desktop\appDesktop GererEmploi (git)\mainApp\gererEmploi-ITA.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\PC\Desktop\appDesktop GererEmploi (git)\mainApp\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,41,61,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x8086 --gpu-device-id=0x1916 --gpu-driver-vendor="Intel Corporation" --gpu-driver-version=31.0.101.2111 --gpu-driver-date=7-19-2022 --lang=en-US --log-file="C:\Users\PC\Desktop\appDesktop GererEmploi (git)\mainApp\debug.log" --service-request-channel-token=5CD9BC5A694087DA224B5AC00C6762AB --mojo-platform-channel-handle=1924 /prefetch:2
+- 21:37:40.688 DEBUG: BrowserWindow::CreateBrowserControl()
+- 21:37:40.688 DEBUG: StoreBrowserWindow(): hwnd = 658128
+- 21:37:40.813 DEBUG: ClientHandler::OnAfterCreated()
+- 21:37:40.813 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 21:37:40.844 DEBUG: OnLoadingStateChange: loading=1, url=
+- 21:37:40.000 DEBUG: Command line string for the renderer process: "C:\Users\PC\Desktop\appDesktop GererEmploi (git)\mainApp\gererEmploi-ITA.exe" --type=renderer --no-sandbox --primordial-pipe-token=732BBA38B4BF648DB4EDBC0B17D9E4E6 --lang=en-US --lang=en-US --log-file="C:\Users\PC\Desktop\appDesktop GererEmploi (git)\mainApp\debug.log" --enable-pinch --device-scale-factor=1.25 --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=732BBA38B4BF648DB4EDBC0B17D9E4E6 --renderer-client-id=3 --mojo-platform-channel-handle=2348 /prefetch:1
+- 21:37:41.063 DEBUG: OnBrowserCreated()
+[0505/213741.172:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 21:37:43.422 INFO: GET 302 /
+- 21:37:46.219 INFO: GET 302 /public/index.php
+- 21:37:47.266 INFO: GET 200 /public/index.php/login
+- 21:37:47.266 INFO: GET 304 /public/assets/loginAssets/css/style.css
+- 21:37:47.266 INFO: GET 404 /public/assets/loginAssets/css/owl.carousel.min.css
+- 21:37:47.266 INFO: GET 304 /public/assets/loginAssets/css/bootstrap.min.css
+- 21:37:47.266 INFO: GET 404 /public/assets/loginAssets/fonts/icomoon/style.css
+- 21:37:47.266 INFO: GET 404 /public/assets/loginAssets/js/jquery-3.3.1.min.js
+- 21:37:47.344 DEBUG: OnContextCreated()
+- 21:37:47.297 INFO: GET 404 /public/assets/loginAssets/js/popper.min.js
+- 21:37:47.297 INFO: GET 404 /public/assets/loginAssets/js/bootstrap.min.js
+- 21:37:47.297 INFO: GET 404 /public/assets/loginAssets/js/main.js
+- 21:37:47.297 INFO: GET 304 /public/assets/loginAssets/images/Design sans titre.gif
+- 21:37:47.500 INFO: GET 404 /public/assets/loginAssets/js/popper.min.js
+- 21:37:47.594 INFO: GET 404 /public/assets/loginAssets/js/bootstrap.min.js
+- 21:37:47.594 INFO: GET 404 /public/assets/loginAssets/js/main.js
+- 21:37:47.610 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/login
+- 21:38:01.453 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/login
+- 21:38:22.406 INFO: POST 302 /public/index.php/login
+- 21:38:24.735 DEBUG: OnContextCreated()
+- 21:38:24.703 INFO: GET 200 /public/index.php
+- 21:38:24.703 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:38:24.703 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:38:24.703 INFO: GET 404 /public/assets/css/app.css
+- 21:38:24.703 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:38:24.719 INFO: GET 200 /public/assets/masterAssets/css/material-dashboard.css?v=3.1.0
+[0505/213824.766:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 21:38:24.797 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:38:24.813 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:38:24.813 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:38:24.813 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:38:24.828 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:38:24.828 INFO: GET 304 /public/bootstrap/jquery.min.js
+- 21:38:24.906 INFO: GET 304 /public/bootstrap/popper.min.js
+- 21:38:24.922 INFO: GET 304 /public/bootstrap/js/bootstrap.min.js
+- 21:38:25.047 INFO: GET 404 /public/assets/css/app.css
+- 21:38:25.047 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:38:25.047 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:38:25.078 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:38:25.078 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+- 21:38:25.078 INFO: GET 304 /public/assets/masterAssets/img/iconofppt.png
+- 21:38:25.078 INFO: GET 304 /public/assets/masterAssets/img/ofpptLogo.png
+- 21:38:25.094 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:38:25.516 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+[0505/213825.510:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php (0)
+[0505/213825.510:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php (0)
+[0505/213825.510:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php (0)
+[0505/213825.510:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php (0)
+[0505/213825.510:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php (0)
+[0505/213825.511:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php (0)
+- 21:38:25.547 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:38:25.547 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:38:25.563 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:38:25.641 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/213825.631:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+- 21:38:25.656 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php
+- 21:38:30.656 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php
+- 21:38:31.797 DEBUG: OnContextCreated()
+- 21:38:31.766 INFO: GET 200 /public/index.php/emplois_formateur
+- 21:38:31.766 INFO: GET 404 /public/assets/css/app.css
+- 21:38:31.766 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:38:31.766 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:38:31.766 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+[0505/213831.798:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 21:38:31.860 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:38:31.860 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:38:31.875 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:38:31.875 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:38:31.875 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:38:31.875 INFO: GET 304 /public/bootstrap/jquery.min.js
+- 21:38:31.875 INFO: GET 304 /public/bootstrap/popper.min.js
+- 21:38:31.875 INFO: GET 304 /public/bootstrap/js/bootstrap.min.js
+- 21:38:31.891 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+- 21:38:31.891 INFO: GET 304 /public/assets/masterAssets/img/iconofppt.png
+- 21:38:31.891 INFO: GET 304 /public/assets/masterAssets/img/ofpptLogo.png
+- 21:38:31.938 INFO: GET 404 /public/assets/css/app.css
+- 21:38:31.938 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:38:31.938 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:38:31.969 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:38:31.969 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:38:32.016 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+[0505/213832.015:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/emplois_formateur (0)
+[0505/213832.016:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/emplois_formateur (0)
+[0505/213832.016:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/emplois_formateur (0)
+[0505/213832.016:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/emplois_formateur (0)
+[0505/213832.017:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/emplois_formateur (0)
+[0505/213832.017:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/emplois_formateur (0)
+- 21:38:32.047 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:38:32.063 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:38:32.078 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:38:32.110 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/213832.097:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+- 21:38:32.110 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/emplois_formateur
+- 21:38:40.375 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/emplois_formateur
+- 21:38:42.422 DEBUG: OnContextCreated()
+- 21:38:42.391 INFO: GET 200 /public/index.php/emplois_formateur?formateur_id=17
+- 21:38:42.406 INFO: GET 404 /public/assets/css/app.css
+- 21:38:42.406 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:38:42.406 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:38:42.406 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+[0505/213842.436:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 21:38:42.500 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:38:42.500 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:38:42.500 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:38:42.500 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:38:42.500 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:38:42.516 INFO: GET 304 /public/bootstrap/jquery.min.js
+- 21:38:42.516 INFO: GET 304 /public/bootstrap/popper.min.js
+- 21:38:42.516 INFO: GET 304 /public/bootstrap/js/bootstrap.min.js
+- 21:38:42.516 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+- 21:38:42.516 INFO: GET 304 /public/assets/masterAssets/img/iconofppt.png
+- 21:38:42.516 INFO: GET 304 /public/assets/masterAssets/img/ofpptLogo.png
+- 21:38:42.594 INFO: GET 404 /public/assets/css/app.css
+- 21:38:42.594 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:38:42.594 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:38:42.625 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:38:42.641 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:38:42.688 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+[0505/213842.682:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/emplois_formateur?formateur_id=17 (0)
+[0505/213842.682:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/emplois_formateur?formateur_id=17 (0)
+[0505/213842.682:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/emplois_formateur?formateur_id=17 (0)
+[0505/213842.682:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/emplois_formateur?formateur_id=17 (0)
+[0505/213842.682:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/emplois_formateur?formateur_id=17 (0)
+[0505/213842.682:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/emplois_formateur?formateur_id=17 (0)
+- 21:38:42.735 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:38:42.797 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:38:42.797 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:38:42.828 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/213842.845:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+- 21:38:42.875 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/emplois_formateur?formateur_id=17
+- 21:38:52.422 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/emplois_formateur?formateur_id=17
+- 21:38:53.110 DEBUG: OnContextCreated()
+- 21:38:53.078 INFO: GET 200 /public/index.php/emplois_formateur?formateur_id=17&TypeEmploi=CDJ
+- 21:38:53.094 INFO: GET 404 /public/assets/css/app.css
+- 21:38:53.094 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:38:53.094 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:38:53.094 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+[0505/213853.144:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 21:38:53.203 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:38:53.203 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:38:53.203 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:38:53.203 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:38:53.203 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:38:53.219 INFO: GET 304 /public/bootstrap/jquery.min.js
+- 21:38:53.219 INFO: GET 304 /public/bootstrap/popper.min.js
+- 21:38:53.219 INFO: GET 304 /public/bootstrap/js/bootstrap.min.js
+- 21:38:53.219 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+- 21:38:53.219 INFO: GET 304 /public/assets/masterAssets/img/iconofppt.png
+- 21:38:53.219 INFO: GET 304 /public/assets/masterAssets/img/ofpptLogo.png
+- 21:38:53.297 INFO: GET 404 /public/assets/css/app.css
+- 21:38:53.313 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:38:53.313 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:38:53.328 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:38:53.344 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:38:53.375 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+[0505/213853.373:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/emplois_formateur?formateur_id=17&TypeEmploi=CDJ (0)
+[0505/213853.373:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/emplois_formateur?formateur_id=17&TypeEmploi=CDJ (0)
+[0505/213853.373:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/emplois_formateur?formateur_id=17&TypeEmploi=CDJ (0)
+[0505/213853.374:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/emplois_formateur?formateur_id=17&TypeEmploi=CDJ (0)
+[0505/213853.375:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/emplois_formateur?formateur_id=17&TypeEmploi=CDJ (0)
+[0505/213853.375:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/emplois_formateur?formateur_id=17&TypeEmploi=CDJ (0)
+- 21:38:53.406 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:38:53.453 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:38:53.485 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:38:53.516 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/213853.526:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+- 21:38:53.547 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/emplois_formateur?formateur_id=17&TypeEmploi=CDJ
+- 21:38:55.063 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/emplois_formateur?formateur_id=17&TypeEmploi=CDJ
+- 21:38:55.000 DEBUG: OnContextCreated()
+- 21:38:55.969 INFO: GET 200 /public/index.php/emploi_filiere
+- 21:38:55.985 INFO: GET 404 /public/assets/css/app.css
+- 21:38:55.985 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:38:55.985 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:38:55.985 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+[0505/213856.015:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 21:38:56.110 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:38:56.125 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:38:56.125 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:38:56.125 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:38:56.125 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:38:56.125 INFO: GET 304 /public/bootstrap/jquery.min.js
+- 21:38:56.125 INFO: GET 304 /public/bootstrap/popper.min.js
+- 21:38:56.141 INFO: GET 304 /public/bootstrap/js/bootstrap.min.js
+- 21:38:56.141 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+- 21:38:56.141 INFO: GET 304 /public/assets/masterAssets/img/iconofppt.png
+- 21:38:56.141 INFO: GET 304 /public/assets/masterAssets/img/ofpptLogo.png
+- 21:38:56.156 INFO: GET 404 /public/assets/css/app.css
+- 21:38:56.156 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:38:56.156 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:38:56.172 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:38:56.188 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:38:56.547 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:38:56.563 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+[0505/213856.558:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/emploi_filiere (0)
+[0505/213856.559:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/emploi_filiere (0)
+[0505/213856.559:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/emploi_filiere (0)
+[0505/213856.559:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/emploi_filiere (0)
+[0505/213856.559:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/emploi_filiere (0)
+[0505/213856.559:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/emploi_filiere (0)
+- 21:38:56.594 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:38:56.610 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:38:56.641 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/213856.641:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+- 21:38:56.672 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/emploi_filiere
+- 21:38:58.563 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/emploi_filiere
+- 21:39:00.578 DEBUG: OnContextCreated()
+- 21:39:00.563 INFO: GET 200 /public/index.php/emploi_filiere?filiere_id=3
+- 21:39:00.563 INFO: GET 404 /public/assets/css/app.css
+- 21:39:00.563 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:39:00.563 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:39:00.563 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+[0505/213900.624:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 21:39:00.688 INFO: GET 304 /public/assets/masterAssets/img/iconofppt.png
+- 21:39:00.688 INFO: GET 304 /public/assets/masterAssets/img/ofpptLogo.png
+- 21:39:00.813 INFO: GET 404 /public/assets/css/app.css
+- 21:39:00.813 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:39:00.813 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:39:00.828 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:39:00.953 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:39:00.953 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:39:00.953 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:39:00.953 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:39:00.953 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:39:00.953 INFO: GET 304 /public/bootstrap/jquery.min.js
+[0505/213900.955:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/emploi_filiere?filiere_id=3 (0)
+[0505/213900.955:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/emploi_filiere?filiere_id=3 (0)
+[0505/213900.955:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/emploi_filiere?filiere_id=3 (0)
+[0505/213900.955:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/emploi_filiere?filiere_id=3 (0)
+[0505/213900.955:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/emploi_filiere?filiere_id=3 (0)
+[0505/213900.955:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/emploi_filiere?filiere_id=3 (0)
+- 21:39:00.969 INFO: GET 304 /public/bootstrap/popper.min.js
+- 21:39:00.969 INFO: GET 304 /public/bootstrap/js/bootstrap.min.js
+- 21:39:00.969 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+- 21:39:01.047 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:39:01.078 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:39:01.094 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:39:01.110 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:39:01.125 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:39:01.172 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/213901.201:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+- 21:39:01.235 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/emploi_filiere?filiere_id=3
+- 21:39:03.703 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/emploi_filiere?filiere_id=3
+- 21:39:04.516 DEBUG: OnContextCreated()
+- 21:39:04.485 INFO: GET 200 /public/index.php/emploi_filiere?TypeEmploi=CDJ&filiere_id=3
+- 21:39:04.516 INFO: GET 404 /public/assets/css/app.css
+- 21:39:04.516 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:39:04.516 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:39:04.516 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+[0505/213904.554:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 21:39:04.641 INFO: GET 304 /public/assets/masterAssets/img/iconofppt.png
+- 21:39:04.641 INFO: GET 304 /public/assets/masterAssets/img/ofpptLogo.png
+- 21:39:04.703 INFO: GET 404 /public/assets/css/app.css
+- 21:39:04.703 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:39:04.703 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:39:04.719 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:39:04.813 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:39:04.828 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:39:04.828 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:39:04.828 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:39:04.828 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:39:04.828 INFO: GET 304 /public/bootstrap/jquery.min.js
+[0505/213904.817:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/emploi_filiere?TypeEmploi=CDJ&filiere_id=3 (0)
+[0505/213904.817:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/emploi_filiere?TypeEmploi=CDJ&filiere_id=3 (0)
+[0505/213904.818:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/emploi_filiere?TypeEmploi=CDJ&filiere_id=3 (0)
+[0505/213904.818:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/emploi_filiere?TypeEmploi=CDJ&filiere_id=3 (0)
+[0505/213904.818:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/emploi_filiere?TypeEmploi=CDJ&filiere_id=3 (0)
+[0505/213904.818:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/emploi_filiere?TypeEmploi=CDJ&filiere_id=3 (0)
+- 21:39:04.844 INFO: GET 304 /public/bootstrap/js/bootstrap.min.js
+- 21:39:04.844 INFO: GET 304 /public/bootstrap/popper.min.js
+- 21:39:04.844 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+- 21:39:04.906 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:39:04.922 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:39:04.922 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:39:04.969 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:39:04.985 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:39:04.016 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/213905.035:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+- 21:39:05.078 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/emploi_filiere?TypeEmploi=CDJ&filiere_id=3
+- 21:39:48.422 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/emploi_filiere?TypeEmploi=CDJ&filiere_id=3
+- 21:39:54.578 DEBUG: OnLoadError, errorCode=-3, failedUrl=http://127.0.0.1:8000/public/index.php/salles
+- 21:39:54.578 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/emploi_filiere?TypeEmploi=CDJ&filiere_id=3
+- 21:39:54.578 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/emploi_filiere?TypeEmploi=CDJ&filiere_id=3
+- 21:39:55.813 INFO: GET 500 /public/index.php/salles
+- 21:39:56.922 DEBUG: OnContextCreated()
+- 21:39:56.906 INFO: GET 500 /public/index.php/salles
+[0505/213957.034:INFO:CONSOLE(154)] "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools", source: http://127.0.0.1:8000/public/index.php/salles (154)
+[0505/213957.230:INFO:CONSOLE(159)] "[object Object]", source: http://127.0.0.1:8000/public/index.php/salles (159)
+[0505/213957.413:INFO:CONSOLE(159)] "Uncaught TypeError: r.join(...).trimEnd is not a function", source: http://127.0.0.1:8000/public/index.php/salles (159)
+[0505/213957.440:INFO:CONSOLE(154)] "The above error occurred in the <su> component:
+
+    at su (http://127.0.0.1:8000/public/index.php/salles:159:252372)
+    at $c (http://127.0.0.1:8000/public/index.php/salles:159:245728)
+    at div
+    at section
+    at tu (http://127.0.0.1:8000/public/index.php/salles:159:248903)
+    at div
+    at Hf (http://127.0.0.1:8000/public/index.php/salles:159:282134)
+    at Vf (http://127.0.0.1:8000/public/index.php/salles:159:283013)
+    at div
+    at $c (http://127.0.0.1:8000/public/index.php/salles:159:245728)
+    at Xf (http://127.0.0.1:8000/public/index.php/salles:159:285234)
+    at section
+    at Xy (http://127.0.0.1:8000/public/index.php/salles:159:412945)
+    at main
+    at ye (http://127.0.0.1:8000/public/index.php/salles:154:307457)
+    at Se (http://127.0.0.1:8000/public/index.php/salles:154:308667)
+    at $c (http://127.0.0.1:8000/public/index.php/salles:159:245728)
+    at Jy (http://127.0.0.1:8000/public/index.php/salles:159:415814)
+
+React will try to recreate this component tree from scratch using the error boundary you provided, $c.", source: http://127.0.0.1:8000/public/index.php/salles (154)
+- 21:39:57.860 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/salles
+- 21:40:04.328 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/salles
+- 21:40:04.391 DEBUG: OnContextCreated()
+[0505/214004.409:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+[0505/214004.782:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/emploi_filiere?TypeEmploi=CDJ&filiere_id=3 (0)
+[0505/214004.782:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/emploi_filiere?TypeEmploi=CDJ&filiere_id=3 (0)
+[0505/214004.782:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/emploi_filiere?TypeEmploi=CDJ&filiere_id=3 (0)
+[0505/214004.782:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/emploi_filiere?TypeEmploi=CDJ&filiere_id=3 (0)
+[0505/214004.782:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/emploi_filiere?TypeEmploi=CDJ&filiere_id=3 (0)
+[0505/214004.783:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/emploi_filiere?TypeEmploi=CDJ&filiere_id=3 (0)
+[0505/214004.987:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+- 21:40:05.031 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/emploi_filiere?TypeEmploi=CDJ&filiere_id=3
+- 21:40:06.219 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/emploi_filiere?TypeEmploi=CDJ&filiere_id=3
+- 21:40:08.282 DEBUG: OnContextCreated()
+- 21:40:08.250 INFO: GET 500 /public/index.php/salles
+[0505/214008.388:INFO:CONSOLE(154)] "%cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools", source: http://127.0.0.1:8000/public/index.php/salles (154)
+[0505/214008.447:INFO:CONSOLE(159)] "[object Object]", source: http://127.0.0.1:8000/public/index.php/salles (159)
+[0505/214008.604:INFO:CONSOLE(159)] "Uncaught TypeError: r.join(...).trimEnd is not a function", source: http://127.0.0.1:8000/public/index.php/salles (159)
+[0505/214008.624:INFO:CONSOLE(154)] "The above error occurred in the <su> component:
+
+    at su (http://127.0.0.1:8000/public/index.php/salles:159:252372)
+    at $c (http://127.0.0.1:8000/public/index.php/salles:159:245728)
+    at div
+    at section
+    at tu (http://127.0.0.1:8000/public/index.php/salles:159:248903)
+    at div
+    at Hf (http://127.0.0.1:8000/public/index.php/salles:159:282134)
+    at Vf (http://127.0.0.1:8000/public/index.php/salles:159:283013)
+    at div
+    at $c (http://127.0.0.1:8000/public/index.php/salles:159:245728)
+    at Xf (http://127.0.0.1:8000/public/index.php/salles:159:285234)
+    at section
+    at Xy (http://127.0.0.1:8000/public/index.php/salles:159:412945)
+    at main
+    at ye (http://127.0.0.1:8000/public/index.php/salles:154:307457)
+    at Se (http://127.0.0.1:8000/public/index.php/salles:154:308667)
+    at $c (http://127.0.0.1:8000/public/index.php/salles:159:245728)
+    at Jy (http://127.0.0.1:8000/public/index.php/salles:159:415814)
+
+React will try to recreate this component tree from scratch using the error boundary you provided, $c.", source: http://127.0.0.1:8000/public/index.php/salles (154)
+- 21:40:08.750 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/salles
+- 21:41:41.125 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/salles
+- 21:41:42.219 DEBUG: OnContextCreated()
+- 21:41:42.203 INFO: GET 404 /public/assets/css/app.css
+- 21:41:42.203 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:41:42.203 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:41:42.203 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:41:42.203 INFO: GET 200 /public/assets/masterAssets/css/material-dashboard.css?v=3.1.0
+- 21:41:42.219 INFO: GET 200 /public/index.php/salles
+- 21:41:42.969 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:41:42.969 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:41:42.969 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:41:42.969 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:41:42.985 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+[0505/214142.992:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 21:41:43.078 INFO: GET 200 /public/bootstrap/jquery.min.js
+- 21:41:43.125 INFO: GET 200 /public/bootstrap/popper.min.js
+- 21:41:43.203 INFO: GET 200 /public/bootstrap/js/bootstrap.min.js
+- 21:41:43.203 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+- 21:41:43.360 INFO: GET 200 /public/assets/masterAssets/img/iconofppt.png
+- 21:41:43.375 INFO: GET 200 /public/assets/masterAssets/img/ofpptLogo.png
+- 21:41:43.813 INFO: GET 404 /public/assets/css/app.css
+- 21:41:43.813 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:41:43.813 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:41:43.860 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:41:43.860 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:41:43.922 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:41:43.938 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:41:43.938 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:41:43.953 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:41:44.047 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/214144.065:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/salles (0)
+[0505/214144.065:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/salles (0)
+[0505/214144.066:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/salles (0)
+[0505/214144.066:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/salles (0)
+[0505/214144.066:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/salles (0)
+[0505/214144.066:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/salles (0)
+[0505/214144.123:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+- 21:41:44.375 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/salles
+- 21:41:58.235 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/salles
+- 21:42:00.578 DEBUG: OnContextCreated()
+- 21:42:00.547 INFO: GET 404 /public/assets/css/app.css
+- 21:42:00.547 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:42:00.547 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:42:00.547 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:42:00.578 INFO: GET 200 /public/index.php/backup
+[0505/214200.599:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 21:42:00.891 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:42:00.891 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:42:00.891 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:42:00.891 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:42:00.891 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:42:00.906 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+- 21:42:01.031 INFO: GET 404 /public/assets/css/app.css
+- 21:42:01.031 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:42:01.031 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:42:01.063 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:42:01.110 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:42:01.344 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+[0505/214201.339:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/backup (0)
+[0505/214201.340:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/backup (0)
+[0505/214201.340:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/backup (0)
+[0505/214201.340:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/backup (0)
+[0505/214201.371:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/backup (0)
+[0505/214201.371:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/backup (0)
+- 21:42:01.578 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:42:01.860 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:42:01.875 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:42:02.047 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/214202.104:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+- 21:42:02.188 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/backup
+- 21:42:37.875 DEBUG: F5 pressed, reloading page
+- 21:42:37.875 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/backup
+- 21:42:39.625 DEBUG: OnContextCreated()
+- 21:42:39.594 INFO: GET 404 /public/assets/css/app.css
+- 21:42:39.594 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:42:39.594 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:42:39.594 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:42:39.610 INFO: GET 200 /public/assets/masterAssets/css/material-dashboard.css?v=3.1.0
+- 21:42:39.610 INFO: GET 200 /public/index.php/backup
+[0505/214240.028:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 21:42:40.188 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:42:40.188 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:42:40.188 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:42:40.203 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:42:40.203 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:42:40.203 INFO: GET 200 /public/bootstrap/jquery.min.js
+- 21:42:40.203 INFO: GET 200 /public/bootstrap/popper.min.js
+- 21:42:40.219 INFO: GET 200 /public/bootstrap/js/bootstrap.min.js
+- 21:42:40.219 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+- 21:42:40.219 INFO: GET 200 /public/assets/masterAssets/img/iconofppt.png
+- 21:42:40.219 INFO: GET 200 /public/assets/masterAssets/img/ofpptLogo.png
+- 21:42:40.735 INFO: GET 404 /public/assets/css/app.css
+- 21:42:40.735 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:42:40.735 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:42:40.797 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:42:40.828 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:42:40.875 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:42:41.047 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:42:41.047 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:42:41.063 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:42:41.188 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/214241.288:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+[0505/214241.413:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/backup (0)
+[0505/214241.413:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/backup (0)
+[0505/214241.414:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/backup (0)
+[0505/214241.414:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/backup (0)
+[0505/214241.414:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/backup (0)
+[0505/214241.415:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/backup (0)
+- 21:42:41.000 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/backup
+- 21:42:46.141 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/backup
+- 21:42:46.813 DEBUG: OnContextCreated()
+- 21:42:46.781 INFO: GET 200 /public/index.php/bp?selected_cdj_cds=CDS&selected_date=2024-05-27&selected_type=emploi_formateur
+- 21:42:46.797 INFO: GET 404 /public/assets/css/app.css
+- 21:42:46.797 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:42:46.797 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:42:46.797 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+[0505/214246.842:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 21:42:46.891 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:42:46.891 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:42:46.891 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:42:46.891 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:42:46.891 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:42:46.906 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+- 21:42:47.078 INFO: GET 404 /public/assets/css/app.css
+- 21:42:47.078 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:42:47.078 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:42:47.094 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:42:47.110 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:42:47.141 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+[0505/214247.133:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/bp?selected_cdj_cds=CDS&selected_date=2024-05-27&selected_type=emploi_formateur (0)
+[0505/214247.133:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/bp?selected_cdj_cds=CDS&selected_date=2024-05-27&selected_type=emploi_formateur (0)
+[0505/214247.133:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/bp?selected_cdj_cds=CDS&selected_date=2024-05-27&selected_type=emploi_formateur (0)
+[0505/214247.133:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/bp?selected_cdj_cds=CDS&selected_date=2024-05-27&selected_type=emploi_formateur (0)
+[0505/214247.133:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/bp?selected_cdj_cds=CDS&selected_date=2024-05-27&selected_type=emploi_formateur (0)
+[0505/214247.133:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/bp?selected_cdj_cds=CDS&selected_date=2024-05-27&selected_type=emploi_formateur (0)
+- 21:42:47.188 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:42:47.219 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:42:47.235 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:42:47.297 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/214247.301:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+- 21:42:47.328 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/bp?selected_cdj_cds=CDS&selected_date=2024-05-27&selected_type=emploi_formateur
+- 21:42:49.360 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/bp?selected_cdj_cds=CDS&selected_date=2024-05-27&selected_type=emploi_formateur
+- 21:42:49.969 DEBUG: OnContextCreated()
+- 21:42:49.938 INFO: GET 200 /public/index.php/bp?selected_type=emploi_groupe&selected_date=2024-05-27&selected_cdj_cds=CDS
+- 21:42:49.953 INFO: GET 404 /public/assets/css/app.css
+- 21:42:49.953 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:42:49.953 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:42:49.953 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+[0505/214249.992:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 21:42:50.047 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:42:50.047 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:42:50.047 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:42:50.047 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:42:50.063 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:42:50.063 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+- 21:42:50.156 INFO: GET 404 /public/assets/css/app.css
+- 21:42:50.156 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:42:50.156 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:42:50.172 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:42:50.188 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:42:50.219 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+[0505/214250.212:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/bp?selected_type=emploi_groupe&selected_date=2024-05-27&selected_cdj_cds=CDS (0)
+[0505/214250.212:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/bp?selected_type=emploi_groupe&selected_date=2024-05-27&selected_cdj_cds=CDS (0)
+[0505/214250.212:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/bp?selected_type=emploi_groupe&selected_date=2024-05-27&selected_cdj_cds=CDS (0)
+[0505/214250.212:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/bp?selected_type=emploi_groupe&selected_date=2024-05-27&selected_cdj_cds=CDS (0)
+[0505/214250.212:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/bp?selected_type=emploi_groupe&selected_date=2024-05-27&selected_cdj_cds=CDS (0)
+[0505/214250.212:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/bp?selected_type=emploi_groupe&selected_date=2024-05-27&selected_cdj_cds=CDS (0)
+- 21:42:50.250 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:42:50.266 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:42:50.281 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:42:50.328 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/214250.328:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+- 21:42:50.360 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/bp?selected_type=emploi_groupe&selected_date=2024-05-27&selected_cdj_cds=CDS
+- 21:42:54.172 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/bp?selected_type=emploi_groupe&selected_date=2024-05-27&selected_cdj_cds=CDS
+- 21:42:54.813 DEBUG: OnContextCreated()
+- 21:42:54.781 INFO: GET 200 /public/index.php/bp?selected_cdj_cds=CDJ&selected_date=2024-05-27&selected_type=emploi_groupe
+- 21:42:54.781 INFO: GET 404 /public/assets/css/app.css
+- 21:42:54.781 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:42:54.797 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:42:54.797 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+[0505/214254.837:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 21:42:54.875 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:42:54.891 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:42:54.891 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:42:54.891 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:42:54.891 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:42:54.891 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+- 21:42:54.985 INFO: GET 404 /public/assets/css/app.css
+- 21:42:54.985 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:42:54.985 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:42:54.016 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:42:55.031 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:42:55.063 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+[0505/214255.059:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/bp?selected_cdj_cds=CDJ&selected_date=2024-05-27&selected_type=emploi_groupe (0)
+[0505/214255.059:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/bp?selected_cdj_cds=CDJ&selected_date=2024-05-27&selected_type=emploi_groupe (0)
+[0505/214255.060:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/bp?selected_cdj_cds=CDJ&selected_date=2024-05-27&selected_type=emploi_groupe (0)
+[0505/214255.060:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/bp?selected_cdj_cds=CDJ&selected_date=2024-05-27&selected_type=emploi_groupe (0)
+[0505/214255.060:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/bp?selected_cdj_cds=CDJ&selected_date=2024-05-27&selected_type=emploi_groupe (0)
+[0505/214255.060:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/bp?selected_cdj_cds=CDJ&selected_date=2024-05-27&selected_type=emploi_groupe (0)
+- 21:42:55.125 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:42:55.172 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:42:55.188 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:42:55.219 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/214255.221:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+- 21:42:55.250 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/bp?selected_cdj_cds=CDJ&selected_date=2024-05-27&selected_type=emploi_groupe
+- 21:44:16.938 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/bp?selected_cdj_cds=CDJ&selected_date=2024-05-27&selected_type=emploi_groupe
+- 21:44:18.422 DEBUG: OnContextCreated()
+- 21:44:18.391 INFO: GET 404 /public/assets/css/app.css
+- 21:44:18.391 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:44:18.391 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:44:18.391 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:44:18.406 INFO: GET 200 /public/assets/masterAssets/css/material-dashboard.css?v=3.1.0
+- 21:44:18.406 INFO: GET 200 /public/index.php/bp?selected_cdj_cds=CDJ&selected_date=2024-05-27&selected_type=emploi_groupe
+- 21:44:18.656 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:44:18.656 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:44:18.672 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:44:18.672 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:44:18.672 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:44:18.672 INFO: GET 200 /public/bootstrap/jquery.min.js
+- 21:44:18.688 INFO: GET 200 /public/bootstrap/popper.min.js
+- 21:44:18.688 INFO: GET 200 /public/bootstrap/js/bootstrap.min.js
+- 21:44:18.688 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+- 21:44:18.688 INFO: GET 200 /public/assets/masterAssets/img/iconofppt.png
+- 21:44:18.703 INFO: GET 200 /public/assets/masterAssets/img/ofpptLogo.png
+[0505/214418.756:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 21:44:19.031 INFO: GET 404 /public/assets/css/app.css
+- 21:44:19.031 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:44:19.031 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:44:19.063 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:44:19.078 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:44:19.141 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:44:19.203 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:44:19.219 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:44:19.219 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:44:19.266 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/214419.278:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+[0505/214419.396:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/bp?selected_cdj_cds=CDJ&selected_date=2024-05-27&selected_type=emploi_groupe (0)
+[0505/214419.396:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/bp?selected_cdj_cds=CDJ&selected_date=2024-05-27&selected_type=emploi_groupe (0)
+[0505/214419.398:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/bp?selected_cdj_cds=CDJ&selected_date=2024-05-27&selected_type=emploi_groupe (0)
+[0505/214419.398:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/bp?selected_cdj_cds=CDJ&selected_date=2024-05-27&selected_type=emploi_groupe (0)
+[0505/214419.398:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/bp?selected_cdj_cds=CDJ&selected_date=2024-05-27&selected_type=emploi_groupe (0)
+[0505/214419.398:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/bp?selected_cdj_cds=CDJ&selected_date=2024-05-27&selected_type=emploi_groupe (0)
+- 21:44:19.703 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/bp?selected_cdj_cds=CDJ&selected_date=2024-05-27&selected_type=emploi_groupe
+- 21:44:45.297 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/bp?selected_cdj_cds=CDJ&selected_date=2024-05-27&selected_type=emploi_groupe
+- 21:44:48.125 DEBUG: OnContextCreated()
+- 21:44:48.110 INFO: GET 404 /public/assets/css/app.css
+- 21:44:48.110 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:44:48.110 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:44:48.110 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:44:48.141 INFO: GET 200 /public/index.php/valideExporter
+[0505/214448.166:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 21:44:48.547 INFO: GET 404 /public/assets/css/app.css
+- 21:44:48.547 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:44:48.547 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:44:48.594 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+[0505/214448.707:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/valideExporter (0)
+[0505/214448.707:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/valideExporter (0)
+[0505/214448.708:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/valideExporter (0)
+[0505/214448.708:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/valideExporter (0)
+[0505/214448.708:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/valideExporter (0)
+[0505/214448.708:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/valideExporter (0)
+- 21:44:48.844 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:44:48.875 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:44:48.875 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:44:48.875 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:44:48.875 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:44:48.875 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+- 21:44:48.891 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:44:48.906 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:44:48.906 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:44:48.906 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:44:48.922 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:44:49.078 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/214449.161:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+- 21:44:49.219 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/valideExporter
+- 21:45:58.844 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/valideExporter
+- 21:46:00.375 DEBUG: OnContextCreated()
+- 21:46:00.328 INFO: GET 200 /public/index.php/backup
+- 21:46:00.344 INFO: GET 404 /public/assets/css/app.css
+- 21:46:00.344 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:46:00.344 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:46:00.344 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+[0505/214600.377:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 21:46:00.438 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:46:00.438 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:46:00.453 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:46:00.453 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:46:00.453 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:46:00.453 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+- 21:46:00.641 INFO: GET 404 /public/assets/css/app.css
+- 21:46:00.641 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:46:00.641 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:46:00.656 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:46:00.672 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:46:00.735 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+[0505/214600.734:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/backup (0)
+[0505/214600.734:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/backup (0)
+[0505/214600.735:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/backup (0)
+[0505/214600.735:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/backup (0)
+[0505/214600.735:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/backup (0)
+[0505/214600.736:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/backup (0)
+- 21:46:00.828 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:46:00.922 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:46:00.938 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:46:01.016 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/214601.050:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+- 21:46:01.094 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/backup
+- 21:46:06.500 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/backup
+- 21:46:07.094 DEBUG: OnContextCreated()
+- 21:46:07.063 INFO: GET 200 /public/index.php/bp?selected_type=emploi_groupe&selected_date=2024-05-27&selected_cdj_cds=CDJ
+- 21:46:07.063 INFO: GET 404 /public/assets/css/app.css
+- 21:46:07.078 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:46:07.078 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:46:07.078 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+[0505/214607.105:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 21:46:07.156 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:46:07.172 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:46:07.172 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:46:07.172 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:46:07.172 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:46:07.172 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+- 21:46:07.250 INFO: GET 404 /public/assets/css/app.css
+- 21:46:07.250 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:46:07.250 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:46:07.266 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:46:07.281 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:46:07.328 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+[0505/214607.333:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/bp?selected_type=emploi_groupe&selected_date=2024-05-27&selected_cdj_cds=CDJ (0)
+[0505/214607.334:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/bp?selected_type=emploi_groupe&selected_date=2024-05-27&selected_cdj_cds=CDJ (0)
+[0505/214607.334:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/bp?selected_type=emploi_groupe&selected_date=2024-05-27&selected_cdj_cds=CDJ (0)
+[0505/214607.334:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/bp?selected_type=emploi_groupe&selected_date=2024-05-27&selected_cdj_cds=CDJ (0)
+[0505/214607.334:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/bp?selected_type=emploi_groupe&selected_date=2024-05-27&selected_cdj_cds=CDJ (0)
+[0505/214607.334:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/bp?selected_type=emploi_groupe&selected_date=2024-05-27&selected_cdj_cds=CDJ (0)
+- 21:46:07.391 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:46:07.406 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:46:07.438 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:46:07.469 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/214607.479:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+- 21:46:07.516 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/bp?selected_type=emploi_groupe&selected_date=2024-05-27&selected_cdj_cds=CDJ
+- 21:46:30.578 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/bp?selected_type=emploi_groupe&selected_date=2024-05-27&selected_cdj_cds=CDJ
+- 21:46:31.797 DEBUG: OnContextCreated()
+- 21:46:31.781 INFO: GET 404 /public/assets/css/app.css
+- 21:46:31.781 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:46:31.781 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:46:31.781 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:46:31.813 INFO: GET 200 /public/index.php/valideExporter
+[0505/214631.836:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 21:46:32.110 INFO: GET 404 /public/assets/css/app.css
+- 21:46:32.110 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:46:32.110 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:46:32.156 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+[0505/214632.252:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/valideExporter (0)
+[0505/214632.252:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/valideExporter (0)
+[0505/214632.253:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/valideExporter (0)
+[0505/214632.253:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/valideExporter (0)
+[0505/214632.254:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/valideExporter (0)
+[0505/214632.254:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/valideExporter (0)
+- 21:46:32.422 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:46:32.438 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:46:32.438 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:46:32.438 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:46:32.438 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:46:32.438 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/214632.573:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+- 21:46:32.625 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/valideExporter
+- 21:47:13.156 DEBUG: F5 pressed, reloading page
+- 21:47:13.156 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/valideExporter
+- 21:47:15.797 DEBUG: OnContextCreated()
+- 21:47:15.781 INFO: GET 404 /public/assets/css/app.css
+- 21:47:15.781 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:47:15.781 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:47:15.781 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:47:15.781 INFO: GET 200 /public/assets/masterAssets/css/material-dashboard.css?v=3.1.0
+- 21:47:15.813 INFO: GET 200 /public/index.php/valideExporter
+- 21:47:15.000 INFO: GET 200 /public/assets/masterAssets/img/iconofppt.png
+- 21:47:15.000 INFO: GET 200 /public/assets/masterAssets/img/ofpptLogo.png
+[0505/214716.038:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 21:47:16.438 INFO: GET 404 /public/assets/css/app.css
+- 21:47:16.453 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:47:16.453 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:47:16.485 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:47:16.688 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:47:16.688 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:47:16.703 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:47:16.703 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:47:16.703 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:47:16.703 INFO: GET 200 /public/bootstrap/jquery.min.js
+- 21:47:16.703 INFO: GET 200 /public/bootstrap/popper.min.js
+- 21:47:16.703 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+- 21:47:16.703 INFO: GET 200 /public/bootstrap/js/bootstrap.min.js
+- 21:47:16.906 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/214716.925:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/valideExporter (0)
+[0505/214716.925:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/valideExporter (0)
+[0505/214716.926:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/valideExporter (0)
+[0505/214716.929:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/valideExporter (0)
+[0505/214716.929:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/valideExporter (0)
+[0505/214716.929:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/valideExporter (0)
+[0505/214717.010:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+- 21:47:17.203 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/valideExporter
+- 21:47:43.938 INFO: About to download a file: WAHOUB_Emplois.xlsx
+- 21:47:46.828 INFO: Download was cancelled
+- 21:47:48.219 INFO: About to download a file: AllEmploisFormateurs.xlsx
+- 21:47:50.766 INFO: Download was cancelled
+[0505/214751.501:INFO:CONSOLE(25387)] "Trying to access element with ID CDJ:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25387)
+[0505/214751.502:INFO:CONSOLE(25388)] "Trying to access element with ID CDS:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25388)
+[0505/214751.502:INFO:CONSOLE(25392)] "Element found:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25392)
+[0505/214751.509:INFO:CONSOLE(25401)] "Element found:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25401)
+[0505/214751.511:INFO:CONSOLE(25387)] "Trying to access element with ID CDJ:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25387)
+[0505/214751.511:INFO:CONSOLE(25388)] "Trying to access element with ID CDS:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25388)
+[0505/214751.511:INFO:CONSOLE(25392)] "Element found:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25392)
+[0505/214751.515:INFO:CONSOLE(25405)] "Element with ID tableCDS_3_2 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25405)
+[0505/214751.515:INFO:CONSOLE(25387)] "Trying to access element with ID CDJ:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25387)
+[0505/214751.515:INFO:CONSOLE(25388)] "Trying to access element with ID CDS:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25388)
+[0505/214751.515:INFO:CONSOLE(25392)] "Element found:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25392)
+[0505/214751.516:INFO:CONSOLE(25401)] "Element found:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25401)
+[0505/214751.517:INFO:CONSOLE(25387)] "Trying to access element with ID CDJ:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25387)
+[0505/214751.517:INFO:CONSOLE(25388)] "Trying to access element with ID CDS:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25388)
+[0505/214751.518:INFO:CONSOLE(25392)] "Element found:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25392)
+[0505/214751.519:INFO:CONSOLE(25401)] "Element found:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25401)
+[0505/214751.525:INFO:CONSOLE(25387)] "Trying to access element with ID CDJ:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25387)
+[0505/214751.525:INFO:CONSOLE(25388)] "Trying to access element with ID CDS:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25388)
+[0505/214751.526:INFO:CONSOLE(25392)] "Element found:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25392)
+[0505/214751.526:INFO:CONSOLE(25401)] "Element found:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25401)
+[0505/214751.530:INFO:CONSOLE(25387)] "Trying to access element with ID CDJ:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25387)
+[0505/214751.530:INFO:CONSOLE(25388)] "Trying to access element with ID CDS:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25388)
+[0505/214751.530:INFO:CONSOLE(25396)] "Element with ID tableCDJ_4_3 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25396)
+[0505/214751.530:INFO:CONSOLE(25405)] "Element with ID tableCDS_4_3 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25405)
+[0505/214751.530:INFO:CONSOLE(25387)] "Trying to access element with ID CDJ:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25387)
+[0505/214751.530:INFO:CONSOLE(25388)] "Trying to access element with ID CDS:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25388)
+[0505/214751.530:INFO:CONSOLE(25392)] "Element found:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25392)
+[0505/214751.534:INFO:CONSOLE(25405)] "Element with ID tableCDS_5_1 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25405)
+[0505/214751.534:INFO:CONSOLE(25387)] "Trying to access element with ID CDJ:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25387)
+[0505/214751.535:INFO:CONSOLE(25388)] "Trying to access element with ID CDS:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25388)
+[0505/214751.535:INFO:CONSOLE(25396)] "Element with ID tableCDJ_5_2 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25396)
+[0505/214751.535:INFO:CONSOLE(25405)] "Element with ID tableCDS_5_2 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25405)
+[0505/214751.535:INFO:CONSOLE(25387)] "Trying to access element with ID CDJ:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25387)
+[0505/214751.535:INFO:CONSOLE(25388)] "Trying to access element with ID CDS:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25388)
+[0505/214751.535:INFO:CONSOLE(25396)] "Element with ID tableCDJ_5_3 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25396)
+[0505/214751.535:INFO:CONSOLE(25405)] "Element with ID tableCDS_5_3 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25405)
+[0505/214751.535:INFO:CONSOLE(25387)] "Trying to access element with ID CDJ:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25387)
+[0505/214751.535:INFO:CONSOLE(25388)] "Trying to access element with ID CDS:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25388)
+[0505/214751.536:INFO:CONSOLE(25396)] "Element with ID tableCDJ_6_1 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25396)
+[0505/214751.536:INFO:CONSOLE(25405)] "Element with ID tableCDS_6_1 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25405)
+[0505/214751.536:INFO:CONSOLE(25387)] "Trying to access element with ID CDJ:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25387)
+[0505/214751.536:INFO:CONSOLE(25388)] "Trying to access element with ID CDS:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25388)
+[0505/214751.536:INFO:CONSOLE(25396)] "Element with ID tableCDJ_6_2 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25396)
+[0505/214751.536:INFO:CONSOLE(25405)] "Element with ID tableCDS_6_2 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25405)
+[0505/214751.536:INFO:CONSOLE(25387)] "Trying to access element with ID CDJ:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25387)
+[0505/214751.536:INFO:CONSOLE(25388)] "Trying to access element with ID CDS:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25388)
+[0505/214751.536:INFO:CONSOLE(25396)] "Element with ID tableCDJ_6_3 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25396)
+[0505/214751.536:INFO:CONSOLE(25405)] "Element with ID tableCDS_6_3 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25405)
+[0505/214751.536:INFO:CONSOLE(25387)] "Trying to access element with ID CDJ:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25387)
+[0505/214751.536:INFO:CONSOLE(25388)] "Trying to access element with ID CDS:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25388)
+[0505/214751.536:INFO:CONSOLE(25396)] "Element with ID tableCDJ_7_1 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25396)
+[0505/214751.537:INFO:CONSOLE(25405)] "Element with ID tableCDS_7_1 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25405)
+[0505/214751.537:INFO:CONSOLE(25387)] "Trying to access element with ID CDJ:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25387)
+[0505/214751.537:INFO:CONSOLE(25388)] "Trying to access element with ID CDS:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25388)
+[0505/214751.537:INFO:CONSOLE(25396)] "Element with ID tableCDJ_7_2 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25396)
+[0505/214751.537:INFO:CONSOLE(25405)] "Element with ID tableCDS_7_2 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25405)
+[0505/214751.537:INFO:CONSOLE(25387)] "Trying to access element with ID CDJ:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25387)
+[0505/214751.537:INFO:CONSOLE(25388)] "Trying to access element with ID CDS:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25388)
+[0505/214751.537:INFO:CONSOLE(25396)] "Element with ID tableCDJ_7_3 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25396)
+[0505/214751.537:INFO:CONSOLE(25405)] "Element with ID tableCDS_7_3 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25405)
+[0505/214751.538:INFO:CONSOLE(25387)] "Trying to access element with ID CDJ:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25387)
+[0505/214751.538:INFO:CONSOLE(25388)] "Trying to access element with ID CDS:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25388)
+[0505/214751.538:INFO:CONSOLE(25396)] "Element with ID tableCDJ_8_1 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25396)
+[0505/214751.538:INFO:CONSOLE(25405)] "Element with ID tableCDS_8_1 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25405)
+[0505/214751.538:INFO:CONSOLE(25387)] "Trying to access element with ID CDJ:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25387)
+[0505/214751.538:INFO:CONSOLE(25388)] "Trying to access element with ID CDS:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25388)
+[0505/214751.538:INFO:CONSOLE(25396)] "Element with ID tableCDJ_8_2 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25396)
+[0505/214751.538:INFO:CONSOLE(25405)] "Element with ID tableCDS_8_2 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25405)
+[0505/214751.538:INFO:CONSOLE(25387)] "Trying to access element with ID CDJ:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25387)
+[0505/214751.540:INFO:CONSOLE(25388)] "Trying to access element with ID CDS:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25388)
+[0505/214751.540:INFO:CONSOLE(25396)] "Element with ID tableCDJ_8_3 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25396)
+[0505/214751.540:INFO:CONSOLE(25405)] "Element with ID tableCDS_8_3 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25405)
+[0505/214751.540:INFO:CONSOLE(25387)] "Trying to access element with ID CDJ:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25387)
+[0505/214751.540:INFO:CONSOLE(25388)] "Trying to access element with ID CDS:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25388)
+[0505/214751.540:INFO:CONSOLE(25396)] "Element with ID tableCDJ_9_1 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25396)
+[0505/214751.540:INFO:CONSOLE(25405)] "Element with ID tableCDS_9_1 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25405)
+[0505/214751.540:INFO:CONSOLE(25387)] "Trying to access element with ID CDJ:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25387)
+[0505/214751.540:INFO:CONSOLE(25388)] "Trying to access element with ID CDS:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25388)
+[0505/214751.540:INFO:CONSOLE(25396)] "Element with ID tableCDJ_9_2 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25396)
+[0505/214751.540:INFO:CONSOLE(25405)] "Element with ID tableCDS_9_2 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25405)
+[0505/214751.540:INFO:CONSOLE(25387)] "Trying to access element with ID CDJ:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25387)
+[0505/214751.540:INFO:CONSOLE(25388)] "Trying to access element with ID CDS:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25388)
+[0505/214751.540:INFO:CONSOLE(25396)] "Element with ID tableCDJ_9_3 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25396)
+[0505/214751.541:INFO:CONSOLE(25405)] "Element with ID tableCDS_9_3 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25405)
+[0505/214751.541:INFO:CONSOLE(25387)] "Trying to access element with ID CDJ:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25387)
+[0505/214751.541:INFO:CONSOLE(25388)] "Trying to access element with ID CDS:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25388)
+[0505/214751.541:INFO:CONSOLE(25396)] "Element with ID tableCDJ_10_1 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25396)
+[0505/214751.541:INFO:CONSOLE(25405)] "Element with ID tableCDS_10_1 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25405)
+[0505/214751.541:INFO:CONSOLE(25387)] "Trying to access element with ID CDJ:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25387)
+[0505/214751.541:INFO:CONSOLE(25388)] "Trying to access element with ID CDS:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25388)
+[0505/214751.541:INFO:CONSOLE(25396)] "Element with ID tableCDJ_10_2 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25396)
+[0505/214751.541:INFO:CONSOLE(25405)] "Element with ID tableCDS_10_2 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25405)
+[0505/214751.541:INFO:CONSOLE(25387)] "Trying to access element with ID CDJ:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25387)
+[0505/214751.541:INFO:CONSOLE(25388)] "Trying to access element with ID CDS:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25388)
+[0505/214751.541:INFO:CONSOLE(25396)] "Element with ID tableCDJ_10_3 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25396)
+[0505/214751.541:INFO:CONSOLE(25405)] "Element with ID tableCDS_10_3 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25405)
+[0505/214751.541:INFO:CONSOLE(25387)] "Trying to access element with ID CDJ:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25387)
+[0505/214751.542:INFO:CONSOLE(25388)] "Trying to access element with ID CDS:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25388)
+[0505/214751.542:INFO:CONSOLE(25396)] "Element with ID tableCDJ_11_1 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25396)
+[0505/214751.542:INFO:CONSOLE(25405)] "Element with ID tableCDS_11_1 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25405)
+[0505/214751.542:INFO:CONSOLE(25387)] "Trying to access element with ID CDJ:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25387)
+[0505/214751.542:INFO:CONSOLE(25388)] "Trying to access element with ID CDS:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25388)
+[0505/214751.542:INFO:CONSOLE(25396)] "Element with ID tableCDJ_11_2 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25396)
+[0505/214751.542:INFO:CONSOLE(25405)] "Element with ID tableCDS_11_2 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25405)
+[0505/214751.542:INFO:CONSOLE(25387)] "Trying to access element with ID CDJ:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25387)
+[0505/214751.542:INFO:CONSOLE(25388)] "Trying to access element with ID CDS:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25388)
+[0505/214751.542:INFO:CONSOLE(25396)] "Element with ID tableCDJ_11_3 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25396)
+[0505/214751.542:INFO:CONSOLE(25405)] "Element with ID tableCDS_11_3 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25405)
+[0505/214751.542:INFO:CONSOLE(25387)] "Trying to access element with ID CDJ:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25387)
+[0505/214751.542:INFO:CONSOLE(25388)] "Trying to access element with ID CDS:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25388)
+[0505/214751.542:INFO:CONSOLE(25396)] "Element with ID tableCDJ_12_1 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25396)
+[0505/214751.542:INFO:CONSOLE(25405)] "Element with ID tableCDS_12_1 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25405)
+[0505/214751.542:INFO:CONSOLE(25387)] "Trying to access element with ID CDJ:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25387)
+[0505/214751.542:INFO:CONSOLE(25388)] "Trying to access element with ID CDS:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25388)
+[0505/214751.542:INFO:CONSOLE(25396)] "Element with ID tableCDJ_12_2 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25396)
+[0505/214751.543:INFO:CONSOLE(25405)] "Element with ID tableCDS_12_2 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25405)
+[0505/214751.543:INFO:CONSOLE(25387)] "Trying to access element with ID CDJ:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25387)
+[0505/214751.543:INFO:CONSOLE(25388)] "Trying to access element with ID CDS:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25388)
+[0505/214751.543:INFO:CONSOLE(25396)] "Element with ID tableCDJ_12_3 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25396)
+[0505/214751.543:INFO:CONSOLE(25405)] "Element with ID tableCDS_12_3 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25405)
+[0505/214751.543:INFO:CONSOLE(25387)] "Trying to access element with ID CDJ:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25387)
+[0505/214751.543:INFO:CONSOLE(25388)] "Trying to access element with ID CDS:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25388)
+[0505/214751.543:INFO:CONSOLE(25396)] "Element with ID tableCDJ_13_1 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25396)
+[0505/214751.543:INFO:CONSOLE(25405)] "Element with ID tableCDS_13_1 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25405)
+[0505/214751.544:INFO:CONSOLE(25387)] "Trying to access element with ID CDJ:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25387)
+[0505/214751.544:INFO:CONSOLE(25388)] "Trying to access element with ID CDS:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25388)
+[0505/214751.544:INFO:CONSOLE(25396)] "Element with ID tableCDJ_13_2 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25396)
+[0505/214751.544:INFO:CONSOLE(25405)] "Element with ID tableCDS_13_2 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25405)
+[0505/214751.544:INFO:CONSOLE(25387)] "Trying to access element with ID CDJ:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25387)
+[0505/214751.544:INFO:CONSOLE(25388)] "Trying to access element with ID CDS:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25388)
+[0505/214751.544:INFO:CONSOLE(25396)] "Element with ID tableCDJ_13_3 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25396)
+[0505/214751.544:INFO:CONSOLE(25405)] "Element with ID tableCDS_13_3 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25405)
+[0505/214751.544:INFO:CONSOLE(25387)] "Trying to access element with ID CDJ:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25387)
+[0505/214751.544:INFO:CONSOLE(25388)] "Trying to access element with ID CDS:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25388)
+[0505/214751.544:INFO:CONSOLE(25396)] "Element with ID tableCDJ_14_1 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25396)
+[0505/214751.544:INFO:CONSOLE(25405)] "Element with ID tableCDS_14_1 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25405)
+[0505/214751.544:INFO:CONSOLE(25387)] "Trying to access element with ID CDJ:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25387)
+[0505/214751.544:INFO:CONSOLE(25388)] "Trying to access element with ID CDS:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25388)
+[0505/214751.544:INFO:CONSOLE(25396)] "Element with ID tableCDJ_14_2 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25396)
+[0505/214751.544:INFO:CONSOLE(25405)] "Element with ID tableCDS_14_2 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25405)
+[0505/214751.545:INFO:CONSOLE(25387)] "Trying to access element with ID CDJ:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25387)
+[0505/214751.545:INFO:CONSOLE(25388)] "Trying to access element with ID CDS:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25388)
+[0505/214751.545:INFO:CONSOLE(25396)] "Element with ID tableCDJ_14_3 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25396)
+[0505/214751.545:INFO:CONSOLE(25405)] "Element with ID tableCDS_14_3 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25405)
+[0505/214751.545:INFO:CONSOLE(25387)] "Trying to access element with ID CDJ:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25387)
+[0505/214751.545:INFO:CONSOLE(25388)] "Trying to access element with ID CDS:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25388)
+[0505/214751.545:INFO:CONSOLE(25396)] "Element with ID tableCDJ_15_1 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25396)
+[0505/214751.545:INFO:CONSOLE(25405)] "Element with ID tableCDS_15_1 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25405)
+[0505/214751.545:INFO:CONSOLE(25387)] "Trying to access element with ID CDJ:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25387)
+[0505/214751.545:INFO:CONSOLE(25388)] "Trying to access element with ID CDS:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25388)
+[0505/214751.545:INFO:CONSOLE(25396)] "Element with ID tableCDJ_15_2 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25396)
+[0505/214751.545:INFO:CONSOLE(25405)] "Element with ID tableCDS_15_2 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25405)
+[0505/214751.545:INFO:CONSOLE(25387)] "Trying to access element with ID CDJ:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25387)
+[0505/214751.545:INFO:CONSOLE(25388)] "Trying to access element with ID CDS:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25388)
+[0505/214751.546:INFO:CONSOLE(25396)] "Element with ID tableCDJ_15_3 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25396)
+[0505/214751.546:INFO:CONSOLE(25405)] "Element with ID tableCDS_15_3 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25405)
+[0505/214751.546:INFO:CONSOLE(25387)] "Trying to access element with ID CDJ:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25387)
+[0505/214751.546:INFO:CONSOLE(25388)] "Trying to access element with ID CDS:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25388)
+[0505/214751.546:INFO:CONSOLE(25396)] "Element with ID tableCDJ_16_1 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25396)
+[0505/214751.546:INFO:CONSOLE(25405)] "Element with ID tableCDS_16_1 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25405)
+[0505/214751.546:INFO:CONSOLE(25387)] "Trying to access element with ID CDJ:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25387)
+[0505/214751.546:INFO:CONSOLE(25388)] "Trying to access element with ID CDS:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25388)
+[0505/214751.546:INFO:CONSOLE(25396)] "Element with ID tableCDJ_16_2 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25396)
+[0505/214751.546:INFO:CONSOLE(25405)] "Element with ID tableCDS_16_2 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25405)
+[0505/214751.546:INFO:CONSOLE(25387)] "Trying to access element with ID CDJ:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25387)
+[0505/214751.547:INFO:CONSOLE(25388)] "Trying to access element with ID CDS:", source: http://127.0.0.1:8000/public/index.php/valideExporter (25388)
+[0505/214751.547:INFO:CONSOLE(25396)] "Element with ID tableCDJ_16_3 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25396)
+[0505/214751.547:INFO:CONSOLE(25405)] "Element with ID tableCDS_16_3 not found!", source: http://127.0.0.1:8000/public/index.php/valideExporter (25405)
+- 21:47:51.594 INFO: About to download a file: EmploisALLFILIERS(Filiere).xlsx
+- 21:47:53.016 INFO: Download was cancelled
+- 21:47:55.313 INFO: About to download a file: Salles.xlsx
+- 21:47:57.781 INFO: Download was cancelled
+- 21:50:58.281 DEBUG: WM_DESTROY
+- 21:50:58.281 DEBUG: RemoveBrowserWindow(): hwnd = 658128
+- 21:50:58.281 INFO: Stopping Mongoose web server
+- 21:50:58.281 DEBUG: Mongoose webserver stopped immediately
+- 21:50:58.313 DEBUG: OnBeforeClose() hwnd=1247848
+- 21:50:58.313 DEBUG: RemoveBrowserWindow(): hwnd = 1247848
+- 21:50:58.313 DEBUG: GetBrowserWindow(): not found, hwnd = 1247848
+- 21:50:58.313 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 21:50:58.313 DEBUG: Calling CefQuitMessageLoop()
+- 21:50:58.406 INFO: Ended application
+- 21:50:58.406 INFO: --------------------------------------------------------
+- 21:51:58.016 INFO: --------------------------------------------------------
+- 21:51:58.016 INFO: Started application
+- 21:51:58.016 INFO: Logging to: C:\Users\PC\Desktop\appDesktop GererEmploi (git)\mainApp\debug.log
+- 21:51:58.016 INFO: Log level = DEBUG4
+- 21:51:58.016 INFO: Starting Mongoose 3.9c web server
+- 21:51:58.016 INFO: WWW directory: C:\Users\PC\Desktop\appDesktop GererEmploi (git)\mainApp\www
+- 21:51:58.016 INFO: Index files: index.php
+- 21:51:58.016 INFO: CGI interpreter: C:\Users\PC\Desktop\appDesktop GererEmploi (git)\mainApp\php\php-cgi.exe
+- 21:51:58.016 INFO: CGI pattern: **.php$
+- 21:51:58.016 INFO: Hide files patterns: 
+- 21:51:58.016 INFO: CGI environment variables set: TMP=C:\Users\PC\AppData\Local\Temp\,TEMP=C:\Users\PC\AppData\Local\Temp\,TMPDIR=C:\Users\PC\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 21:51:58.016 INFO: Web server url: http://127.0.0.1:8000/
+- 21:51:58.016 INFO: remote_debugging_port = 51786
+- 21:51:58.016 DEBUG: Command line string for the browser process: "C:\Users\PC\Desktop\appDesktop GererEmploi (git)\mainApp\gererEmploi-ITA.exe" --no-sandbox --lang=en-US --log-file="C:\Users\PC\Desktop\appDesktop GererEmploi (git)\mainApp\debug.log" --remote-debugging-port=51786
+- 21:51:59.234 DEBUG: App::OnContextInitialized()
+- 21:51:59.234 INFO: DPI, window enlarged by 25% new width/height = 1000/750
+- 21:51:59.234 DEBUG: Window max width/height = 1842/1034
+- 21:51:59.234 DEBUG: GetBrowserWindow(): not found, hwnd = 1246896
+- 21:51:59.234 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 21:51:59.266 DEBUG: BrowserWindow::CreateBrowserControl()
+- 21:51:59.266 DEBUG: StoreBrowserWindow(): hwnd = 1246896
+- 21:51:59.000 DEBUG: Command line string for the gpu-process process: "C:\Users\PC\Desktop\appDesktop GererEmploi (git)\mainApp\gererEmploi-ITA.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\PC\Desktop\appDesktop GererEmploi (git)\mainApp\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,41,61,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x8086 --gpu-device-id=0x1916 --gpu-driver-vendor="Intel Corporation" --gpu-driver-version=31.0.101.2111 --gpu-driver-date=7-19-2022 --lang=en-US --log-file="C:\Users\PC\Desktop\appDesktop GererEmploi (git)\mainApp\debug.log" --service-request-channel-token=F38A1497A2BD548DBC1E0889D42D2FB8 --mojo-platform-channel-handle=1816 /prefetch:2
+- 21:51:59.359 DEBUG: ClientHandler::OnAfterCreated()
+- 21:51:59.359 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 21:51:59.391 DEBUG: OnLoadingStateChange: loading=1, url=
+- 21:51:59.000 DEBUG: Command line string for the renderer process: "C:\Users\PC\Desktop\appDesktop GererEmploi (git)\mainApp\gererEmploi-ITA.exe" --type=renderer --no-sandbox --primordial-pipe-token=FAEB36277789110469227EC31612187B --lang=en-US --lang=en-US --log-file="C:\Users\PC\Desktop\appDesktop GererEmploi (git)\mainApp\debug.log" --enable-pinch --device-scale-factor=1.25 --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=FAEB36277789110469227EC31612187B --renderer-client-id=3 --mojo-platform-channel-handle=2340 /prefetch:1
+- 21:51:59.062 DEBUG: OnBrowserCreated()
+[0505/215159.603:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 21:52:00.922 INFO: GET 302 /
+- 21:52:01.953 DEBUG: OnContextCreated()
+- 21:52:01.438 INFO: GET 200 /public/index.php
+- 21:52:01.438 INFO: GET 404 /public/assets/css/app.css
+- 21:52:01.438 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:52:01.438 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:52:01.438 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+[0505/215201.410:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 21:52:01.688 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:52:01.688 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:52:01.688 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:52:01.688 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:52:01.703 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:52:01.797 INFO: GET 404 /public/assets/css/app.css
+- 21:52:01.797 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:52:01.797 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:52:01.828 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:52:01.828 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+- 21:52:01.844 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:52:01.969 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+[0505/215201.885:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php (0)
+[0505/215201.885:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php (0)
+[0505/215201.885:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php (0)
+[0505/215201.885:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php (0)
+[0505/215201.886:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php (0)
+[0505/215201.886:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php (0)
+- 21:52:01.984 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:52:01.984 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:52:01.000 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:52:01.063 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/215201.984:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+- 21:52:01.078 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php
+[0505/215203.821:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php (0)
+[0505/215203.822:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php (0)
+[0505/215203.822:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php (0)
+[0505/215203.823:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php (0)
+[0505/215203.823:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php (0)
+[0505/215203.824:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php (0)
+- 21:52:05.469 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php
+- 21:52:06.890 DEBUG: OnContextCreated()
+- 21:52:06.375 INFO: GET 200 /public/index.php/nouveau emploi
+- 21:52:06.391 INFO: GET 404 /public/assets/css/app.css
+- 21:52:06.391 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:52:06.391 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:52:06.391 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+[0505/215206.355:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 21:52:06.469 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:52:06.484 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:52:06.484 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:52:06.484 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:52:06.500 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:52:06.500 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+- 21:52:06.609 INFO: GET 404 /public/assets/css/app.css
+- 21:52:06.609 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:52:06.609 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:52:06.641 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:52:06.656 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:52:06.688 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+[0505/215206.606:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/nouveau%20emploi (0)
+[0505/215206.606:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/nouveau%20emploi (0)
+[0505/215206.607:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/nouveau%20emploi (0)
+[0505/215206.607:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/nouveau%20emploi (0)
+[0505/215206.607:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/nouveau%20emploi (0)
+[0505/215206.607:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/nouveau%20emploi (0)
+[0505/215206.615:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-brands-400.woff2", source: http://127.0.0.1:8000/public/index.php/nouveau%20emploi (0)
+[0505/215206.615:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/nouveau%20emploi (0)
+[0505/215206.615:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-brands-400.woff2", source: http://127.0.0.1:8000/public/index.php/nouveau%20emploi (0)
+[0505/215206.616:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/nouveau%20emploi (0)
+[0505/215206.616:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-brands-400.woff2", source: http://127.0.0.1:8000/public/index.php/nouveau%20emploi (0)
+[0505/215206.616:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/nouveau%20emploi (0)
+- 21:52:06.734 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:52:06.750 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:52:06.766 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:52:06.797 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/215206.706:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+- 21:52:06.797 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/nouveau%20emploi
+- 21:52:07.063 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/nouveau%20emploi
+- 21:52:08.281 DEBUG: OnContextCreated()
+- 21:52:08.766 INFO: GET 404 /public/assets/css/app.css
+- 21:52:08.781 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:52:08.781 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:52:08.781 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:52:08.781 INFO: GET 200 /public/index.php/backup
+[0505/215208.722:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 21:52:08.922 INFO: GET 404 /public/assets/css/app.css
+- 21:52:08.922 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:52:08.922 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:52:08.953 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:52:08.969 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:52:08.047 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:52:08.047 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:52:08.047 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:52:08.047 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:52:08.047 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/215209.117:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+[0505/215209.157:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/backup (0)
+[0505/215209.158:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/backup (0)
+[0505/215209.158:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/backup (0)
+[0505/215209.158:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/backup (0)
+[0505/215209.158:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/backup (0)
+[0505/215209.158:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/backup (0)
+- 21:52:09.359 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/backup
+- 21:52:11.031 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/backup
+- 21:52:12.125 DEBUG: OnContextCreated()
+- 21:52:12.609 INFO: GET 200 /public/index.php/bp?selected_type=emploi_groupe&selected_date=2024-05-27&selected_cdj_cds=CDJ
+- 21:52:12.609 INFO: GET 404 /public/assets/css/app.css
+- 21:52:12.609 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:52:12.609 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:52:12.609 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+[0505/215212.571:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 21:52:12.703 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:52:12.703 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:52:12.703 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:52:12.719 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:52:12.719 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:52:12.719 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+- 21:52:12.797 INFO: GET 404 /public/assets/css/app.css
+- 21:52:12.797 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:52:12.797 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:52:12.828 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:52:12.828 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:52:12.875 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+[0505/215212.792:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/bp?selected_type=emploi_groupe&selected_date=2024-05-27&selected_cdj_cds=CDJ (0)
+[0505/215212.792:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/bp?selected_type=emploi_groupe&selected_date=2024-05-27&selected_cdj_cds=CDJ (0)
+[0505/215212.792:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/bp?selected_type=emploi_groupe&selected_date=2024-05-27&selected_cdj_cds=CDJ (0)
+[0505/215212.793:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/bp?selected_type=emploi_groupe&selected_date=2024-05-27&selected_cdj_cds=CDJ (0)
+[0505/215212.793:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/bp?selected_type=emploi_groupe&selected_date=2024-05-27&selected_cdj_cds=CDJ (0)
+[0505/215212.793:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/bp?selected_type=emploi_groupe&selected_date=2024-05-27&selected_cdj_cds=CDJ (0)
+- 21:52:12.922 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:52:12.984 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:52:12.984 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:52:12.016 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/215212.936:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+- 21:52:12.047 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/bp?selected_type=emploi_groupe&selected_date=2024-05-27&selected_cdj_cds=CDJ
+- 21:52:14.609 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/bp?selected_type=emploi_groupe&selected_date=2024-05-27&selected_cdj_cds=CDJ
+- 21:52:15.672 DEBUG: OnContextCreated()
+- 21:52:15.156 INFO: GET 200 /public/index.php/emplois_formateur
+- 21:52:15.172 INFO: GET 404 /public/assets/css/app.css
+- 21:52:15.172 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:52:15.172 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:52:15.172 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+[0505/215215.127:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 21:52:15.266 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:52:15.266 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:52:15.266 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:52:15.266 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:52:15.266 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:52:15.281 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+- 21:52:15.344 INFO: GET 404 /public/assets/css/app.css
+- 21:52:15.344 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:52:15.344 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:52:15.359 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:52:15.375 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:52:15.391 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+[0505/215215.315:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/emplois_formateur (0)
+[0505/215215.315:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/emplois_formateur (0)
+[0505/215215.315:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/emplois_formateur (0)
+[0505/215215.315:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/emplois_formateur (0)
+[0505/215215.315:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/emplois_formateur (0)
+[0505/215215.315:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/emplois_formateur (0)
+- 21:52:15.422 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:52:15.438 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:52:15.453 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:52:15.469 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/215215.390:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+- 21:52:15.484 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/emplois_formateur
+- 21:52:16.859 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/emplois_formateur
+- 21:52:17.015 DEBUG: OnContextCreated()
+- 21:52:17.484 INFO: GET 200 /public/index.php/emplois_formateur?formateur_id=3
+- 21:52:17.500 INFO: GET 404 /public/assets/css/app.css
+- 21:52:17.500 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:52:17.500 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:52:17.500 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+[0505/215217.457:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 21:52:17.594 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:52:17.594 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:52:17.594 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:52:17.594 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:52:17.609 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:52:17.609 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+- 21:52:17.688 INFO: GET 404 /public/assets/css/app.css
+- 21:52:17.688 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:52:17.688 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:52:17.703 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:52:17.719 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:52:17.766 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+[0505/215217.679:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/emplois_formateur?formateur_id=3 (0)
+[0505/215217.679:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/emplois_formateur?formateur_id=3 (0)
+[0505/215217.679:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/emplois_formateur?formateur_id=3 (0)
+[0505/215217.680:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/emplois_formateur?formateur_id=3 (0)
+[0505/215217.680:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/emplois_formateur?formateur_id=3 (0)
+[0505/215217.680:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/emplois_formateur?formateur_id=3 (0)
+- 21:52:17.813 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:52:17.891 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:52:17.891 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:52:17.938 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/215217.874:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+- 21:52:17.984 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/emplois_formateur?formateur_id=3
+- 21:52:19.500 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/emplois_formateur?formateur_id=3
+- 21:52:19.609 DEBUG: OnContextCreated()
+- 21:52:20.094 INFO: GET 200 /public/index.php/emplois_formateur?formateur_id=3&TypeEmploi=CDS
+- 21:52:20.109 INFO: GET 404 /public/assets/css/app.css
+- 21:52:20.109 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:52:20.109 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:52:20.109 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+[0505/215220.076:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 21:52:20.203 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:52:20.203 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:52:20.203 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:52:20.219 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:52:20.219 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:52:20.219 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+- 21:52:20.297 INFO: GET 404 /public/assets/css/app.css
+- 21:52:20.297 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:52:20.297 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:52:20.313 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:52:20.328 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:52:20.344 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+[0505/215220.278:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/emplois_formateur?formateur_id=3&TypeEmploi=CDS (0)
+[0505/215220.278:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/emplois_formateur?formateur_id=3&TypeEmploi=CDS (0)
+[0505/215220.279:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/emplois_formateur?formateur_id=3&TypeEmploi=CDS (0)
+[0505/215220.279:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/emplois_formateur?formateur_id=3&TypeEmploi=CDS (0)
+[0505/215220.279:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/emplois_formateur?formateur_id=3&TypeEmploi=CDS (0)
+[0505/215220.279:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/emplois_formateur?formateur_id=3&TypeEmploi=CDS (0)
+- 21:52:20.391 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:52:20.438 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:52:20.438 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:52:20.469 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/215220.399:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+- 21:52:20.500 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/emplois_formateur?formateur_id=3&TypeEmploi=CDS
+- 21:52:21.391 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/emplois_formateur?formateur_id=3&TypeEmploi=CDS
+- 21:52:21.578 DEBUG: OnContextCreated()
+- 21:52:21.063 INFO: GET 200 /public/index.php/emploi_filiere
+- 21:52:21.063 INFO: GET 404 /public/assets/css/app.css
+- 21:52:21.063 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:52:21.063 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:52:21.063 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+[0505/215222.020:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 21:52:22.156 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:52:22.172 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:52:22.172 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:52:22.172 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:52:22.172 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:52:22.172 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+- 21:52:22.234 INFO: GET 404 /public/assets/css/app.css
+- 21:52:22.234 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:52:22.234 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:52:22.250 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:52:22.266 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:52:22.281 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+[0505/215222.197:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/emploi_filiere (0)
+[0505/215222.197:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/emploi_filiere (0)
+[0505/215222.198:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/emploi_filiere (0)
+[0505/215222.198:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/emploi_filiere (0)
+[0505/215222.198:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/emploi_filiere (0)
+[0505/215222.198:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/emploi_filiere (0)
+- 21:52:22.313 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:52:22.328 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:52:22.328 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:52:22.359 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/215222.277:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+- 21:52:22.375 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/emploi_filiere
+- 21:52:23.922 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/emploi_filiere
+- 21:52:24.359 DEBUG: OnContextCreated()
+- 21:52:24.859 INFO: GET 404 /public/assets/css/app.css
+- 21:52:24.859 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:52:24.859 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:52:24.859 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:52:24.875 INFO: GET 200 /public/index.php/emploi_filiere?filiere_id=3
+[0505/215224.817:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 21:52:24.031 INFO: GET 404 /public/assets/css/app.css
+- 21:52:24.047 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:52:24.047 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:52:24.063 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:52:25.156 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:52:25.172 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:52:25.172 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:52:25.172 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:52:25.172 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:52:25.172 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/215225.082:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/emploi_filiere?filiere_id=3 (0)
+[0505/215225.082:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/emploi_filiere?filiere_id=3 (0)
+[0505/215225.084:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/emploi_filiere?filiere_id=3 (0)
+[0505/215225.084:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/emploi_filiere?filiere_id=3 (0)
+[0505/215225.084:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/emploi_filiere?filiere_id=3 (0)
+[0505/215225.084:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/emploi_filiere?filiere_id=3 (0)
+- 21:52:25.250 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:52:25.297 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:52:25.313 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:52:25.313 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:52:25.313 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:52:25.344 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/215225.297:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+- 21:52:25.406 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/emploi_filiere?filiere_id=3
+- 21:52:26.406 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/emploi_filiere?filiere_id=3
+- 21:52:27.750 DEBUG: OnContextCreated()
+- 21:52:27.234 INFO: GET 200 /public/index.php/emploi_filiere?TypeEmploi=CDJ&filiere_id=3
+- 21:52:27.266 INFO: GET 404 /public/assets/css/app.css
+- 21:52:27.266 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:52:27.266 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:52:27.266 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+[0505/215227.215:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 21:52:27.438 INFO: GET 404 /public/assets/css/app.css
+- 21:52:27.453 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:52:27.453 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:52:27.469 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:52:27.578 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:52:27.578 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:52:27.578 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:52:27.578 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:52:27.578 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:52:27.578 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/215227.516:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/emploi_filiere?TypeEmploi=CDJ&filiere_id=3 (0)
+[0505/215227.516:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/emploi_filiere?TypeEmploi=CDJ&filiere_id=3 (0)
+[0505/215227.518:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/emploi_filiere?TypeEmploi=CDJ&filiere_id=3 (0)
+[0505/215227.518:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/emploi_filiere?TypeEmploi=CDJ&filiere_id=3 (0)
+[0505/215227.518:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/emploi_filiere?TypeEmploi=CDJ&filiere_id=3 (0)
+[0505/215227.518:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/emploi_filiere?TypeEmploi=CDJ&filiere_id=3 (0)
+- 21:52:27.703 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:52:27.766 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:52:27.781 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:52:27.797 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:52:27.797 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:52:27.859 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/215227.822:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+- 21:52:27.953 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/emploi_filiere?TypeEmploi=CDJ&filiere_id=3
+- 21:52:29.406 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/emploi_filiere?TypeEmploi=CDJ&filiere_id=3
+- 21:52:29.562 DEBUG: OnContextCreated()
+- 21:52:29.047 INFO: GET 200 /public/index.php/emploi_filiere?TypeEmploi=CDS&filiere_id=3
+- 21:52:29.078 INFO: GET 404 /public/assets/css/app.css
+- 21:52:29.078 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:52:29.078 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:52:29.078 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+[0505/215230.027:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 21:52:30.172 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:52:30.172 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:52:30.188 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:52:30.188 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:52:30.188 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:52:30.188 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+- 21:52:30.250 INFO: GET 404 /public/assets/css/app.css
+- 21:52:30.250 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:52:30.250 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:52:30.281 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:52:30.297 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:52:30.313 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+[0505/215230.228:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/emploi_filiere?TypeEmploi=CDS&filiere_id=3 (0)
+[0505/215230.228:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/emploi_filiere?TypeEmploi=CDS&filiere_id=3 (0)
+[0505/215230.228:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/emploi_filiere?TypeEmploi=CDS&filiere_id=3 (0)
+[0505/215230.228:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/emploi_filiere?TypeEmploi=CDS&filiere_id=3 (0)
+[0505/215230.228:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/emploi_filiere?TypeEmploi=CDS&filiere_id=3 (0)
+[0505/215230.228:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/emploi_filiere?TypeEmploi=CDS&filiere_id=3 (0)
+- 21:52:30.344 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:52:30.391 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:52:30.391 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:52:30.438 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/215230.358:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+- 21:52:30.469 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/emploi_filiere?TypeEmploi=CDS&filiere_id=3
+- 21:52:31.531 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/emploi_filiere?TypeEmploi=CDS&filiere_id=3
+- 21:52:32.672 DEBUG: OnContextCreated()
+- 21:52:32.156 INFO: GET 200 /public/index.php/emploi_filiere?TypeEmploi=CDS&filiere_id=3&niveau=1
+- 21:52:32.156 INFO: GET 404 /public/assets/css/app.css
+- 21:52:32.156 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:52:32.156 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:52:32.156 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+[0505/215232.120:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 21:52:32.328 INFO: GET 404 /public/assets/css/app.css
+- 21:52:32.328 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:52:32.328 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:52:32.344 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:52:32.359 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:52:32.719 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:52:32.719 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:52:32.719 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:52:32.719 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:52:32.719 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/215232.737:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+[0505/215232.761:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/emploi_filiere?TypeEmploi=CDS&filiere_id=3&niveau=1 (0)
+[0505/215232.761:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/emploi_filiere?TypeEmploi=CDS&filiere_id=3&niveau=1 (0)
+[0505/215232.761:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/emploi_filiere?TypeEmploi=CDS&filiere_id=3&niveau=1 (0)
+[0505/215232.762:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/emploi_filiere?TypeEmploi=CDS&filiere_id=3&niveau=1 (0)
+[0505/215232.762:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/emploi_filiere?TypeEmploi=CDS&filiere_id=3&niveau=1 (0)
+[0505/215232.762:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/emploi_filiere?TypeEmploi=CDS&filiere_id=3&niveau=1 (0)
+- 21:52:32.906 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/emploi_filiere?TypeEmploi=CDS&filiere_id=3&niveau=1
+- 21:52:34.234 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/emploi_filiere?TypeEmploi=CDS&filiere_id=3&niveau=1
+- 21:52:34.328 DEBUG: OnContextCreated()
+- 21:52:34.797 INFO: GET 200 /public/index.php/salles
+- 21:52:34.813 INFO: GET 404 /public/assets/css/app.css
+- 21:52:34.813 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:52:34.813 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:52:34.813 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+[0505/215234.768:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 21:52:34.906 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:52:34.906 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:52:34.922 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:52:34.922 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:52:34.922 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:52:34.922 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+- 21:52:34.984 INFO: GET 404 /public/assets/css/app.css
+- 21:52:34.984 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:52:34.984 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:52:34.000 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:52:34.016 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:52:34.047 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+[0505/215234.957:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/salles (0)
+[0505/215234.957:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/salles (0)
+[0505/215234.958:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/salles (0)
+[0505/215234.958:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/salles (0)
+[0505/215234.958:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/salles (0)
+[0505/215234.958:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/salles (0)
+- 21:52:34.063 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:52:34.078 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:52:34.094 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:52:35.109 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/215235.114:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+- 21:52:35.219 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/salles
+- 21:52:38.281 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/salles
+- 21:52:39.797 DEBUG: OnContextCreated()
+- 21:52:39.297 INFO: GET 404 /public/assets/css/app.css
+- 21:52:39.297 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:52:39.297 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:52:39.297 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:52:39.328 INFO: GET 200 /public/index.php/valideExporter
+[0505/215239.263:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 21:52:39.484 INFO: GET 404 /public/assets/css/app.css
+- 21:52:39.484 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:52:39.484 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:52:39.500 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+[0505/215239.485:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/valideExporter (0)
+[0505/215239.486:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/valideExporter (0)
+[0505/215239.486:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/valideExporter (0)
+[0505/215239.486:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/valideExporter (0)
+[0505/215239.486:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/valideExporter (0)
+[0505/215239.487:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/valideExporter (0)
+- 21:52:39.719 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:52:39.734 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:52:39.734 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:52:39.734 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:52:39.734 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:52:39.750 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+- 21:52:39.750 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:52:39.750 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:52:39.766 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:52:39.766 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:52:39.766 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:52:39.828 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/215239.783:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+- 21:52:39.891 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/valideExporter
+- 21:52:42.250 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/valideExporter
+- 21:52:43.812 DEBUG: OnContextCreated()
+- 21:52:43.297 INFO: GET 200 /public/index.php/gererUser
+- 21:52:43.313 INFO: GET 404 /public/assets/css/app.css
+- 21:52:43.313 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:52:43.313 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:52:43.313 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+[0505/215243.263:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 21:52:43.406 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:52:43.406 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:52:43.406 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:52:43.406 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:52:43.422 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:52:43.422 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+- 21:52:43.484 INFO: GET 404 /public/assets/css/app.css
+- 21:52:43.484 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:52:43.484 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:52:43.500 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:52:43.516 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:52:43.531 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+[0505/215243.454:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/gererUser (0)
+[0505/215243.454:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/gererUser (0)
+[0505/215243.454:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/gererUser (0)
+[0505/215243.454:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/gererUser (0)
+[0505/215243.454:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/gererUser (0)
+[0505/215243.454:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/gererUser (0)
+- 21:52:43.594 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:52:43.656 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:52:43.656 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:52:43.688 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/215243.610:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+- 21:52:43.703 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/gererUser
+- 21:52:44.969 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/gererUser
+- 21:52:46.765 DEBUG: OnContextCreated()
+- 21:52:46.266 INFO: GET 404 /public/assets/css/app.css
+- 21:52:46.266 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:52:46.266 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:52:46.266 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:52:46.281 INFO: GET 200 /public/index.php/gererFormateur
+[0505/215246.230:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 21:52:46.359 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:52:46.359 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:52:46.359 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:52:46.375 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:52:46.375 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:52:46.375 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+- 21:52:46.453 INFO: GET 404 /public/assets/css/app.css
+- 21:52:46.453 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:52:46.453 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:52:46.484 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:52:46.500 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:52:46.594 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+[0505/215246.504:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/gererFormateur (0)
+[0505/215246.504:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/gererFormateur (0)
+[0505/215246.504:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/gererFormateur (0)
+[0505/215246.504:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/gererFormateur (0)
+[0505/215246.504:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/gererFormateur (0)
+[0505/215246.504:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/gererFormateur (0)
+- 21:52:46.688 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:52:46.813 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:52:46.906 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:52:46.953 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/215247.138:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+- 21:52:47.281 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/gererFormateur
+- 21:52:48.141 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/gererFormateur
+- 21:52:49.703 DEBUG: OnContextCreated()
+- 21:52:49.172 INFO: GET 200 /public/index.php/gererFiliere
+- 21:52:49.188 INFO: GET 404 /public/assets/css/app.css
+- 21:52:49.188 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:52:49.188 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:52:49.203 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+[0505/215249.153:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 21:52:49.297 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:52:49.297 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:52:49.297 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:52:49.313 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:52:49.313 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:52:49.313 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+- 21:52:49.406 INFO: GET 404 /public/assets/css/app.css
+- 21:52:49.406 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:52:49.406 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:52:49.438 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:52:49.438 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:52:49.484 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+[0505/215249.393:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/gererFiliere (0)
+[0505/215249.393:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/gererFiliere (0)
+[0505/215249.393:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/gererFiliere (0)
+[0505/215249.393:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/gererFiliere (0)
+[0505/215249.393:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/gererFiliere (0)
+[0505/215249.394:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/gererFiliere (0)
+- 21:52:49.563 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:52:49.656 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:52:49.656 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:52:49.688 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/215249.659:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+- 21:52:49.766 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/gererFiliere
+- 21:52:50.578 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/gererFiliere
+- 21:52:51.062 DEBUG: OnContextCreated()
+- 21:52:51.547 INFO: GET 200 /public/index.php/gererGroupe
+- 21:52:51.563 INFO: GET 404 /public/assets/css/app.css
+- 21:52:51.563 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:52:51.563 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:52:51.563 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+[0505/215251.527:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 21:52:51.656 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:52:51.656 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:52:51.656 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:52:51.656 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:52:51.672 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:52:51.672 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+- 21:52:51.781 INFO: GET 404 /public/assets/css/app.css
+- 21:52:51.781 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:52:51.781 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:52:51.813 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:52:51.828 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:52:51.875 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+[0505/215251.797:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/gererGroupe (0)
+[0505/215251.798:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/gererGroupe (0)
+[0505/215251.798:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/gererGroupe (0)
+[0505/215251.798:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/gererGroupe (0)
+[0505/215251.798:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/gererGroupe (0)
+[0505/215251.798:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/gererGroupe (0)
+- 21:52:51.984 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:52:52.109 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:52:52.109 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:52:52.141 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/215252.121:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+- 21:52:52.234 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/gererGroupe
+- 21:52:52.891 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/gererGroupe
+- 21:52:53.500 DEBUG: OnContextCreated()
+- 21:52:53.984 INFO: GET 200 /public/index.php/gereSemaine
+- 21:52:53.000 INFO: GET 404 /public/assets/css/app.css
+- 21:52:53.000 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:52:53.000 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:52:53.000 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+[0505/215253.969:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 21:52:54.094 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:52:54.094 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:52:54.109 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:52:54.109 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:52:54.109 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:52:54.109 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+- 21:52:54.234 INFO: GET 404 /public/assets/css/app.css
+- 21:52:54.234 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:52:54.234 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:52:54.266 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:52:54.281 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:52:54.313 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+[0505/215254.226:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/gereSemaine (0)
+[0505/215254.226:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/gereSemaine (0)
+[0505/215254.227:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/gereSemaine (0)
+[0505/215254.227:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/gereSemaine (0)
+[0505/215254.227:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/gereSemaine (0)
+[0505/215254.227:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/gereSemaine (0)
+- 21:52:54.359 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:52:54.438 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:52:54.484 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:52:54.516 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/215254.440:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+- 21:52:54.547 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/gereSemaine
+- 21:52:54.875 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/gereSemaine
+- 21:52:55.453 DEBUG: OnContextCreated()
+- 21:52:55.938 INFO: GET 404 /public/assets/css/app.css
+- 21:52:55.938 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:52:55.938 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:52:55.938 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:52:55.969 INFO: GET 200 /public/index.php/gererSalle
+[0505/215255.918:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 21:52:55.047 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:52:55.047 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:52:55.047 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:52:55.047 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:52:55.063 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:52:55.063 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+- 21:52:56.234 INFO: GET 404 /public/assets/css/app.css
+- 21:52:56.234 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:52:56.234 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:52:56.266 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:52:56.281 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:52:56.313 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+[0505/215256.237:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/gererSalle (0)
+[0505/215256.237:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/gererSalle (0)
+[0505/215256.237:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/gererSalle (0)
+[0505/215256.237:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/gererSalle (0)
+[0505/215256.237:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/gererSalle (0)
+[0505/215256.237:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/gererSalle (0)
+- 21:52:56.391 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:52:56.469 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:52:56.531 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:52:56.563 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/215256.505:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+- 21:52:56.625 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/gererSalle
+- 21:52:57.313 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/gererSalle
+- 21:52:58.922 DEBUG: OnContextCreated()
+- 21:52:58.406 INFO: GET 200 /public/index.php/gererModule
+- 21:52:58.406 INFO: GET 404 /public/assets/css/app.css
+- 21:52:58.422 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:52:58.422 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:52:58.422 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+[0505/215258.377:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 21:52:58.516 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:52:58.516 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:52:58.516 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:52:58.516 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:52:58.516 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:52:58.531 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+- 21:52:58.609 INFO: GET 404 /public/assets/css/app.css
+- 21:52:58.625 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:52:58.625 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:52:58.656 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:52:58.656 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:52:58.688 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+[0505/215258.598:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/gererModule (0)
+[0505/215258.599:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/gererModule (0)
+[0505/215258.599:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/gererModule (0)
+[0505/215258.599:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/gererModule (0)
+[0505/215258.599:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/gererModule (0)
+[0505/215258.599:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/gererModule (0)
+- 21:52:58.750 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:52:58.813 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:52:58.828 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:52:58.844 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/215258.764:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+- 21:52:58.875 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/gererModule
+- 21:52:59.500 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/gererModule
+- 21:53:00.094 DEBUG: OnContextCreated()
+- 21:53:00.578 INFO: GET 200 /public/index.php/groupes-modules
+- 21:53:00.578 INFO: GET 404 /public/assets/css/app.css
+- 21:53:00.578 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:53:00.578 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:53:00.578 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+[0505/215300.554:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 21:53:00.672 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:53:00.672 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:53:00.688 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:53:00.688 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:53:00.688 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:53:00.688 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+- 21:53:00.813 INFO: GET 404 /public/assets/css/app.css
+- 21:53:00.813 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:53:00.813 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:53:00.844 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+[0505/215300.763:INFO:CONSOLE(317)] "Uncaught SyntaxError: Unexpected token .", source: http://127.0.0.1:8000/public/index.php/groupes-modules (317)
+- 21:53:00.859 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:53:00.891 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+[0505/215300.800:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/groupes-modules (0)
+[0505/215300.800:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/groupes-modules (0)
+[0505/215300.800:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/groupes-modules (0)
+[0505/215300.801:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/groupes-modules (0)
+[0505/215300.801:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/groupes-modules (0)
+[0505/215300.801:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/groupes-modules (0)
+- 21:53:00.984 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:53:00.078 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:53:01.156 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:53:01.188 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/215301.104:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+- 21:53:01.203 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/groupes-modules
+- 21:53:01.844 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/groupes-modules
+- 21:53:02.390 DEBUG: OnContextCreated()
+- 21:53:02.875 INFO: GET 404 /public/assets/css/app.css
+- 21:53:02.875 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:53:02.891 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:53:02.891 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:53:02.891 INFO: GET 200 /public/index.php/import
+[0505/215302.853:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 21:53:02.984 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:53:02.984 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:53:02.000 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:53:02.000 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:53:02.000 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:53:02.000 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+- 21:53:02.094 INFO: GET 404 /public/assets/css/app.css
+- 21:53:03.094 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:53:03.094 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:53:03.109 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:53:03.141 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:53:03.156 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+[0505/215303.078:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/import (0)
+[0505/215303.078:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/import (0)
+[0505/215303.078:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/import (0)
+[0505/215303.078:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/import (0)
+[0505/215303.078:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/import (0)
+[0505/215303.078:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/import (0)
+- 21:53:03.219 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:53:03.281 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:53:03.297 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:53:03.313 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/215303.259:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+- 21:53:03.359 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/import
+- 21:53:07.250 DEBUG: WM_DESTROY
+- 21:53:07.250 DEBUG: RemoveBrowserWindow(): hwnd = 1246896
+- 21:53:07.250 INFO: Stopping Mongoose web server
+- 21:53:07.250 DEBUG: Mongoose webserver stopped immediately
+- 21:53:07.281 DEBUG: OnBeforeClose() hwnd=1116172
+- 21:53:07.281 DEBUG: RemoveBrowserWindow(): hwnd = 1116172
+- 21:53:07.281 DEBUG: GetBrowserWindow(): not found, hwnd = 1116172
+- 21:53:07.281 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 21:53:07.281 DEBUG: Calling CefQuitMessageLoop()
+- 21:53:07.859 DEBUG: OnBrowserDestroyed()
+- 21:53:07.359 INFO: Ended application
+- 21:53:07.359 INFO: --------------------------------------------------------
