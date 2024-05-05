@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\salle;
 use App\Models\emploi;
+use App\Models\groupe;
 use App\Models\seance;
 use Illuminate\Http\Request;
 

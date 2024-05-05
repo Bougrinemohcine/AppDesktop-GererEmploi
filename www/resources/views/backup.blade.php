@@ -66,7 +66,7 @@
                     <table class="table border border-info ">
                         <thead>
                             <tr>
-                                <th rowspan="2" class="border border-info bg-grey text-black">Formateur</th>
+                                <th rowspan="3" class="border border-info bg-grey text-black">Formateur</th>
                                 @foreach ($jours as $jour)
                                     <th colspan="4" class="border border-info text-black">{{ $jour }}</th>
                                 @endforeach
