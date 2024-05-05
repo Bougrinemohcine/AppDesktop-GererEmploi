@@ -188,7 +188,7 @@
                     <table class="table border border-info">
                         <thead>
                             <tr >
-                                <th rowspan="2" class="border border-info text-black">Groupe</th>
+                                <th rowspan="3" class="border border-info text-black">Groupe</th>
                                 @foreach($jours as $jour)
                                     <th colspan="4" class="border border-info text-black">{{$jour}}</th>
                                 @endforeach
@@ -213,7 +213,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($groupes->where('Mode_de_formation','CDS') as $groupe)
+                            @foreach ($groupes->where('Mode_de_formation','CDJ') as $groupe)
                                 <tr>
                                     <td class="border border-info fs-5 text-black font-weight-bold">{{ $groupe->nom_groupe }}</td>
                                     @foreach ($jours as $jour)
