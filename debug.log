@@ -1740,3 +1740,290 @@ React will try to recreate this component tree from scratch using the error boun
 - 21:53:07.859 DEBUG: OnBrowserDestroyed()
 - 21:53:07.359 INFO: Ended application
 - 21:53:07.359 INFO: --------------------------------------------------------
+- 21:55:10.015 INFO: --------------------------------------------------------
+- 21:55:10.015 INFO: Started application
+- 21:55:10.015 INFO: Logging to: C:\Users\PC\Desktop\appDesktop GererEmploi (git)\mainApp\debug.log
+- 21:55:10.015 INFO: Log level = DEBUG4
+- 21:55:10.015 INFO: Starting Mongoose 3.9c web server
+- 21:55:10.015 INFO: WWW directory: C:\Users\PC\Desktop\appDesktop GererEmploi (git)\mainApp\www
+- 21:55:10.015 INFO: Index files: index.php
+- 21:55:10.015 INFO: CGI interpreter: C:\Users\PC\Desktop\appDesktop GererEmploi (git)\mainApp\php\php-cgi.exe
+- 21:55:10.015 INFO: CGI pattern: **.php$
+- 21:55:10.015 INFO: Hide files patterns: 
+- 21:55:10.015 INFO: CGI environment variables set: TMP=C:\Users\PC\AppData\Local\Temp\,TEMP=C:\Users\PC\AppData\Local\Temp\,TMPDIR=C:\Users\PC\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 21:55:10.015 INFO: Web server url: http://127.0.0.1:8000/
+- 21:55:10.015 INFO: remote_debugging_port = 60277
+- 21:55:10.015 DEBUG: Command line string for the browser process: "C:\Users\PC\Desktop\appDesktop GererEmploi (git)\mainApp\gererEmploi-ITA.exe" --no-sandbox --lang=en-US --log-file="C:\Users\PC\Desktop\appDesktop GererEmploi (git)\mainApp\debug.log" --remote-debugging-port=60277
+- 21:55:10.109 DEBUG: App::OnContextInitialized()
+- 21:55:10.109 INFO: DPI, window enlarged by 25% new width/height = 1000/750
+- 21:55:10.109 DEBUG: Window max width/height = 1842/1034
+- 21:55:10.109 DEBUG: GetBrowserWindow(): not found, hwnd = 16909710
+- 21:55:10.109 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 21:55:10.125 DEBUG: BrowserWindow::CreateBrowserControl()
+- 21:55:10.125 DEBUG: StoreBrowserWindow(): hwnd = 16909710
+- 21:55:11.219 DEBUG: ClientHandler::OnAfterCreated()
+- 21:55:11.219 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 21:55:11.234 DEBUG: OnLoadingStateChange: loading=1, url=
+- 21:55:11.000 DEBUG: Command line string for the gpu-process process: "C:\Users\PC\Desktop\appDesktop GererEmploi (git)\mainApp\gererEmploi-ITA.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\PC\Desktop\appDesktop GererEmploi (git)\mainApp\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,41,61,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x8086 --gpu-device-id=0x1916 --gpu-driver-vendor="Intel Corporation" --gpu-driver-version=31.0.101.2111 --gpu-driver-date=7-19-2022 --lang=en-US --log-file="C:\Users\PC\Desktop\appDesktop GererEmploi (git)\mainApp\debug.log" --service-request-channel-token=0E5EA0A4863185FCF671AEFED159B018 --mojo-platform-channel-handle=1824 /prefetch:2
+- 21:55:11.000 DEBUG: Command line string for the renderer process: "C:\Users\PC\Desktop\appDesktop GererEmploi (git)\mainApp\gererEmploi-ITA.exe" --type=renderer --no-sandbox --primordial-pipe-token=41E030716AB26AF412B25AD273BB8AA1 --lang=en-US --lang=en-US --log-file="C:\Users\PC\Desktop\appDesktop GererEmploi (git)\mainApp\debug.log" --enable-pinch --device-scale-factor=1.25 --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=41E030716AB26AF412B25AD273BB8AA1 --renderer-client-id=3 --mojo-platform-channel-handle=2344 /prefetch:1
+- 21:55:11.078 DEBUG: OnBrowserCreated()
+[0505/215511.399:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 21:55:12.797 INFO: GET 302 /
+- 21:55:13.109 DEBUG: OnContextCreated()
+- 21:55:13.531 INFO: GET 200 /public/index.php
+- 21:55:13.531 INFO: GET 404 /public/assets/css/app.css
+- 21:55:13.531 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:55:13.531 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:55:13.531 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+[0505/215513.485:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 21:55:13.875 INFO: GET 404 /public/assets/css/app.css
+- 21:55:13.875 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:55:13.890 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:55:13.890 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:55:13.890 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:55:13.890 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:55:13.906 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:55:13.906 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:55:13.922 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:55:13.937 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+- 21:55:13.969 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:55:13.109 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+[0505/215514.000:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php (0)
+[0505/215514.001:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php (0)
+[0505/215514.001:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php (0)
+[0505/215514.001:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php (0)
+[0505/215514.001:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php (0)
+[0505/215514.001:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php (0)
+[0505/215514.001:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php (0)
+[0505/215514.001:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php (0)
+[0505/215514.001:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php (0)
+[0505/215514.001:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php (0)
+[0505/215514.002:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php (0)
+[0505/215514.002:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php (0)
+[0505/215514.002:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php (0)
+[0505/215514.002:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php (0)
+[0505/215514.002:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php (0)
+[0505/215514.002:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php (0)
+[0505/215514.003:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php (0)
+[0505/215514.003:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php (0)
+- 21:55:14.125 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:55:14.140 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:55:14.172 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:55:14.609 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/215514.532:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+- 21:55:14.672 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php
+- 21:55:37.828 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php
+- 21:55:38.047 DEBUG: OnContextCreated()
+- 21:55:38.469 INFO: GET 200 /public/index.php/salles
+- 21:55:38.469 INFO: GET 404 /public/assets/css/app.css
+- 21:55:38.469 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:55:38.469 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:55:38.469 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+[0505/215538.400:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 21:55:38.578 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:55:38.578 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:55:38.578 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:55:38.594 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:55:38.594 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:55:38.594 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+- 21:55:38.687 INFO: GET 404 /public/assets/css/app.css
+- 21:55:38.703 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:55:38.703 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:55:38.719 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:55:38.734 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:55:38.750 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+[0505/215538.634:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/salles (0)
+[0505/215538.635:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/salles (0)
+[0505/215538.635:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/salles (0)
+[0505/215538.635:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/salles (0)
+[0505/215538.635:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/salles (0)
+[0505/215538.635:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/salles (0)
+- 21:55:38.781 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:55:38.797 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:55:38.797 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:55:38.828 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/215538.804:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+- 21:55:38.937 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/salles
+- 21:55:44.390 INFO: About to download a file: Salles.xlsx
+- 21:55:47.687 INFO: Download was cancelled
+- 21:55:49.375 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/salles
+- 21:55:50.078 DEBUG: OnContextCreated()
+- 21:55:50.500 INFO: GET 404 /public/assets/css/app.css
+- 21:55:50.500 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:55:50.515 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:55:50.515 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 21:55:50.531 INFO: GET 200 /public/index.php/valideExporter
+[0505/215550.446:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 21:55:50.781 INFO: GET 404 /public/assets/css/app.css
+- 21:55:50.781 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 21:55:50.781 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 21:55:50.797 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+[0505/215550.772:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/valideExporter (0)
+[0505/215550.772:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/valideExporter (0)
+[0505/215550.772:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/valideExporter (0)
+[0505/215550.772:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/valideExporter (0)
+[0505/215550.772:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php/valideExporter (0)
+[0505/215550.772:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php/valideExporter (0)
+- 21:55:50.984 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:55:50.984 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:55:50.984 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:55:50.984 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:55:50.984 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:55:50.984 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+- 21:55:50.000 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 21:55:50.000 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 21:55:50.000 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 21:55:50.000 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 21:55:50.015 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 21:55:50.078 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/215551.001:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+- 21:55:51.140 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/valideExporter
+- 21:55:54.640 INFO: About to download a file: Salles.xlsx
+- 21:56:00.250 DEBUG: GetBrowserWindow(): not found, hwnd = 1772306
+- 21:56:00.265 DEBUG: GetBrowserWindow(): not found, hwnd = 1772306
+- 21:56:00.375 DEBUG: GetBrowserWindow(): not found, hwnd = 1772306
+- 21:56:00.484 DEBUG: GetBrowserWindow(): not found, hwnd = 1772306
+- 21:56:00.594 DEBUG: GetBrowserWindow(): not found, hwnd = 1772306
+- 21:56:00.703 DEBUG: GetBrowserWindow(): not found, hwnd = 1772306
+- 21:56:00.812 DEBUG: GetBrowserWindow(): not found, hwnd = 1772306
+- 21:56:00.922 DEBUG: GetBrowserWindow(): not found, hwnd = 1772306
+- 21:56:00.031 DEBUG: GetBrowserWindow(): not found, hwnd = 1772306
+- 21:56:01.140 DEBUG: GetBrowserWindow(): not found, hwnd = 1772306
+- 21:56:01.250 DEBUG: GetBrowserWindow(): not found, hwnd = 1772306
+- 21:56:01.359 DEBUG: GetBrowserWindow(): not found, hwnd = 1772306
+- 21:56:01.484 DEBUG: GetBrowserWindow(): not found, hwnd = 1772306
+- 21:56:01.578 DEBUG: GetBrowserWindow(): not found, hwnd = 1772306
+- 21:56:02.406 INFO: Download completed, saved to: C:\Users\PC\Desktop\Salles.xlsx
+- 21:59:33.578 DEBUG: WM_DESTROY
+- 21:59:33.578 DEBUG: RemoveBrowserWindow(): hwnd = 16909710
+- 21:59:33.578 INFO: Stopping Mongoose web server
+- 21:59:33.578 DEBUG: Mongoose webserver stopped immediately
+- 21:59:33.812 DEBUG: OnBeforeClose() hwnd=6949204
+- 21:59:33.812 DEBUG: RemoveBrowserWindow(): hwnd = 6949204
+- 21:59:33.812 DEBUG: GetBrowserWindow(): not found, hwnd = 6949204
+- 21:59:33.812 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 21:59:33.812 DEBUG: Calling CefQuitMessageLoop()
+- 21:59:33.906 INFO: Ended application
+- 21:59:33.922 INFO: --------------------------------------------------------
+- 22:12:14.000 INFO: --------------------------------------------------------
+- 22:12:14.000 INFO: Started application
+- 22:12:14.000 INFO: Logging to: C:\Users\PC\Desktop\appDesktop GererEmploi (git)\mainApp\debug.log
+- 22:12:14.000 INFO: Log level = DEBUG4
+- 22:12:14.000 INFO: Starting Mongoose 3.9c web server
+- 22:12:14.000 INFO: WWW directory: C:\Users\PC\Desktop\appDesktop GererEmploi (git)\mainApp\www
+- 22:12:14.000 INFO: Index files: index.php
+- 22:12:14.000 INFO: CGI interpreter: C:\Users\PC\Desktop\appDesktop GererEmploi (git)\mainApp\php\php-cgi.exe
+- 22:12:14.000 INFO: CGI pattern: **.php$
+- 22:12:14.000 INFO: Hide files patterns: 
+- 22:12:14.000 INFO: CGI environment variables set: TMP=C:\Users\PC\AppData\Local\Temp\,TEMP=C:\Users\PC\AppData\Local\Temp\,TMPDIR=C:\Users\PC\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 22:12:14.000 INFO: Web server url: http://127.0.0.1:8000/
+- 22:12:14.000 INFO: remote_debugging_port = 57999
+- 22:12:14.000 DEBUG: Command line string for the browser process: "C:\Users\PC\Desktop\appDesktop GererEmploi (git)\mainApp\gererEmploi-ITA.exe" --no-sandbox --lang=en-US --log-file="C:\Users\PC\Desktop\appDesktop GererEmploi (git)\mainApp\debug.log" --remote-debugging-port=57999
+- 22:12:14.078 DEBUG: App::OnContextInitialized()
+- 22:12:14.078 INFO: DPI, window enlarged by 25% new width/height = 1000/750
+- 22:12:14.078 DEBUG: Window max width/height = 1842/1034
+- 22:12:14.093 DEBUG: GetBrowserWindow(): not found, hwnd = 4786462
+- 22:12:14.093 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 22:12:14.109 DEBUG: BrowserWindow::CreateBrowserControl()
+- 22:12:14.109 DEBUG: StoreBrowserWindow(): hwnd = 4786462
+- 22:12:14.218 DEBUG: ClientHandler::OnAfterCreated()
+- 22:12:14.218 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 22:12:14.000 DEBUG: Command line string for the gpu-process process: "C:\Users\PC\Desktop\appDesktop GererEmploi (git)\mainApp\gererEmploi-ITA.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\PC\Desktop\appDesktop GererEmploi (git)\mainApp\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,41,61,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x8086 --gpu-device-id=0x1916 --gpu-driver-vendor="Intel Corporation" --gpu-driver-version=31.0.101.2111 --gpu-driver-date=7-19-2022 --lang=en-US --log-file="C:\Users\PC\Desktop\appDesktop GererEmploi (git)\mainApp\debug.log" --service-request-channel-token=7DBD2DAE12E4D52E375312947BB30E25 --mojo-platform-channel-handle=1824 /prefetch:2
+- 22:12:14.234 DEBUG: OnLoadingStateChange: loading=1, url=
+- 22:12:14.000 DEBUG: Command line string for the renderer process: "C:\Users\PC\Desktop\appDesktop GererEmploi (git)\mainApp\gererEmploi-ITA.exe" --type=renderer --no-sandbox --primordial-pipe-token=F7874C1DA20A3C2C5CAF7A4A52509048 --lang=en-US --lang=en-US --log-file="C:\Users\PC\Desktop\appDesktop GererEmploi (git)\mainApp\debug.log" --enable-pinch --device-scale-factor=1.25 --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=F7874C1DA20A3C2C5CAF7A4A52509048 --renderer-client-id=3 --mojo-platform-channel-handle=2360 /prefetch:1
+- 22:12:14.062 DEBUG: OnBrowserCreated()
+[0505/221214.611:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 22:12:16.796 INFO: GET 302 /
+- 22:12:16.343 INFO: GET 200 /public/index.php
+- 22:12:16.218 DEBUG: OnContextCreated()
+- 22:12:16.546 INFO: GET 404 /public/assets/css/app.css
+- 22:12:16.562 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 22:12:16.562 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 22:12:16.562 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+[0505/221216.828:INFO:CONSOLE(48)] "Uncaught ReferenceError: jQuery is not defined", source: https://cdn.datatables.net/v/bs4/jszip-2.5.0/dt-1.11.5/b-2.0.1/b-html5-2.0.1/datatables.min.js (48)
+- 22:12:16.765 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 22:12:16.765 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+- 22:12:16.765 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 22:12:16.765 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 22:12:16.765 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 22:12:17.890 INFO: GET 404 /public/assets/css/app.css
+- 22:12:17.890 INFO: GET 404 /public/assets/masterAssets/css/nucleo-icons.css
+- 22:12:17.890 INFO: GET 404 /public/assets/masterAssets/css/nucleo-svg.css
+- 22:12:17.906 INFO: GET 404 /public/assets/bootstrap/css/bootstrap.min.css
+- 22:12:17.921 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+- 22:12:17.921 INFO: GET 404 /public/assets/masterAssets/js/core/popper.min.js
+- 22:12:17.046 INFO: GET 404 /public/assets/masterAssets/js/core/bootstrap.min.js
+[0505/221217.279:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php (0)
+[0505/221217.279:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php (0)
+[0505/221217.279:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php (0)
+[0505/221217.280:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php (0)
+[0505/221217.280:INFO:CONSOLE(0)] "Failed to decode downloaded font: https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/webfonts/fa-solid-900.woff2", source: http://127.0.0.1:8000/public/index.php (0)
+[0505/221217.280:INFO:CONSOLE(0)] "OTS parsing error: Failed to convert WOFF 2.0 font to SFNT", source: http://127.0.0.1:8000/public/index.php (0)
+- 22:12:17.078 INFO: GET 404 /public/assets/masterAssets/js/plugins/perfect-scrollbar.min.js
+- 22:12:17.093 INFO: GET 404 /public/assets/masterAssets/js/plugins/smooth-scrollbar.min.js
+- 22:12:17.093 INFO: GET 404 /public/assets/masterAssets/js/plugins/chartjs.min.js
+- 22:12:17.171 INFO: GET 404 /public/assets/masterAssets/js/material-dashboard.min.js?v=3.1.0
+[0505/221217.395:INFO:CONSOLE(6)] "Event ignored due to environment being localhost", source: https://api.nepcha.com/js/nepcha-analytics.js (6)
+- 22:12:17.187 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php
+- 22:12:20.265 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php
+- 22:12:21.796 INFO: GET 302 /public/index.php/logout
+- 22:12:21.000 DEBUG: OnContextCreated()
+- 22:12:21.328 INFO: GET 404 /public/assets/loginAssets/fonts/icomoon/style.css
+- 22:12:21.328 INFO: GET 404 /public/assets/loginAssets/css/owl.carousel.min.css
+- 22:12:21.328 INFO: GET 304 /public/assets/loginAssets/css/bootstrap.min.css
+- 22:12:21.328 INFO: GET 304 /public/assets/loginAssets/css/style.css
+- 22:12:21.328 INFO: GET 404 /public/assets/loginAssets/js/jquery-3.3.1.min.js
+- 22:12:21.343 INFO: GET 200 /public/index.php/login
+- 22:12:21.359 INFO: GET 404 /public/assets/loginAssets/js/popper.min.js
+- 22:12:21.359 INFO: GET 304 /public/assets/loginAssets/images/Design sans titre.gif
+- 22:12:21.375 INFO: GET 404 /public/assets/loginAssets/js/bootstrap.min.js
+- 22:12:21.375 INFO: GET 404 /public/assets/loginAssets/js/main.js
+- 22:12:21.406 INFO: GET 404 /public/assets/loginAssets/js/popper.min.js
+- 22:12:21.437 INFO: GET 404 /public/assets/loginAssets/js/bootstrap.min.js
+- 22:12:21.437 INFO: GET 404 /public/assets/loginAssets/js/main.js
+- 22:12:21.437 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/login
+- 22:12:22.734 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/login
+- 22:12:23.156 DEBUG: OnContextCreated()
+- 22:12:23.500 INFO: GET 404 /public/assets/loginAssets/fonts/icomoon/style.css
+- 22:12:23.500 INFO: GET 404 /public/assets/loginAssets/css/owl.carousel.min.css
+- 22:12:23.500 INFO: GET 304 /public/assets/loginAssets/css/bootstrap.min.css
+- 22:12:23.500 INFO: GET 304 /public/assets/loginAssets/css/style.css
+- 22:12:23.500 INFO: GET 404 /public/assets/loginAssets/js/jquery-3.3.1.min.js
+- 22:12:23.515 INFO: GET 200 /public/index.php/register
+- 22:12:23.515 INFO: GET 304 /public/assets/loginAssets/images/Design sans titre.gif
+- 22:12:23.515 INFO: GET 404 /public/assets/loginAssets/js/popper.min.js
+- 22:12:23.531 INFO: GET 404 /public/assets/loginAssets/js/bootstrap.min.js
+- 22:12:23.531 INFO: GET 404 /public/assets/loginAssets/js/main.js
+- 22:12:23.578 INFO: GET 404 /public/assets/loginAssets/js/popper.min.js
+- 22:12:23.593 INFO: GET 404 /public/assets/loginAssets/js/bootstrap.min.js
+- 22:12:23.609 INFO: GET 404 /public/assets/loginAssets/js/main.js
+- 22:12:23.656 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/register
+- 22:12:42.562 DEBUG: OnLoadingStateChange: loading=1, url=http://127.0.0.1:8000/public/index.php/register
+- 22:12:44.125 INFO: POST 302 /public/index.php/register
+- 22:12:44.671 INFO: GET 302 /public/index.php
+- 22:12:45.906 DEBUG: OnContextCreated()
+- 22:12:45.250 INFO: GET 404 /public/assets/loginAssets/fonts/icomoon/style.css
+- 22:12:45.250 INFO: GET 404 /public/assets/loginAssets/css/owl.carousel.min.css
+- 22:12:45.250 INFO: GET 304 /public/assets/loginAssets/css/bootstrap.min.css
+- 22:12:45.250 INFO: GET 304 /public/assets/loginAssets/css/style.css
+- 22:12:45.250 INFO: GET 404 /public/assets/loginAssets/js/jquery-3.3.1.min.js
+- 22:12:45.312 INFO: GET 200 /public/index.php/login
+- 22:12:45.312 INFO: GET 404 /public/assets/loginAssets/js/popper.min.js
+- 22:12:45.312 INFO: GET 404 /public/assets/loginAssets/js/bootstrap.min.js
+- 22:12:45.312 INFO: GET 404 /public/assets/loginAssets/js/main.js
+- 22:12:45.328 INFO: GET 304 /public/assets/loginAssets/images/Design sans titre.gif
+- 22:12:45.328 INFO: GET 404 /public/assets/loginAssets/js/popper.min.js
+- 22:12:45.328 INFO: GET 404 /public/assets/loginAssets/js/bootstrap.min.js
+- 22:12:45.343 INFO: GET 404 /public/assets/loginAssets/js/main.js
+- 22:12:45.343 DEBUG: OnLoadingStateChange: loading=0, url=http://127.0.0.1:8000/public/index.php/login
+- 22:14:35.906 DEBUG: WM_DESTROY
+- 22:14:35.906 DEBUG: RemoveBrowserWindow(): hwnd = 4786462
+- 22:14:35.906 INFO: Stopping Mongoose web server
+- 22:14:35.906 DEBUG: Mongoose webserver stopped immediately
+- 22:14:35.140 DEBUG: OnBeforeClose() hwnd=1507368
+- 22:14:35.140 DEBUG: RemoveBrowserWindow(): hwnd = 1507368
+- 22:14:35.140 DEBUG: GetBrowserWindow(): not found, hwnd = 1507368
+- 22:14:35.140 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 22:14:35.140 DEBUG: Calling CefQuitMessageLoop()
+- 22:14:35.234 INFO: Ended application
+- 22:14:35.234 INFO: --------------------------------------------------------
