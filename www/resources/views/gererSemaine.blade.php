@@ -20,7 +20,7 @@
                                 <td>{{$emploi->date_fin}}</td>
                                 <td>
                                     <div class="d-flex">
-                                        <form action="{{route('deleteSemaine')}}" method="post">{{--{{route('deleteFormateur',$emploi->id)}}--}}
+                                        <form action="{{route('deleteSemaine')}}" method="post">
                                             @csrf
                                             <input type="text" value="{{$emploi->id}}" name="id"hidden>
                                             <button onclick="return confirm('Voulez Vous vraiment Supprimer cette semaine?')" type="submit" class="btn btn-danger">Delete</button>
