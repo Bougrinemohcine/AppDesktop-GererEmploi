@@ -45,9 +45,6 @@ Route::post("/afficher_emploi", [pages::class, 'afficher_emploi'])->name('affich
 // -------------------------------------------
 
 Route::middleware('auth')->group(function () {
-
-
-
     // IMPORT  ///////////////////////////////////////////////////////////////////////////////////
     Route::controller(importData::class)->group(function(){
         Route::get('/import','index')->name('importView');
