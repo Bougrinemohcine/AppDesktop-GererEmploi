@@ -4112,3 +4112,43 @@ React will try to recreate this component tree from scratch using the error boun
 - 23:19:33.421 DEBUG: Calling CefQuitMessageLoop()
 - 23:19:33.484 INFO: Ended application
 - 23:19:33.484 INFO: --------------------------------------------------------
+- 23:25:57.016 INFO: --------------------------------------------------------
+- 23:25:57.016 INFO: Started application
+- 23:25:57.016 INFO: Logging to: C:\Users\PC\Desktop\Projects\git\appDesktop GererEmploi (git)\mainApp\debug.log
+- 23:25:57.016 INFO: Log level = DEBUG4
+- 23:25:57.016 INFO: Starting Mongoose 3.9c web server
+- 23:25:57.016 INFO: WWW directory: C:\Users\PC\Desktop\Projects\git\appDesktop GererEmploi (git)\mainApp\www
+- 23:25:57.016 INFO: Index files: index.php
+- 23:25:57.016 INFO: CGI interpreter: C:\Users\PC\Desktop\Projects\git\appDesktop GererEmploi (git)\mainApp\php\php-cgi.exe
+- 23:25:57.016 INFO: CGI pattern: **.php$
+- 23:25:57.016 INFO: Hide files patterns: 
+- 23:25:57.016 INFO: CGI environment variables set: TMP=C:\Users\PC\AppData\Local\Temp\,TEMP=C:\Users\PC\AppData\Local\Temp\,TMPDIR=C:\Users\PC\AppData\Local\Temp\,SERVER_NAME=127.0.0.1,PHPDESKTOP_VERSION=57.0
+- 23:25:57.031 INFO: Web server url: http://127.0.0.1:8000/
+- 23:25:57.031 INFO: remote_debugging_port = 51552
+- 23:25:57.031 DEBUG: Command line string for the browser process: "C:\Users\PC\Desktop\Projects\git\appDesktop GererEmploi (git)\mainApp\gererEmploi-ITA.exe" --no-sandbox --lang=en-US --log-file="C:\Users\PC\Desktop\Projects\git\appDesktop GererEmploi (git)\mainApp\debug.log" --remote-debugging-port=51552
+- 23:25:58.000 DEBUG: Command line string for the gpu-process process: "C:\Users\PC\Desktop\Projects\git\appDesktop GererEmploi (git)\mainApp\gererEmploi-ITA.exe" --type=gpu-process --no-sandbox --lang=en-US --log-file="C:\Users\PC\Desktop\Projects\git\appDesktop GererEmploi (git)\mainApp\debug.log" --disable-direct-composition --supports-dual-gpus=false --gpu-driver-bug-workarounds=7,10,18,19,20,23,41,61,74 --disable-gl-extensions="GL_KHR_blend_equation_advanced GL_KHR_blend_equation_advanced_coherent" --gpu-vendor-id=0x8086 --gpu-device-id=0x1916 --gpu-driver-vendor="Intel Corporation" --gpu-driver-version=31.0.101.2111 --gpu-driver-date=7-19-2022 --lang=en-US --log-file="C:\Users\PC\Desktop\Projects\git\appDesktop GererEmploi (git)\mainApp\debug.log" --service-request-channel-token=DA44D6A0E30648C7AA3CAA090771AE70 --mojo-platform-channel-handle=1892 /prefetch:2
+- 23:25:58.656 DEBUG: App::OnContextInitialized()
+- 23:25:58.656 INFO: DPI, window enlarged by 25% new width/height = 1000/750
+- 23:25:58.656 DEBUG: Window max width/height = 1842/1034
+- 23:25:58.656 DEBUG: GetBrowserWindow(): not found, hwnd = 984820
+- 23:25:58.656 DEBUG: WindowProc(): event WM_GETMINMAXINFO: could not fetch BrowserWindow
+- 23:25:58.687 DEBUG: BrowserWindow::CreateBrowserControl()
+- 23:25:58.687 DEBUG: StoreBrowserWindow(): hwnd = 984820
+- 23:25:58.828 DEBUG: ClientHandler::OnAfterCreated()
+- 23:25:58.828 DEBUG: SetCefBrowser() called in ClientHandler::OnAfterCreated()
+- 23:25:58.859 DEBUG: OnLoadingStateChange: loading=1, url=
+- 23:25:58.015 DEBUG: Command line string for the renderer process: "C:\Users\PC\Desktop\Projects\git\appDesktop GererEmploi (git)\mainApp\gererEmploi-ITA.exe" --type=renderer --no-sandbox --primordial-pipe-token=6041E0A140050A2671DF3D8D29D6068F --lang=en-US --lang=en-US --log-file="C:\Users\PC\Desktop\Projects\git\appDesktop GererEmploi (git)\mainApp\debug.log" --enable-pinch --device-scale-factor=1.25 --num-raster-threads=2 --enable-main-frame-before-activation --content-image-texture-target=0,0,3553;0,1,3553;0,2,3553;0,3,3553;0,4,3553;0,5,3553;0,6,3553;0,7,3553;0,8,3553;0,9,3553;0,10,3553;0,11,3553;0,12,3553;0,13,3553;0,14,3553;0,15,3553;1,0,3553;1,1,3553;1,2,3553;1,3,3553;1,4,3553;1,5,3553;1,6,3553;1,7,3553;1,8,3553;1,9,3553;1,10,3553;1,11,3553;1,12,3553;1,13,3553;1,14,3553;1,15,3553;2,0,3553;2,1,3553;2,2,3553;2,3,3553;2,4,3553;2,5,3553;2,6,3553;2,7,3553;2,8,3553;2,9,3553;2,10,3553;2,11,3553;2,12,3553;2,13,3553;2,14,3553;2,15,3553;3,0,3553;3,1,3553;3,2,3553;3,3,3553;3,4,3553;3,5,3553;3,6,3553;3,7,3553;3,8,3553;3,9,3553;3,10,3553;3,11,3553;3,12,3553;3,13,3553;3,14,3553;3,15,3553 --service-request-channel-token=6041E0A140050A2671DF3D8D29D6068F --renderer-client-id=3 --mojo-platform-channel-handle=2344 /prefetch:1
+- 23:25:59.203 DEBUG: OnBrowserCreated()
+[0607/232559.644:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain
+- 23:26:01.422 INFO: GET 302 /
+- 23:26:12.750 DEBUG: WM_DESTROY
+- 23:26:12.750 DEBUG: RemoveBrowserWindow(): hwnd = 984820
+- 23:26:12.750 INFO: Stopping Mongoose web server
+- 23:26:12.750 DEBUG: Mongoose webserver stopped immediately
+- 23:26:12.750 DEBUG: OnBeforeClose() hwnd=67328
+- 23:26:12.750 DEBUG: RemoveBrowserWindow(): hwnd = 67328
+- 23:26:12.750 DEBUG: GetBrowserWindow(): not found, hwnd = 67328
+- 23:26:12.750 WARNING: RemoveBrowserWindow() failed: GetBrowserWindow() failed
+- 23:26:12.750 DEBUG: Calling CefQuitMessageLoop()
+- 23:26:12.844 INFO: Ended application
+- 23:26:12.844 INFO: --------------------------------------------------------
